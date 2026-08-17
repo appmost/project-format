@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.appmost.ai/format/schemas/2.0/page.schema.json",
+  "title": "Appmost Project Format 2.0 page",
+  "type": "object",
+  "required": ["id"],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "rows": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/row" }
+    },
+    "extensions": { "$ref": "#/$defs/extensions" }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "extensions": {
+      "type": "object",
+      "propertyNames": { "pattern": "^[a-z0-9.-]+/[a-zA-Z0-9._-]+$" }
+    },
+    "action": {
+      "type": "object",
+      "required": ["type"],
+      "properties": {
+        "type": { "type": "string", "minLength": 1 },
+        "configuration": { "type": "object" },
+        "extensions": { "$ref": "#/$defs/extensions" }
+      },
+      "additionalProperties": true
+    },
+    "row": {
+      "type": "object",
+      "required": ["id", "type"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "type": { "type": "string", "minLength": 1 },
+        "role": { "enum": ["header", "defaultHeader", "footer"] },
+        "appActions": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/action" }
+        },
+        "childProperties": {
+          "type": "object",
+          "properties": {
+            "children": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/row" }
+            }
+          },
+          "additionalProperties": true
+        },
+        "extensions": { "$ref": "#/$defs/extensions" }
+      },
+      "additionalProperties": true
+    }
+  }
+}

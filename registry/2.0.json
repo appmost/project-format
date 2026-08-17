@@ -1,0 +1,1993 @@
+{
+  "registryVersion": 1,
+  "formatVersion": "2.0",
+  "documentVersion": 2,
+  "referenceRenderer": "iosSwiftUI",
+  "notes": [
+    "Type names are normative; visual examples are explanatory.",
+    "Published row renderer targets are iOS with SwiftUI and Android with Compose.",
+    "A valid project may contain a type that a particular renderer does not support."
+  ],
+  "rowTypes": [
+    {
+      "type": "singleButton",
+      "name": "Single button",
+      "category": "Action",
+      "summary": "A single full-width action button.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "dualText",
+      "name": "Dual text",
+      "category": "Content",
+      "summary": "Leading and trailing text on one line.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": true
+      }
+    },
+    {
+      "type": "plainLeadingLabel",
+      "name": "Plain leading label",
+      "category": "Content",
+      "summary": "A single leading-aligned label without a container treatment.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "iconTwoTexts",
+      "name": "Icon two texts",
+      "category": "Content",
+      "summary": "A leading icon followed by two text values.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": true
+      }
+    },
+    {
+      "type": "textTrailingIcon",
+      "name": "Text trailing icon",
+      "category": "Content",
+      "summary": "Leading text with a trailing icon.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": true
+      }
+    },
+    {
+      "type": "textsAndColorSwatches",
+      "name": "Texts and color swatches",
+      "category": "Input",
+      "summary": "Text values paired with color swatches.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "settingsDualText",
+      "name": "Settings dual text",
+      "category": "Content",
+      "summary": "A settings-style title with a trailing value.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "containerPreview",
+      "name": "Container preview",
+      "category": "Layout",
+      "summary": "A preview surface for nested row content.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "insetSecondaryLabel",
+      "name": "Inset secondary label",
+      "category": "Content",
+      "summary": "An inset secondary or supporting label.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "labelAndSwitch",
+      "name": "Label and switch",
+      "category": "Input",
+      "summary": "A label paired with an on/off switch.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": true
+      }
+    },
+    {
+      "type": "centeredLabel",
+      "name": "Centered label",
+      "category": "Content",
+      "summary": "A single centered label.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": true
+      }
+    },
+    {
+      "type": "stackedLabels",
+      "name": "Stacked labels",
+      "category": "Content",
+      "summary": "Several labels stacked vertically.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "lightHeaderLabel",
+      "name": "Light header label",
+      "category": "Content",
+      "summary": "A low-emphasis section header.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "centeredSeparatorLabel",
+      "name": "Centered separator label",
+      "category": "Content",
+      "summary": "A centered label that separates surrounding content.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "centeredMessage",
+      "name": "Centered message",
+      "category": "Content",
+      "summary": "A centered multiline message.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "centeredAlertLabel",
+      "name": "Centered alert label",
+      "category": "Content",
+      "summary": "A centered alert or warning label.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "twoColumnEditor",
+      "name": "Two column editor",
+      "category": "Content",
+      "summary": "Two editable content columns.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "centeredPaddedLabel",
+      "name": "Centered padded label",
+      "category": "Content",
+      "summary": "A centered label with built-in padding.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "filterSpacer",
+      "name": "Filter spacer",
+      "category": "Layout",
+      "summary": "Empty spacing used between filter content.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "insetButton",
+      "name": "Inset button",
+      "category": "Action",
+      "summary": "An inset action button.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "singleImage",
+      "name": "Single image",
+      "category": "Media",
+      "summary": "A single image.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": true
+      }
+    },
+    {
+      "type": "spacer",
+      "name": "Spacer",
+      "category": "Layout",
+      "summary": "Empty vertical spacing between content groups.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": true
+      }
+    },
+    {
+      "type": "iconOverText",
+      "name": "Icon over text",
+      "category": "Content",
+      "summary": "An icon placed above a text label.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": true
+      }
+    },
+    {
+      "type": "compactDualText",
+      "name": "Compact dual text",
+      "category": "Content",
+      "summary": "A compact leading and trailing text row.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "appSummary",
+      "name": "App summary",
+      "category": "Data",
+      "summary": "A summary of app-level information.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "map",
+      "name": "Map",
+      "category": "Location",
+      "summary": "An interactive or static map.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "titleSubtitleStacked",
+      "name": "Title subtitle stacked",
+      "category": "Content",
+      "summary": "A title and subtitle stacked vertically.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "fullWidthImageDisplay",
+      "name": "Full width image display",
+      "category": "Media",
+      "summary": "An edge-to-edge image.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "multilineLabel",
+      "name": "Multiline label",
+      "category": "Content",
+      "summary": "A label that supports multiple lines.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "variableSummaryTrailingTitle",
+      "name": "Variable summary trailing title",
+      "category": "Data",
+      "summary": "A variable summary with a trailing title.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "facebookButtonBar",
+      "name": "Facebook button bar",
+      "category": "Action",
+      "summary": "A horizontal social-style action bar.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "labelAndStepper",
+      "name": "Label and stepper",
+      "category": "Input",
+      "summary": "A label paired with a numeric stepper.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "defaultSegmentedControl",
+      "name": "Default segmented control",
+      "category": "Input",
+      "summary": "A standard segmented control.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "textArea",
+      "name": "Text area",
+      "category": "Input",
+      "summary": "An editable multiline text area.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "imageBackgroundLabel",
+      "name": "Image background label",
+      "category": "Media",
+      "summary": "A label displayed over an image background.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "fiveStarRating",
+      "name": "Five star rating",
+      "category": "Input",
+      "summary": "A five-star rating control.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "textAboveImage",
+      "name": "Text above image",
+      "category": "Media",
+      "summary": "Text displayed above an image.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "imageTextArea",
+      "name": "Image text area",
+      "category": "Input",
+      "summary": "An image paired with a multiline text area.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "dotted",
+      "name": "Dotted",
+      "category": "Layout",
+      "summary": "A dotted visual separator.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "titleStatusDescription",
+      "name": "Title status description",
+      "category": "Data",
+      "summary": "A title, status, and supporting description.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "textField",
+      "name": "Text field",
+      "category": "Input",
+      "summary": "A single-line text input.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": true
+      }
+    },
+    {
+      "type": "leadingImageText",
+      "name": "Leading image text",
+      "category": "Media",
+      "summary": "A leading image followed by text.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "labelAndTextField",
+      "name": "Label and text field",
+      "category": "Input",
+      "summary": "A label paired with a single-line text input.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": true
+      }
+    },
+    {
+      "type": "variableActionButtons",
+      "name": "Variable action buttons",
+      "category": "Action",
+      "summary": "Variable values paired with action buttons.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "centeredAccentLabel",
+      "name": "Centered accent label",
+      "category": "Content",
+      "summary": "A centered label using the accent color.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "iconWithTwoStackedTexts",
+      "name": "Icon with two stacked texts",
+      "category": "Content",
+      "summary": "An icon followed by two stacked text lines.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": true
+      }
+    },
+    {
+      "type": "leadingIconMetadataTitle",
+      "name": "Leading icon metadata title",
+      "category": "Content",
+      "summary": "A leading icon with metadata and a title.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "dualTextField",
+      "name": "Dual text field",
+      "category": "Input",
+      "summary": "Two single-line text inputs.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "numberBadgeTitleSubtitleStatus",
+      "name": "Number badge title subtitle status",
+      "category": "Data",
+      "summary": "A numbered badge with title, subtitle, and status.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "badgeTitleSubtitleStatus",
+      "name": "Badge title subtitle status",
+      "category": "Data",
+      "summary": "A badge with title, subtitle, and status.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "titleFootnoteMetricPairs",
+      "name": "Title footnote metric pairs",
+      "category": "Data",
+      "summary": "A title and footnote with paired metrics.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "imageMetadataTrailingTitleButton",
+      "name": "Image metadata trailing title button",
+      "category": "Media",
+      "summary": "An image and metadata with a trailing title and button.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "imageMetadata",
+      "name": "Image metadata",
+      "category": "Media",
+      "summary": "An image with supporting metadata.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "boldHeader",
+      "name": "Bold header",
+      "category": "Content",
+      "summary": "A bold section header.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": true
+      }
+    },
+    {
+      "type": "button",
+      "name": "Button",
+      "category": "Action",
+      "summary": "A standard action button.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": true
+      }
+    },
+    {
+      "type": "titleHighlightTwoColumnStats",
+      "name": "Title highlight two column stats",
+      "category": "Content",
+      "summary": "A title and highlighted value with two-column statistics.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "titleHighlightTwoColumnDetailPairs",
+      "name": "Title highlight two column detail pairs",
+      "category": "Content",
+      "summary": "A title and highlighted value with two-column detail pairs.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "centeredTitleLabel",
+      "name": "Centered title label",
+      "category": "Content",
+      "summary": "A centered title label.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "plainTextArea",
+      "name": "Plain text area",
+      "category": "Input",
+      "summary": "A plain multiline text area.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": true
+      }
+    },
+    {
+      "type": "iconText",
+      "name": "Icon text",
+      "category": "Content",
+      "summary": "An icon followed by text.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": true
+      }
+    },
+    {
+      "type": "imageGridContent",
+      "name": "Image grid content",
+      "category": "Media",
+      "summary": "A grid of images with supporting content.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "largeImageDetailMetrics",
+      "name": "Large image detail metrics",
+      "category": "Data",
+      "summary": "A large image with details and metrics.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "fullWidthImageWithText",
+      "name": "Full width image with text",
+      "category": "Media",
+      "summary": "A full-width image with supporting text.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "textAreaButton",
+      "name": "Text area button",
+      "category": "Input",
+      "summary": "A multiline text area with an action button.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "pageCaptionDescription",
+      "name": "Page caption description",
+      "category": "Content",
+      "summary": "A page caption with supporting description.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "pagedImageCarousel",
+      "name": "Paged image carousel",
+      "category": "Media",
+      "summary": "A horizontally paged image carousel.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "avatarDualLabel",
+      "name": "Avatar dual label",
+      "category": "Media",
+      "summary": "An avatar followed by two text labels.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "variableSummary",
+      "name": "Variable summary",
+      "category": "Data",
+      "summary": "A compact summary of variable values.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "colorTextField",
+      "name": "Color text field",
+      "category": "Input",
+      "summary": "A text input for a color value.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "horizontalChildren",
+      "name": "Horizontal children",
+      "category": "Layout",
+      "summary": "Child rows arranged horizontally.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": true
+      }
+    },
+    {
+      "type": "iconTextField",
+      "name": "Icon text field",
+      "category": "Input",
+      "summary": "An icon paired with a single-line text input.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "insetFields",
+      "name": "Inset fields",
+      "category": "Input",
+      "summary": "A grouped inset collection of input fields.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "androidIconPreview",
+      "name": "Android icon preview",
+      "category": "Media",
+      "summary": "A preview of Android launcher icon output.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "androidMaskPreview",
+      "name": "Android mask preview",
+      "category": "Media",
+      "summary": "A preview of Android adaptive icon masking.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "verticalChildren",
+      "name": "Vertical children",
+      "category": "Layout",
+      "summary": "Child rows arranged vertically.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": true
+      }
+    },
+    {
+      "type": "textAndIconButton",
+      "name": "Text and icon button",
+      "category": "Action",
+      "summary": "Text paired with an icon button.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": true
+      }
+    },
+    {
+      "type": "centeredIconText",
+      "name": "Centered icon text",
+      "category": "Content",
+      "summary": "A centered icon and text label.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": true
+      }
+    },
+    {
+      "type": "progressBar",
+      "name": "Progress bar",
+      "category": "Data",
+      "summary": "A horizontal progress indicator.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": true
+      }
+    },
+    {
+      "type": "scrollableHorizontalChildren",
+      "name": "Scrollable horizontal children",
+      "category": "Layout",
+      "summary": "Child rows in a horizontally scrolling container.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": true
+      }
+    },
+    {
+      "type": "boldHeaderWithButton",
+      "name": "Bold header with button",
+      "category": "Action",
+      "summary": "A bold section header with a trailing action.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": true
+      }
+    },
+    {
+      "type": "dualAdaptiveColor",
+      "name": "Dual adaptive color",
+      "category": "Input",
+      "summary": "Two adaptive-color samples.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "iconTextSwitch",
+      "name": "Icon text switch",
+      "category": "Input",
+      "summary": "An icon and text paired with an on/off switch.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": true
+      }
+    },
+    {
+      "type": "centeredTextBetweenButtons",
+      "name": "Centered text between buttons",
+      "category": "Action",
+      "summary": "Centered text between two actions.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": true
+      }
+    },
+    {
+      "type": "iconTextIcon",
+      "name": "Icon text icon",
+      "category": "Content",
+      "summary": "Text placed between leading and trailing icons.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": true
+      }
+    },
+    {
+      "type": "iconLabelTextFieldStepper",
+      "name": "Icon label text field stepper",
+      "category": "Input",
+      "summary": "An icon, label, text input, and numeric stepper.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "tallIconTextSwitch",
+      "name": "Tall icon text switch",
+      "category": "Input",
+      "summary": "A tall icon and text row with an on/off switch.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "textsAndTrailingColors",
+      "name": "Texts and trailing colors",
+      "category": "Input",
+      "summary": "Text values with trailing color samples.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "imageLargeColorBlocks",
+      "name": "Image large color blocks",
+      "category": "Input",
+      "summary": "An image paired with large color blocks.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "barChart",
+      "name": "Bar chart",
+      "category": "Data",
+      "summary": "A bar chart.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": true
+      }
+    },
+    {
+      "type": "imageTextsButton",
+      "name": "Image texts button",
+      "category": "Media",
+      "summary": "An image, text values, and an action button.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": true
+      }
+    },
+    {
+      "type": "labelTextFieldStepper",
+      "name": "Label text field stepper",
+      "category": "Input",
+      "summary": "A label, text input, and numeric stepper.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "wideLabelAndStepper",
+      "name": "Wide label and stepper",
+      "category": "Input",
+      "summary": "A wide label paired with a numeric stepper.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "imageBodyTextButton",
+      "name": "Image body text button",
+      "category": "Media",
+      "summary": "An image, body text, and an action button.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "circleProgress",
+      "name": "Circle progress",
+      "category": "Data",
+      "summary": "A circular progress indicator.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": true
+      }
+    },
+    {
+      "type": "textsAndCircleProgress",
+      "name": "Texts and circle progress",
+      "category": "Data",
+      "summary": "Text labels paired with circular progress.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": true
+      }
+    },
+    {
+      "type": "circleProgressAndTexts",
+      "name": "Circle progress and texts",
+      "category": "Data",
+      "summary": "Circular progress followed by text values.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": true
+      }
+    },
+    {
+      "type": "datePicker",
+      "name": "Date picker",
+      "category": "Input",
+      "summary": "A full date picker.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "lineBarChart",
+      "name": "Line bar chart",
+      "category": "Data",
+      "summary": "A combined line and bar chart.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": true
+      }
+    },
+    {
+      "type": "areaChart",
+      "name": "Area chart",
+      "category": "Data",
+      "summary": "An area chart.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": true
+      }
+    },
+    {
+      "type": "rangeChart",
+      "name": "Range chart",
+      "category": "Data",
+      "summary": "A chart for a numeric or time range.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "textsAndTrailingImage",
+      "name": "Texts and trailing image",
+      "category": "Media",
+      "summary": "Text labels with a trailing image.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": true
+      }
+    },
+    {
+      "type": "largeImageAndTexts",
+      "name": "Large image and texts",
+      "category": "Media",
+      "summary": "A large image with supporting text values.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": true
+      }
+    },
+    {
+      "type": "smallDatePicker",
+      "name": "Small date picker",
+      "category": "Input",
+      "summary": "A compact date picker.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "singleLabel",
+      "name": "Single label",
+      "category": "Content",
+      "summary": "A single text label.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": true
+      }
+    },
+    {
+      "type": "smallImageAndTexts",
+      "name": "Small image and texts",
+      "category": "Media",
+      "summary": "A small image followed by text values.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": true
+      }
+    },
+    {
+      "type": "textFieldStepperButton",
+      "name": "Text field stepper button",
+      "category": "Input",
+      "summary": "A text input, numeric stepper, and action button.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "iconLabelSegmentedControl",
+      "name": "Icon label segmented control",
+      "category": "Input",
+      "summary": "An icon and label paired with a segmented control.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "iconLabelButtonLabel",
+      "name": "Icon label button label",
+      "category": "Action",
+      "summary": "An icon, label, action button, and trailing label.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "slider",
+      "name": "Slider",
+      "category": "Input",
+      "summary": "A continuous value slider.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "weekDatePicker",
+      "name": "Week date picker",
+      "category": "Input",
+      "summary": "A picker for selecting a week.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": true
+      }
+    },
+    {
+      "type": "mediaHero",
+      "name": "Media hero",
+      "category": "Media",
+      "summary": "A prominent media hero with overlaid or adjacent content.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "mediaCard",
+      "name": "Media card",
+      "category": "Media",
+      "summary": "A compact media card with supporting content.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "statGrid",
+      "name": "Stat grid",
+      "category": "Data",
+      "summary": "A grid of key statistics.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "statusList",
+      "name": "Status list",
+      "category": "Data",
+      "summary": "A list of labelled statuses.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "segmentedChip",
+      "name": "Segmented chip",
+      "category": "Input",
+      "summary": "A compact segmented chip selector.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    },
+    {
+      "type": "formSection",
+      "name": "Form section",
+      "category": "Input",
+      "summary": "A grouped section of form controls.",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": false
+      }
+    }
+  ],
+  "actionTypes": [
+    {
+      "type": "abortActions",
+      "name": "Abort actions",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "showActionSheet",
+      "name": "Show action sheet",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "openAppleMaps",
+      "name": "Open apple maps",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "appendToFirebaseDatabase",
+      "name": "Append to firebase database",
+      "support": {
+        "ios": true,
+        "android": false
+      }
+    },
+    {
+      "type": "promptForAppReview",
+      "name": "Prompt for app review",
+      "support": {
+        "ios": true,
+        "android": false
+      }
+    },
+    {
+      "type": "openAppInAppStore",
+      "name": "Open app in app store",
+      "support": {
+        "ios": true,
+        "android": false
+      }
+    },
+    {
+      "type": "askForPush",
+      "name": "Ask for push",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "openBarcodeScanner",
+      "name": "Open barcode scanner",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "callFirebaseFunction",
+      "name": "Call firebase function",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "callJsonApi",
+      "name": "Call json api",
+      "support": {
+        "ios": true,
+        "android": false
+      }
+    },
+    {
+      "type": "composeEmail",
+      "name": "Compose email",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "clearStripeConnection",
+      "name": "Clear stripe connection",
+      "support": {
+        "ios": true,
+        "android": false
+      }
+    },
+    {
+      "type": "callPhoneNumber",
+      "name": "Call phone number",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "connectStripe",
+      "name": "Connect stripe",
+      "support": {
+        "ios": true,
+        "android": false
+      }
+    },
+    {
+      "type": "showContactPicker",
+      "name": "Show contact picker",
+      "support": {
+        "ios": false,
+        "android": true
+      }
+    },
+    {
+      "type": "copyString",
+      "name": "Copy string",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "createFirebaseUser",
+      "name": "Create firebase user",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "delay",
+      "name": "Delay",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "deleteFirebaseUser",
+      "name": "Delete firebase user",
+      "support": {
+        "ios": true,
+        "android": false
+      }
+    },
+    {
+      "type": "showDialog",
+      "name": "Show dialog",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "dismiss",
+      "name": "Dismiss",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "dismissTabBar",
+      "name": "Dismiss tab bar",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "selectOrCaptureImage",
+      "name": "Select or capture image",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "openVariableEditing",
+      "name": "Open variable editing",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "fetchGPS",
+      "name": "Fetch gps",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "fetchJsonValueToVariable",
+      "name": "Fetch json value to variable",
+      "support": {
+        "ios": true,
+        "android": false
+      }
+    },
+    {
+      "type": "generateSwishQrCode",
+      "name": "Generate swish qr code",
+      "support": {
+        "ios": true,
+        "android": false
+      }
+    },
+    {
+      "type": "googleSheet",
+      "name": "Google sheet",
+      "support": {
+        "ios": true,
+        "android": false
+      }
+    },
+    {
+      "type": "justHighlightRow",
+      "name": "Just highlight row",
+      "support": {
+        "ios": true,
+        "android": false
+      }
+    },
+    {
+      "type": "ifElse",
+      "name": "If else",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "readTextFile",
+      "name": "Read text file",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "showLicenses",
+      "name": "Show licenses",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "logToFirebaseAnalytics",
+      "name": "Log to firebase analytics",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "manipulateVariables",
+      "name": "Manipulate variables",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "openMessenger",
+      "name": "Open messenger",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "modifyImage",
+      "name": "Modify image",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "multipleActions",
+      "name": "Multiple actions",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "doNothing",
+      "name": "Do nothing",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "openSwishApp",
+      "name": "Open swish app",
+      "support": {
+        "ios": true,
+        "android": false
+      }
+    },
+    {
+      "type": "openAnotherPage",
+      "name": "Open another page",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "pairBluetooth",
+      "name": "Pair bluetooth",
+      "support": {
+        "ios": true,
+        "android": false
+      }
+    },
+    {
+      "type": "performFunction",
+      "name": "Perform function",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "playSound",
+      "name": "Play sound",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "playVideo",
+      "name": "Play video",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "popPage",
+      "name": "Pop page",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "pushStripePaymentOptions",
+      "name": "Push stripe payment options",
+      "support": {
+        "ios": true,
+        "android": false
+      }
+    },
+    {
+      "type": "pushStripeShipping",
+      "name": "Push stripe shipping",
+      "support": {
+        "ios": true,
+        "android": false
+      }
+    },
+    {
+      "type": "readNfcTag",
+      "name": "Read nfc tag",
+      "support": {
+        "ios": true,
+        "android": false
+      }
+    },
+    {
+      "type": "reloadFirebaseUser",
+      "name": "Reload firebase user",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "reloadIAPSubscriptions",
+      "name": "Reload iap subscriptions",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "reloadVariableFromDataSource",
+      "name": "Reload variable from data source",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "resetNavigation",
+      "name": "Reset navigation",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "resetPage",
+      "name": "Reset page",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "restoreIAP",
+      "name": "Restore iap",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "scrollPage",
+      "name": "Scroll page",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "scrollPagination",
+      "name": "Scroll pagination",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "sendFirebasePasswordResetEmail",
+      "name": "Send firebase password reset email",
+      "support": {
+        "ios": true,
+        "android": false
+      }
+    },
+    {
+      "type": "shareLink",
+      "name": "Share link",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "sharePdf",
+      "name": "Share pdf",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "showInfoPopup",
+      "name": "Show info popup",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "showStripeExpressDashboard",
+      "name": "Show stripe express dashboard",
+      "support": {
+        "ios": true,
+        "android": false
+      }
+    },
+    {
+      "type": "signIn",
+      "name": "Sign in",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "signOut",
+      "name": "Sign out",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "composeSMS",
+      "name": "Compose sms",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "startAudioRecording",
+      "name": "Start audio recording",
+      "support": {
+        "ios": true,
+        "android": false
+      }
+    },
+    {
+      "type": "startStripePayment",
+      "name": "Start stripe payment",
+      "support": {
+        "ios": true,
+        "android": false
+      }
+    },
+    {
+      "type": "stopAudioRecording",
+      "name": "Stop audio recording",
+      "support": {
+        "ios": true,
+        "android": false
+      }
+    },
+    {
+      "type": "subscribeToIAP",
+      "name": "Subscribe to iap",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "syncBackFirebaseSubscribedTopics",
+      "name": "Sync back firebase subscribed topics",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "syncBackFirebaseUser",
+      "name": "Sync back firebase user",
+      "support": {
+        "ios": true,
+        "android": false
+      }
+    },
+    {
+      "type": "manuallyUpdateUI",
+      "name": "Manually update ui",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "uploadFileToFirebaseStorage",
+      "name": "Upload file to firebase storage",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "updatePaginationView",
+      "name": "Update pagination view",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "openWebPage",
+      "name": "Open web page",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "writeNfcTag",
+      "name": "Write nfc tag",
+      "support": {
+        "ios": true,
+        "android": false
+      }
+    }
+  ],
+  "valueTypes": [
+    {
+      "type": "adaptiveColor",
+      "name": "Adaptive color",
+      "representation": "adaptive color object",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "boolean",
+      "name": "Boolean",
+      "representation": "boolean",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "color",
+      "name": "Color",
+      "representation": "color string",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "coordinate",
+      "name": "Coordinate",
+      "representation": "coordinate string/object",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "custom",
+      "name": "Custom",
+      "representation": "custom object",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "date",
+      "name": "Date",
+      "representation": "date string",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "double",
+      "name": "Double",
+      "representation": "double-precision number",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "dateTime",
+      "name": "Date time",
+      "representation": "date-time string",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "element",
+      "name": "Element",
+      "representation": "runtime list element",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "float",
+      "name": "Float",
+      "representation": "floating-point number",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "integer",
+      "name": "Integer",
+      "representation": "32-bit integer",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "image",
+      "name": "Image",
+      "representation": "image resource identifier",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "iconName",
+      "name": "Icon name",
+      "representation": "icon identifier",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "longInteger",
+      "name": "Long integer",
+      "representation": "64-bit integer compatibility value",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "list",
+      "name": "List",
+      "representation": "ordered child value list",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "location",
+      "name": "Location",
+      "representation": "location string/object",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "string",
+      "name": "String",
+      "representation": "string",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "time",
+      "name": "Time",
+      "representation": "time string",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    },
+    {
+      "type": "unknown",
+      "name": "Unknown",
+      "representation": "unknown sentinel",
+      "support": {
+        "ios": true,
+        "android": true
+      }
+    }
+  ],
+  "expressionTypes": [
+    "ownVariable",
+    "variableReference",
+    "function",
+    "resolvedText",
+    "string",
+    "boolean",
+    "double",
+    "integer",
+    "color",
+    "adaptiveColor",
+    "iconName",
+    "coordinate",
+    "location"
+  ],
+  "conditionOperators": [
+    "equals",
+    "lessThan",
+    "greaterThan",
+    "lessThanOrEqual",
+    "greaterThanOrEqual",
+    "notEqual"
+  ],
+  "stringTypes": [
+    "phoneNumber",
+    "email",
+    "webUrl",
+    "address",
+    "postalNumber",
+    "personalNumber",
+    "text"
+  ],
+  "errorCodes": [
+    "broken_reference",
+    "duplicate_id",
+    "invalid_json",
+    "invalid_package",
+    "invalid_typed_value",
+    "missing_document_version",
+    "unknown_action_type",
+    "unknown_row_type",
+    "unknown_value_type",
+    "unsafe_path",
+    "unsupported_document_version"
+  ]
+}

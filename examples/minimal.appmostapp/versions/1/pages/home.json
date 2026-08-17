@@ -1,0 +1,19 @@
+{
+  "id": "home",
+  "title": "Home",
+  "rows": [
+    {
+      "id": "welcome",
+      "type": "singleLabel",
+      "labelModels": [
+        { "text": "Hello Appmost" }
+      ],
+      "contentPadding": {
+        "top": 12,
+        "right": 16,
+        "bottom": 12,
+        "left": 16
+      }
+    }
+  ]
+}
