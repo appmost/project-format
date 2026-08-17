@@ -6,6 +6,7 @@
   "notes": [
     "Type names are normative; visual examples are explanatory.",
     "Published row renderer targets are iOS with SwiftUI and Android with Compose.",
+    "Appmost Design uses the iOS SwiftUI preview and exposes a smaller authoring surface through its Appmost Design support flags.",
     "A valid project may contain a type that a particular renderer does not support."
   ],
   "rowTypes": [
@@ -16,7 +17,8 @@
       "summary": "A single full-width action button.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -26,7 +28,8 @@
       "summary": "Leading and trailing text on one line.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": true
+        "androidCompose": true,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -36,7 +39,8 @@
       "summary": "A single leading-aligned label without a container treatment.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -46,7 +50,8 @@
       "summary": "A leading icon followed by two text values.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": true
+        "androidCompose": true,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -56,7 +61,8 @@
       "summary": "Leading text with a trailing icon.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": true
+        "androidCompose": true,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -66,7 +72,8 @@
       "summary": "Text values paired with color swatches.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -76,7 +83,8 @@
       "summary": "A settings-style title with a trailing value.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -86,7 +94,8 @@
       "summary": "A preview surface for nested row content.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -96,7 +105,8 @@
       "summary": "An inset secondary or supporting label.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -106,7 +116,8 @@
       "summary": "A label paired with an on/off switch.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": true
+        "androidCompose": true,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -116,7 +127,8 @@
       "summary": "A single centered label.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": true
+        "androidCompose": true,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -126,7 +138,8 @@
       "summary": "Several labels stacked vertically.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -136,7 +149,8 @@
       "summary": "A low-emphasis section header.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -146,7 +160,8 @@
       "summary": "A centered label that separates surrounding content.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -156,7 +171,8 @@
       "summary": "A centered multiline message.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -166,7 +182,8 @@
       "summary": "A centered alert or warning label.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -176,7 +193,8 @@
       "summary": "Two editable content columns.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -186,7 +204,8 @@
       "summary": "A centered label with built-in padding.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -196,7 +215,8 @@
       "summary": "Empty spacing used between filter content.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -206,7 +226,8 @@
       "summary": "An inset action button.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -216,7 +237,8 @@
       "summary": "A single image.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": true
+        "androidCompose": true,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -226,7 +248,8 @@
       "summary": "Empty vertical spacing between content groups.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": true
+        "androidCompose": true,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -236,7 +259,8 @@
       "summary": "An icon placed above a text label.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": true
+        "androidCompose": true,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -246,7 +270,8 @@
       "summary": "A compact leading and trailing text row.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -256,7 +281,8 @@
       "summary": "A summary of app-level information.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -266,7 +292,8 @@
       "summary": "An interactive or static map.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -276,7 +303,8 @@
       "summary": "A title and subtitle stacked vertically.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -286,7 +314,8 @@
       "summary": "An edge-to-edge image.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -296,7 +325,8 @@
       "summary": "A label that supports multiple lines.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -306,7 +336,8 @@
       "summary": "A variable summary with a trailing title.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -316,7 +347,8 @@
       "summary": "A horizontal social-style action bar.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -326,7 +358,8 @@
       "summary": "A label paired with a numeric stepper.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -336,7 +369,8 @@
       "summary": "A standard segmented control.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -346,7 +380,8 @@
       "summary": "An editable multiline text area.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -356,7 +391,8 @@
       "summary": "A label displayed over an image background.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -366,7 +402,8 @@
       "summary": "A five-star rating control.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -376,7 +413,8 @@
       "summary": "Text displayed above an image.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -386,7 +424,8 @@
       "summary": "An image paired with a multiline text area.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -396,7 +435,8 @@
       "summary": "A dotted visual separator.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -406,7 +446,8 @@
       "summary": "A title, status, and supporting description.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -416,7 +457,8 @@
       "summary": "A single-line text input.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": true
+        "androidCompose": true,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -426,7 +468,8 @@
       "summary": "A leading image followed by text.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -436,7 +479,8 @@
       "summary": "A label paired with a single-line text input.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": true
+        "androidCompose": true,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -446,7 +490,8 @@
       "summary": "Variable values paired with action buttons.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -456,7 +501,8 @@
       "summary": "A centered label using the accent color.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -466,7 +512,8 @@
       "summary": "An icon followed by two stacked text lines.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": true
+        "androidCompose": true,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -476,7 +523,8 @@
       "summary": "A leading icon with metadata and a title.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -486,7 +534,8 @@
       "summary": "Two single-line text inputs.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -496,7 +545,8 @@
       "summary": "A numbered badge with title, subtitle, and status.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -506,7 +556,8 @@
       "summary": "A badge with title, subtitle, and status.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -516,7 +567,8 @@
       "summary": "A title and footnote with paired metrics.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -526,7 +578,8 @@
       "summary": "An image and metadata with a trailing title and button.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -536,7 +589,8 @@
       "summary": "An image with supporting metadata.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -546,7 +600,8 @@
       "summary": "A bold section header.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": true
+        "androidCompose": true,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -556,7 +611,8 @@
       "summary": "A standard action button.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": true
+        "androidCompose": true,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -566,7 +622,8 @@
       "summary": "A title and highlighted value with two-column statistics.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -576,7 +633,8 @@
       "summary": "A title and highlighted value with two-column detail pairs.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -586,7 +644,8 @@
       "summary": "A centered title label.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -596,7 +655,8 @@
       "summary": "A plain multiline text area.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": true
+        "androidCompose": true,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -606,7 +666,8 @@
       "summary": "An icon followed by text.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": true
+        "androidCompose": true,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -616,7 +677,8 @@
       "summary": "A grid of images with supporting content.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -626,7 +688,8 @@
       "summary": "A large image with details and metrics.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -636,7 +699,8 @@
       "summary": "A full-width image with supporting text.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -646,7 +710,8 @@
       "summary": "A multiline text area with an action button.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -656,7 +721,8 @@
       "summary": "A page caption with supporting description.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -666,7 +732,8 @@
       "summary": "A horizontally paged image carousel.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -676,7 +743,8 @@
       "summary": "An avatar followed by two text labels.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -686,7 +754,8 @@
       "summary": "A compact summary of variable values.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -696,7 +765,8 @@
       "summary": "A text input for a color value.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -706,7 +776,8 @@
       "summary": "Child rows arranged horizontally.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": true
+        "androidCompose": true,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -716,7 +787,8 @@
       "summary": "An icon paired with a single-line text input.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -726,7 +798,8 @@
       "summary": "A grouped inset collection of input fields.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -736,7 +809,8 @@
       "summary": "A preview of Android launcher icon output.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -746,7 +820,8 @@
       "summary": "A preview of Android adaptive icon masking.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -756,7 +831,8 @@
       "summary": "Child rows arranged vertically.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": true
+        "androidCompose": true,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -766,7 +842,8 @@
       "summary": "Text paired with an icon button.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": true
+        "androidCompose": true,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -776,7 +853,8 @@
       "summary": "A centered icon and text label.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": true
+        "androidCompose": true,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -786,7 +864,8 @@
       "summary": "A horizontal progress indicator.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": true
+        "androidCompose": true,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -796,7 +875,8 @@
       "summary": "Child rows in a horizontally scrolling container.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": true
+        "androidCompose": true,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -806,7 +886,8 @@
       "summary": "A bold section header with a trailing action.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": true
+        "androidCompose": true,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -816,7 +897,8 @@
       "summary": "Two adaptive-color samples.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -826,7 +908,8 @@
       "summary": "An icon and text paired with an on/off switch.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": true
+        "androidCompose": true,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -836,7 +919,8 @@
       "summary": "Centered text between two actions.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": true
+        "androidCompose": true,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -846,7 +930,8 @@
       "summary": "Text placed between leading and trailing icons.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": true
+        "androidCompose": true,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -856,7 +941,8 @@
       "summary": "An icon, label, text input, and numeric stepper.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -866,7 +952,8 @@
       "summary": "A tall icon and text row with an on/off switch.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -876,7 +963,8 @@
       "summary": "Text values with trailing color samples.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -886,7 +974,8 @@
       "summary": "An image paired with large color blocks.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -896,7 +985,8 @@
       "summary": "A bar chart.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": true
+        "androidCompose": true,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -906,7 +996,8 @@
       "summary": "An image, text values, and an action button.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": true
+        "androidCompose": true,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -916,7 +1007,8 @@
       "summary": "A label, text input, and numeric stepper.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -926,7 +1018,8 @@
       "summary": "A wide label paired with a numeric stepper.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -936,7 +1029,8 @@
       "summary": "An image, body text, and an action button.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -946,7 +1040,8 @@
       "summary": "A circular progress indicator.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": true
+        "androidCompose": true,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -956,7 +1051,8 @@
       "summary": "Text labels paired with circular progress.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": true
+        "androidCompose": true,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -966,7 +1062,8 @@
       "summary": "Circular progress followed by text values.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": true
+        "androidCompose": true,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -976,7 +1073,8 @@
       "summary": "A full date picker.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -986,7 +1084,8 @@
       "summary": "A combined line and bar chart.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": true
+        "androidCompose": true,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -996,7 +1095,8 @@
       "summary": "An area chart.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": true
+        "androidCompose": true,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -1006,7 +1106,8 @@
       "summary": "A chart for a numeric or time range.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -1016,7 +1117,8 @@
       "summary": "Text labels with a trailing image.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": true
+        "androidCompose": true,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -1026,7 +1128,8 @@
       "summary": "A large image with supporting text values.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": true
+        "androidCompose": true,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -1036,7 +1139,8 @@
       "summary": "A compact date picker.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -1046,7 +1150,8 @@
       "summary": "A single text label.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": true
+        "androidCompose": true,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -1056,7 +1161,8 @@
       "summary": "A small image followed by text values.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": true
+        "androidCompose": true,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -1066,7 +1172,8 @@
       "summary": "A text input, numeric stepper, and action button.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -1076,7 +1183,8 @@
       "summary": "An icon and label paired with a segmented control.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -1086,7 +1194,8 @@
       "summary": "An icon, label, action button, and trailing label.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -1096,7 +1205,8 @@
       "summary": "A continuous value slider.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -1106,7 +1216,8 @@
       "summary": "A picker for selecting a week.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": true
+        "androidCompose": true,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -1116,7 +1227,8 @@
       "summary": "A prominent media hero with overlaid or adjacent content.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -1126,7 +1238,8 @@
       "summary": "A compact media card with supporting content.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -1136,7 +1249,8 @@
       "summary": "A grid of key statistics.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -1146,7 +1260,8 @@
       "summary": "A list of labelled statuses.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -1156,7 +1271,8 @@
       "summary": "A compact segmented chip selector.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     },
     {
@@ -1166,7 +1282,8 @@
       "summary": "A grouped section of form controls.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false
+        "androidCompose": false,
+        "appmostDesignPreview": true
       }
     }
   ],
@@ -1176,7 +1293,8 @@
       "name": "Abort actions",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": false
       }
     },
     {
@@ -1184,7 +1302,8 @@
       "name": "Show action sheet",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": true
       }
     },
     {
@@ -1192,7 +1311,8 @@
       "name": "Open apple maps",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": false
       }
     },
     {
@@ -1200,7 +1320,8 @@
       "name": "Append to firebase database",
       "support": {
         "ios": true,
-        "android": false
+        "android": false,
+        "appmostDesign": false
       }
     },
     {
@@ -1208,7 +1329,8 @@
       "name": "Prompt for app review",
       "support": {
         "ios": true,
-        "android": false
+        "android": false,
+        "appmostDesign": false
       }
     },
     {
@@ -1216,7 +1338,8 @@
       "name": "Open app in app store",
       "support": {
         "ios": true,
-        "android": false
+        "android": false,
+        "appmostDesign": false
       }
     },
     {
@@ -1224,7 +1347,8 @@
       "name": "Ask for push",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": false
       }
     },
     {
@@ -1232,7 +1356,8 @@
       "name": "Open barcode scanner",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": false
       }
     },
     {
@@ -1240,7 +1365,8 @@
       "name": "Call firebase function",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": false
       }
     },
     {
@@ -1248,7 +1374,8 @@
       "name": "Call json api",
       "support": {
         "ios": true,
-        "android": false
+        "android": false,
+        "appmostDesign": false
       }
     },
     {
@@ -1256,7 +1383,8 @@
       "name": "Compose email",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": false
       }
     },
     {
@@ -1264,7 +1392,8 @@
       "name": "Clear stripe connection",
       "support": {
         "ios": true,
-        "android": false
+        "android": false,
+        "appmostDesign": false
       }
     },
     {
@@ -1272,7 +1401,8 @@
       "name": "Call phone number",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": false
       }
     },
     {
@@ -1280,7 +1410,8 @@
       "name": "Connect stripe",
       "support": {
         "ios": true,
-        "android": false
+        "android": false,
+        "appmostDesign": false
       }
     },
     {
@@ -1288,7 +1419,8 @@
       "name": "Show contact picker",
       "support": {
         "ios": false,
-        "android": true
+        "android": true,
+        "appmostDesign": false
       }
     },
     {
@@ -1296,7 +1428,8 @@
       "name": "Copy string",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": false
       }
     },
     {
@@ -1304,7 +1437,8 @@
       "name": "Create firebase user",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": false
       }
     },
     {
@@ -1312,7 +1446,8 @@
       "name": "Delay",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": true
       }
     },
     {
@@ -1320,7 +1455,8 @@
       "name": "Delete firebase user",
       "support": {
         "ios": true,
-        "android": false
+        "android": false,
+        "appmostDesign": false
       }
     },
     {
@@ -1328,7 +1464,8 @@
       "name": "Show dialog",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": true
       }
     },
     {
@@ -1336,7 +1473,8 @@
       "name": "Dismiss",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": true
       }
     },
     {
@@ -1344,7 +1482,8 @@
       "name": "Dismiss tab bar",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": true
       }
     },
     {
@@ -1352,7 +1491,8 @@
       "name": "Select or capture image",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": false
       }
     },
     {
@@ -1360,7 +1500,8 @@
       "name": "Open variable editing",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": false
       }
     },
     {
@@ -1368,7 +1509,8 @@
       "name": "Fetch gps",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": false
       }
     },
     {
@@ -1376,7 +1518,8 @@
       "name": "Fetch json value to variable",
       "support": {
         "ios": true,
-        "android": false
+        "android": false,
+        "appmostDesign": false
       }
     },
     {
@@ -1384,7 +1527,8 @@
       "name": "Generate swish qr code",
       "support": {
         "ios": true,
-        "android": false
+        "android": false,
+        "appmostDesign": false
       }
     },
     {
@@ -1392,7 +1536,8 @@
       "name": "Google sheet",
       "support": {
         "ios": true,
-        "android": false
+        "android": false,
+        "appmostDesign": false
       }
     },
     {
@@ -1400,7 +1545,8 @@
       "name": "Just highlight row",
       "support": {
         "ios": true,
-        "android": false
+        "android": false,
+        "appmostDesign": false
       }
     },
     {
@@ -1408,7 +1554,8 @@
       "name": "If else",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": false
       }
     },
     {
@@ -1416,7 +1563,8 @@
       "name": "Read text file",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": false
       }
     },
     {
@@ -1424,7 +1572,8 @@
       "name": "Show licenses",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": false
       }
     },
     {
@@ -1432,7 +1581,8 @@
       "name": "Log to firebase analytics",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": false
       }
     },
     {
@@ -1440,7 +1590,8 @@
       "name": "Manipulate variables",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": false
       }
     },
     {
@@ -1448,7 +1599,8 @@
       "name": "Open messenger",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": false
       }
     },
     {
@@ -1456,7 +1608,8 @@
       "name": "Modify image",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": false
       }
     },
     {
@@ -1464,7 +1617,8 @@
       "name": "Multiple actions",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": true
       }
     },
     {
@@ -1472,7 +1626,8 @@
       "name": "Do nothing",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": true
       }
     },
     {
@@ -1480,7 +1635,8 @@
       "name": "Open swish app",
       "support": {
         "ios": true,
-        "android": false
+        "android": false,
+        "appmostDesign": false
       }
     },
     {
@@ -1488,7 +1644,8 @@
       "name": "Open another page",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": true
       }
     },
     {
@@ -1496,7 +1653,8 @@
       "name": "Pair bluetooth",
       "support": {
         "ios": true,
-        "android": false
+        "android": false,
+        "appmostDesign": false
       }
     },
     {
@@ -1504,7 +1662,8 @@
       "name": "Perform function",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": false
       }
     },
     {
@@ -1512,7 +1671,8 @@
       "name": "Play sound",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": true
       }
     },
     {
@@ -1520,7 +1680,8 @@
       "name": "Play video",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": false
       }
     },
     {
@@ -1528,7 +1689,8 @@
       "name": "Pop page",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": true
       }
     },
     {
@@ -1536,7 +1698,8 @@
       "name": "Push stripe payment options",
       "support": {
         "ios": true,
-        "android": false
+        "android": false,
+        "appmostDesign": false
       }
     },
     {
@@ -1544,7 +1707,8 @@
       "name": "Push stripe shipping",
       "support": {
         "ios": true,
-        "android": false
+        "android": false,
+        "appmostDesign": false
       }
     },
     {
@@ -1552,7 +1716,8 @@
       "name": "Read nfc tag",
       "support": {
         "ios": true,
-        "android": false
+        "android": false,
+        "appmostDesign": false
       }
     },
     {
@@ -1560,7 +1725,8 @@
       "name": "Reload firebase user",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": false
       }
     },
     {
@@ -1568,7 +1734,8 @@
       "name": "Reload iap subscriptions",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": false
       }
     },
     {
@@ -1576,7 +1743,8 @@
       "name": "Reload variable from data source",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": false
       }
     },
     {
@@ -1584,7 +1752,8 @@
       "name": "Reset navigation",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": true
       }
     },
     {
@@ -1592,7 +1761,8 @@
       "name": "Reset page",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": false
       }
     },
     {
@@ -1600,7 +1770,8 @@
       "name": "Restore iap",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": false
       }
     },
     {
@@ -1608,7 +1779,8 @@
       "name": "Scroll page",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": true
       }
     },
     {
@@ -1616,7 +1788,8 @@
       "name": "Scroll pagination",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": false
       }
     },
     {
@@ -1624,7 +1797,8 @@
       "name": "Send firebase password reset email",
       "support": {
         "ios": true,
-        "android": false
+        "android": false,
+        "appmostDesign": false
       }
     },
     {
@@ -1632,7 +1806,8 @@
       "name": "Share link",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": true
       }
     },
     {
@@ -1640,7 +1815,8 @@
       "name": "Share pdf",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": false
       }
     },
     {
@@ -1648,7 +1824,8 @@
       "name": "Show info popup",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": true
       }
     },
     {
@@ -1656,7 +1833,8 @@
       "name": "Show stripe express dashboard",
       "support": {
         "ios": true,
-        "android": false
+        "android": false,
+        "appmostDesign": false
       }
     },
     {
@@ -1664,7 +1842,8 @@
       "name": "Sign in",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": false
       }
     },
     {
@@ -1672,7 +1851,8 @@
       "name": "Sign out",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": false
       }
     },
     {
@@ -1680,7 +1860,8 @@
       "name": "Compose sms",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": false
       }
     },
     {
@@ -1688,7 +1869,8 @@
       "name": "Start audio recording",
       "support": {
         "ios": true,
-        "android": false
+        "android": false,
+        "appmostDesign": false
       }
     },
     {
@@ -1696,7 +1878,8 @@
       "name": "Start stripe payment",
       "support": {
         "ios": true,
-        "android": false
+        "android": false,
+        "appmostDesign": false
       }
     },
     {
@@ -1704,7 +1887,8 @@
       "name": "Stop audio recording",
       "support": {
         "ios": true,
-        "android": false
+        "android": false,
+        "appmostDesign": false
       }
     },
     {
@@ -1712,7 +1896,8 @@
       "name": "Subscribe to iap",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": false
       }
     },
     {
@@ -1720,7 +1905,8 @@
       "name": "Sync back firebase subscribed topics",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": false
       }
     },
     {
@@ -1728,7 +1914,8 @@
       "name": "Sync back firebase user",
       "support": {
         "ios": true,
-        "android": false
+        "android": false,
+        "appmostDesign": false
       }
     },
     {
@@ -1736,7 +1923,8 @@
       "name": "Manually update ui",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": false
       }
     },
     {
@@ -1744,7 +1932,8 @@
       "name": "Upload file to firebase storage",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": false
       }
     },
     {
@@ -1752,7 +1941,8 @@
       "name": "Update pagination view",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": false
       }
     },
     {
@@ -1760,7 +1950,8 @@
       "name": "Open web page",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesign": true
       }
     },
     {
@@ -1768,7 +1959,8 @@
       "name": "Write nfc tag",
       "support": {
         "ios": true,
-        "android": false
+        "android": false,
+        "appmostDesign": false
       }
     }
   ],
@@ -1779,7 +1971,9 @@
       "representation": "adaptive color object",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesignReadable": true,
+        "appmostDesignSelectable": true
       }
     },
     {
@@ -1788,7 +1982,9 @@
       "representation": "boolean",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesignReadable": true,
+        "appmostDesignSelectable": true
       }
     },
     {
@@ -1797,7 +1993,9 @@
       "representation": "color string",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesignReadable": true,
+        "appmostDesignSelectable": true
       }
     },
     {
@@ -1806,7 +2004,9 @@
       "representation": "coordinate string/object",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesignReadable": true,
+        "appmostDesignSelectable": true
       }
     },
     {
@@ -1815,7 +2015,9 @@
       "representation": "custom object",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesignReadable": true,
+        "appmostDesignSelectable": true
       }
     },
     {
@@ -1824,7 +2026,9 @@
       "representation": "date string",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesignReadable": true,
+        "appmostDesignSelectable": true
       }
     },
     {
@@ -1833,7 +2037,9 @@
       "representation": "double-precision number",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesignReadable": true,
+        "appmostDesignSelectable": true
       }
     },
     {
@@ -1842,7 +2048,9 @@
       "representation": "date-time string",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesignReadable": true,
+        "appmostDesignSelectable": true
       }
     },
     {
@@ -1851,7 +2059,9 @@
       "representation": "runtime list element",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesignReadable": true,
+        "appmostDesignSelectable": false
       }
     },
     {
@@ -1860,7 +2070,9 @@
       "representation": "floating-point number",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesignReadable": true,
+        "appmostDesignSelectable": true
       }
     },
     {
@@ -1869,7 +2081,9 @@
       "representation": "32-bit integer",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesignReadable": true,
+        "appmostDesignSelectable": true
       }
     },
     {
@@ -1878,7 +2092,9 @@
       "representation": "image resource identifier",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesignReadable": true,
+        "appmostDesignSelectable": true
       }
     },
     {
@@ -1887,7 +2103,9 @@
       "representation": "icon identifier",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesignReadable": true,
+        "appmostDesignSelectable": true
       }
     },
     {
@@ -1896,7 +2114,9 @@
       "representation": "64-bit integer compatibility value",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesignReadable": true,
+        "appmostDesignSelectable": false
       }
     },
     {
@@ -1905,7 +2125,9 @@
       "representation": "ordered child value list",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesignReadable": true,
+        "appmostDesignSelectable": true
       }
     },
     {
@@ -1914,7 +2136,9 @@
       "representation": "location string/object",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesignReadable": true,
+        "appmostDesignSelectable": true
       }
     },
     {
@@ -1923,7 +2147,9 @@
       "representation": "string",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesignReadable": true,
+        "appmostDesignSelectable": true
       }
     },
     {
@@ -1932,7 +2158,9 @@
       "representation": "time string",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesignReadable": true,
+        "appmostDesignSelectable": true
       }
     },
     {
@@ -1941,7 +2169,9 @@
       "representation": "unknown sentinel",
       "support": {
         "ios": true,
-        "android": true
+        "android": true,
+        "appmostDesignReadable": true,
+        "appmostDesignSelectable": false
       }
     }
   ],
