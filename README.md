@@ -4,8 +4,9 @@ Appmost Project Format is the open specification for `.appmostapp` project
 packages. This repository documents document version 2 and includes JSON
 Schemas, the canonical type registry, a minimal example, and a small validator.
 
-Appmost and Pixelmost are reference implementations. Their editor and renderer
-source code are not part of this repository.
+Appmost is the reference implementation. Appmost Design can open and preview
+the format, with a deliberately smaller authoring surface described below. The
+product source code is not part of this repository.
 
 ## Package layout
 
@@ -55,11 +56,39 @@ The validator checks package structure, document versions, version and page
 references, safe relative paths, semantic row types, action types, value types,
 and namespaced extensions.
 
-## Renderer support
+## Implementation support
 
 A structurally valid project may use a feature that is not available in every
 renderer. `registry/2.0.json` publishes row support for iOS with SwiftUI and
-Android with Compose. Unsupported required content must fail clearly.
+Android with Compose, together with the narrower Appmost Design capabilities.
+
+| Format surface | iOS (SwiftUI) | Android (Compose) | Appmost Design |
+| --- | ---: | ---: | ---: |
+| Row types | 116/116 | 37/116 | 116/116 in the SwiftUI preview |
+| Action types | 74/75 | 52/75 | 15/75 in the editor and interactive preview |
+| Value types | 19/19 | 19/19 | 19/19 readable; 16/19 directly selectable |
+
+The Appmost Design row count describes preview compatibility. It does not mean
+that every row property has a dedicated control in the editor.
+
+Appmost Design supports these action types:
+
+`delay`, `dismiss`, `dismissTabBar`, `doNothing`, `multipleActions`,
+`openAnotherPage`, `openWebPage`, `playSound`, `popPage`, `resetNavigation`,
+`scrollPage`, `shareLink`, `showActionSheet`, `showDialog`, and `showInfoPopup`.
+
+The three value types that are readable but not directly selectable in Appmost
+Design are `element`, `longInteger`, and `unknown`.
+
+The registry exposes this distinction per type:
+
+- rows: `iosSwiftUI`, `androidCompose`, and `appmostDesignPreview`;
+- actions: `ios`, `android`, and `appmostDesign`;
+- values: `ios`, `android`, `appmostDesignReadable`, and
+  `appmostDesignSelectable`.
+
+These product capability flags do not affect whether a package is structurally
+valid.
 
 ## License
 

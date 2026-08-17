@@ -27,6 +27,35 @@ test('the minimal example is a valid format 2.0 package', async () => {
   });
 });
 
+test('Appmost Design support is explicit and intentionally narrower', async () => {
+  const registry = JSON.parse(await readFile(path.join(repositoryRoot, 'registry/2.0.json'), 'utf8'));
+  const designActions = registry.actionTypes
+    .filter((action) => action.support.appmostDesign)
+    .map((action) => action.type)
+    .sort();
+
+  assert.equal(registry.rowTypes.filter((row) => row.support.appmostDesignPreview).length, 116);
+  assert.deepEqual(designActions, [
+    'delay',
+    'dismiss',
+    'dismissTabBar',
+    'doNothing',
+    'multipleActions',
+    'openAnotherPage',
+    'openWebPage',
+    'playSound',
+    'popPage',
+    'resetNavigation',
+    'scrollPage',
+    'shareLink',
+    'showActionSheet',
+    'showDialog',
+    'showInfoPopup',
+  ]);
+  assert.equal(registry.valueTypes.filter((value) => value.support.appmostDesignReadable).length, 19);
+  assert.equal(registry.valueTypes.filter((value) => value.support.appmostDesignSelectable).length, 16);
+});
+
 test('an unknown semantic row type fails clearly', async () => {
   const { directory, copy } = await temporaryExample();
   try {
