@@ -1,0 +1,218 @@
+{
+  "appGlobalUISettings": {
+    "forceComposeRendering": true,
+    "forceSwiftUIRendering": false,
+    "preloadTabItems": true
+  },
+  "buildVersion": 1,
+  "bundleVersion": "1.0",
+  "changeLog": "",
+  "currentEnvironment": "prod",
+  "documentVersion": 2,
+  "frameworks": "",
+  "functions": [],
+  "globalTheme": {
+    "androidStatusBarMode": "auto",
+    "buttonColor": {
+      "adaptive": true,
+      "dc": {
+        "hex": "48D2BC"
+      },
+      "lc": {
+        "hex": "1D8273"
+      }
+    },
+    "chartTintColor": {
+      "adaptive": true,
+      "dc": {
+        "hex": "48D2BC"
+      },
+      "lc": {
+        "hex": "1D8273"
+      }
+    },
+    "clearColorForNavBarWithLargeTitles": true,
+    "customColors": [
+      {
+        "color": {
+          "adaptive": true,
+          "dc": {
+            "hex": "111817"
+          },
+          "lc": {
+            "hex": "EFF8F4"
+          }
+        },
+        "name": "background"
+      },
+      {
+        "color": {
+          "adaptive": true,
+          "dc": {
+            "hex": "1A2220"
+          },
+          "lc": {
+            "hex": "F8FCFA"
+          }
+        },
+        "name": "secondaryBackground"
+      },
+      {
+        "color": {
+          "adaptive": true,
+          "dc": {
+            "hex": "121A18"
+          },
+          "lc": {
+            "hex": "EAF4EF"
+          }
+        },
+        "name": "groupedBackground"
+      },
+      {
+        "color": {
+          "adaptive": true,
+          "dc": {
+            "hex": "202B28"
+          },
+          "lc": {
+            "hex": "FFFFFF"
+          }
+        },
+        "name": "secondaryGroupedBackground"
+      },
+      {
+        "color": {
+          "adaptive": true,
+          "dc": {
+            "hex": "48D2BC"
+          },
+          "lc": {
+            "hex": "1D8273"
+          }
+        },
+        "name": "accent1"
+      },
+      {
+        "color": {
+          "adaptive": true,
+          "dc": {
+            "hex": "FF9A71"
+          },
+          "lc": {
+            "hex": "A53A22"
+          }
+        },
+        "name": "accent2"
+      },
+      {
+        "color": {
+          "adaptive": true,
+          "dc": {
+            "hex": "A99DFF"
+          },
+          "lc": {
+            "hex": "6C5CE7"
+          }
+        },
+        "name": "accent3"
+      }
+    ],
+    "iconTintColor": {
+      "hex": "1D8273"
+    },
+    "iconTintColorDark": {
+      "hex": "48D2BC"
+    },
+    "linkButtonColor": {
+      "adaptive": true,
+      "dc": {
+        "hex": "48D2BC"
+      },
+      "lc": {
+        "hex": "1D8273"
+      }
+    },
+    "navBarBgCol": {
+      "adaptive": true,
+      "dc": {
+        "hex": "111817"
+      },
+      "lc": {
+        "hex": "EFF8F4"
+      }
+    },
+    "newTintColor": {
+      "hex": "1D8273"
+    },
+    "tabBarBgCol": {
+      "adaptive": true,
+      "dc": {
+        "hex": "111817"
+      },
+      "lc": {
+        "hex": "EFF8F4"
+      }
+    },
+    "tintColorDark": {
+      "hex": "48D2BC"
+    }
+  },
+  "icon": {},
+  "ipad_scaling": 1,
+  "manuallyAddedIconNames": [],
+  "pageFileNames": [
+    "compose-row-catalog.json",
+    "docs-action.json",
+    "docs-content.json",
+    "docs-input.json",
+    "docs-layout.json",
+    "docs-media.json",
+    "docs-data.json",
+    "docs-location.json",
+    "catalog-action.json",
+    "catalog-content.json",
+    "catalog-input.json",
+    "catalog-layout.json",
+    "catalog-media.json",
+    "catalog-data.json",
+    "catalog-location.json"
+  ],
+  "permissionDescriptions": {},
+  "startPageId": "compose-row-catalog",
+  "supportedLocalizations": "",
+  "useAppClip": false,
+  "useDynamicFontSizesOniOS": true,
+  "useIPad": false,
+  "useInAppNotifications": true,
+  "usePushNotifications": false,
+  "usedIconNames": [
+    "alert-circle-outline",
+    "arrow-right",
+    "arrow-top-right",
+    "bookmark-outline",
+    "camera",
+    "camera-flip-outline",
+    "chevron-right",
+    "flashlight-on",
+    "format-list-bulleted",
+    "gesture-tap",
+    "heart-outline",
+    "map-marker",
+    "shape-outline",
+    "sparkles",
+    "tune-variant"
+  ],
+  "usesAudioManager": false,
+  "usesAuth0": false,
+  "usesBluetooth": false,
+  "usesFirebase": false,
+  "usesFirebaseAnalytics": false,
+  "usesFirebaseMessaging": false,
+  "usesFreshChat": false,
+  "usesIOSIAP": false,
+  "usesMsalIntegration": false,
+  "usesNfcActions": false,
+  "version": 1,
+  "versionName": "3.9.1"
+}

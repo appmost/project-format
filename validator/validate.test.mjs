@@ -9,6 +9,7 @@ import { FormatValidationError, validateProject } from './validate.mjs';
 
 const repositoryRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const example = path.join(repositoryRoot, 'examples/minimal.appmostapp');
+const composeRowCatalog = path.join(repositoryRoot, 'examples/compose-row-catalog.appmostapp');
 
 async function temporaryExample() {
   const directory = await mkdtemp(path.join(tmpdir(), 'appmost-format-'));
@@ -25,6 +26,22 @@ test('the minimal example is a valid format 2.0 package', async () => {
     pageCount: 1,
     rowCount: 1,
   });
+});
+
+test('the Compose row catalog covers every registered row type', async () => {
+  const result = await validateProject(composeRowCatalog);
+  assert.equal(result.currentVersion, 1);
+  assert.deepEqual(result.versionNumbers, [1]);
+
+  const versionDirectory = path.join(composeRowCatalog, 'versions/1');
+  const version = JSON.parse(await readFile(path.join(versionDirectory, 'version.json'), 'utf8'));
+  const pages = await Promise.all(version.pageFileNames.map(async (fileName) => (
+    JSON.parse(await readFile(path.join(versionDirectory, 'pages', fileName), 'utf8'))
+  )));
+  const catalogTypes = [...new Set(pages.flatMap((page) => page.rows.map((row) => row.type)))].sort();
+  const registry = JSON.parse(await readFile(path.join(repositoryRoot, 'registry/2.0.json'), 'utf8'));
+  const registeredTypes = registry.rowTypes.map((row) => row.type).sort();
+  assert.deepEqual(catalogTypes, registeredTypes);
 });
 
 test('Appmost Design support is explicit and intentionally narrower', async () => {

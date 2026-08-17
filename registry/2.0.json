@@ -17,7 +17,7 @@
       "summary": "A single full-width action button.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -39,7 +39,7 @@
       "summary": "A single leading-aligned label without a container treatment.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -72,7 +72,7 @@
       "summary": "Text values paired with color swatches.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -83,7 +83,7 @@
       "summary": "A settings-style title with a trailing value.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -94,7 +94,7 @@
       "summary": "A preview surface for nested row content.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -105,7 +105,7 @@
       "summary": "An inset secondary or supporting label.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -138,7 +138,7 @@
       "summary": "Several labels stacked vertically.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -149,7 +149,7 @@
       "summary": "A low-emphasis section header.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -160,7 +160,7 @@
       "summary": "A centered label that separates surrounding content.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -171,7 +171,7 @@
       "summary": "A centered multiline message.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -182,7 +182,7 @@
       "summary": "A centered alert or warning label.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -193,7 +193,7 @@
       "summary": "Two editable content columns.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -204,7 +204,7 @@
       "summary": "A centered label with built-in padding.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -215,7 +215,7 @@
       "summary": "Empty spacing used between filter content.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -226,7 +226,7 @@
       "summary": "An inset action button.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -270,7 +270,7 @@
       "summary": "A compact leading and trailing text row.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -281,7 +281,7 @@
       "summary": "A summary of app-level information.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -292,7 +292,7 @@
       "summary": "An interactive or static map.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -303,7 +303,7 @@
       "summary": "A title and subtitle stacked vertically.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -314,7 +314,7 @@
       "summary": "An edge-to-edge image.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -325,7 +325,7 @@
       "summary": "A label that supports multiple lines.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -336,7 +336,7 @@
       "summary": "A variable summary with a trailing title.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -347,7 +347,7 @@
       "summary": "A horizontal social-style action bar.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -358,7 +358,7 @@
       "summary": "A label paired with a numeric stepper.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -369,7 +369,7 @@
       "summary": "A standard segmented control.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -380,7 +380,7 @@
       "summary": "An editable multiline text area.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -391,7 +391,7 @@
       "summary": "A label displayed over an image background.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -402,7 +402,7 @@
       "summary": "A five-star rating control.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -413,7 +413,7 @@
       "summary": "Text displayed above an image.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -424,7 +424,7 @@
       "summary": "An image paired with a multiline text area.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -435,7 +435,7 @@
       "summary": "A dotted visual separator.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -446,7 +446,7 @@
       "summary": "A title, status, and supporting description.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -468,7 +468,7 @@
       "summary": "A leading image followed by text.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -490,7 +490,7 @@
       "summary": "Variable values paired with action buttons.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -501,7 +501,7 @@
       "summary": "A centered label using the accent color.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -523,7 +523,7 @@
       "summary": "A leading icon with metadata and a title.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -534,7 +534,7 @@
       "summary": "Two single-line text inputs.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -545,7 +545,7 @@
       "summary": "A numbered badge with title, subtitle, and status.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -556,7 +556,7 @@
       "summary": "A badge with title, subtitle, and status.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -567,7 +567,7 @@
       "summary": "A title and footnote with paired metrics.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -578,7 +578,7 @@
       "summary": "An image and metadata with a trailing title and button.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -589,7 +589,7 @@
       "summary": "An image with supporting metadata.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -622,7 +622,7 @@
       "summary": "A title and highlighted value with two-column statistics.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -633,7 +633,7 @@
       "summary": "A title and highlighted value with two-column detail pairs.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -644,7 +644,7 @@
       "summary": "A centered title label.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -677,7 +677,7 @@
       "summary": "A grid of images with supporting content.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -688,7 +688,7 @@
       "summary": "A large image with details and metrics.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -699,7 +699,7 @@
       "summary": "A full-width image with supporting text.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -710,7 +710,7 @@
       "summary": "A multiline text area with an action button.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -721,7 +721,7 @@
       "summary": "A page caption with supporting description.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -732,7 +732,7 @@
       "summary": "A horizontally paged image carousel.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -743,7 +743,7 @@
       "summary": "An avatar followed by two text labels.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -754,7 +754,7 @@
       "summary": "A compact summary of variable values.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -765,7 +765,7 @@
       "summary": "A text input for a color value.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -787,7 +787,7 @@
       "summary": "An icon paired with a single-line text input.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -798,7 +798,7 @@
       "summary": "A grouped inset collection of input fields.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -809,7 +809,7 @@
       "summary": "A preview of Android launcher icon output.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -820,7 +820,7 @@
       "summary": "A preview of Android adaptive icon masking.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -897,7 +897,7 @@
       "summary": "Two adaptive-color samples.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -941,7 +941,7 @@
       "summary": "An icon, label, text input, and numeric stepper.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -952,7 +952,7 @@
       "summary": "A tall icon and text row with an on/off switch.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -963,7 +963,7 @@
       "summary": "Text values with trailing color samples.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -974,7 +974,7 @@
       "summary": "An image paired with large color blocks.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -1007,7 +1007,7 @@
       "summary": "A label, text input, and numeric stepper.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -1018,7 +1018,7 @@
       "summary": "A wide label paired with a numeric stepper.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -1029,7 +1029,7 @@
       "summary": "An image, body text, and an action button.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -1073,7 +1073,7 @@
       "summary": "A full date picker.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -1106,7 +1106,7 @@
       "summary": "A chart for a numeric or time range.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -1139,7 +1139,7 @@
       "summary": "A compact date picker.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -1172,7 +1172,7 @@
       "summary": "A text input, numeric stepper, and action button.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -1183,7 +1183,7 @@
       "summary": "An icon and label paired with a segmented control.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -1194,7 +1194,7 @@
       "summary": "An icon, label, action button, and trailing label.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -1205,7 +1205,7 @@
       "summary": "A continuous value slider.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -1227,7 +1227,7 @@
       "summary": "A prominent media hero with overlaid or adjacent content.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -1238,7 +1238,7 @@
       "summary": "A compact media card with supporting content.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -1249,7 +1249,7 @@
       "summary": "A grid of key statistics.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -1260,7 +1260,7 @@
       "summary": "A list of labelled statuses.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -1271,7 +1271,7 @@
       "summary": "A compact segmented chip selector.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     },
@@ -1282,7 +1282,7 @@
       "summary": "A grouped section of form controls.",
       "support": {
         "iosSwiftUI": true,
-        "androidCompose": false,
+        "androidCompose": true,
         "appmostDesignPreview": true
       }
     }

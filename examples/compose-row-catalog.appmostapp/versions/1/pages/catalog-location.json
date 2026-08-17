@@ -1,0 +1,104 @@
+{
+  "id": "catalog-location",
+  "index": 14,
+  "listProperties": {
+    "hidesStickySeparator": true,
+    "style": "p"
+  },
+  "parentId": "",
+  "parentRelationship": "none",
+  "properties": {
+    "hideFirstSection": false
+  },
+  "rows": [
+    {
+      "childProperties": {},
+      "contentPadding": {
+        "bottom": 2,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 20
+      },
+      "id": "intro-location-catalog",
+      "labelModels": [
+        {
+          "fontSize": 28,
+          "fontWeight": "bold",
+          "lineBreak": "yes",
+          "text": "Location Catalog"
+        }
+      ],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 36
+      },
+      "type": "singleLabel"
+    },
+    {
+      "childProperties": {},
+      "contentPadding": {
+        "bottom": 14,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 2
+      },
+      "id": "intro-body-location-catalog",
+      "labelModels": [
+        {
+          "fontSize": 15,
+          "lineBreak": "yes",
+          "text": "Android Compose rendering from the public Appmost row catalog.",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        }
+      ],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 44
+      },
+      "type": "singleLabel"
+    },
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "catalog-map",
+      "images": [],
+      "labelModels": [],
+      "mapProperties": [
+        {
+          "centerZoom": 12
+        }
+      ],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "map",
+      "weekDatePickers": []
+    }
+  ],
+  "title": "Location Catalog"
+}

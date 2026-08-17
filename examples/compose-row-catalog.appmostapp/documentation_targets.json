@@ -1,0 +1,58 @@
+{
+  "fixture": "compose-row-catalog",
+  "formatVersion": "2.0",
+  "rowCount": 116,
+  "coveragePages": [
+    "catalog-action",
+    "catalog-content",
+    "catalog-input",
+    "catalog-layout",
+    "catalog-media",
+    "catalog-data",
+    "catalog-location"
+  ],
+  "targets": [
+    {
+      "pageId": "docs-action",
+      "title": "Action",
+      "fileName": "android-compose-action.png",
+      "alt": "Appmost action row examples rendered with Jetpack Compose on Android"
+    },
+    {
+      "pageId": "docs-content",
+      "title": "Content",
+      "fileName": "android-compose-content.png",
+      "alt": "Appmost content row examples rendered with Jetpack Compose on Android"
+    },
+    {
+      "pageId": "docs-input",
+      "title": "Input",
+      "fileName": "android-compose-input.png",
+      "alt": "Appmost input row examples rendered with Jetpack Compose on Android"
+    },
+    {
+      "pageId": "docs-layout",
+      "title": "Layout",
+      "fileName": "android-compose-layout.png",
+      "alt": "Appmost layout row examples rendered with Jetpack Compose on Android"
+    },
+    {
+      "pageId": "docs-media",
+      "title": "Media",
+      "fileName": "android-compose-media.png",
+      "alt": "Appmost media row examples rendered with Jetpack Compose on Android"
+    },
+    {
+      "pageId": "docs-data",
+      "title": "Data",
+      "fileName": "android-compose-data.png",
+      "alt": "Appmost data row examples rendered with Jetpack Compose on Android"
+    },
+    {
+      "pageId": "docs-location",
+      "title": "Location",
+      "fileName": "android-compose-location.png",
+      "alt": "Appmost location row examples rendered with Jetpack Compose on Android"
+    }
+  ]
+}

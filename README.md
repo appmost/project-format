@@ -36,6 +36,7 @@ catalog and visual reference.
 - `schemas/2.0/` — schemas for app, version, and page documents
 - `registry/2.0.json` — canonical type names and renderer support
 - `examples/minimal.appmostapp/` — a small valid project
+- `examples/compose-row-catalog.appmostapp/` — every row type in a renderable test project
 - `validator/` — the dependency-free reference validator and its tests
 
 ## Validate a project
@@ -64,7 +65,7 @@ Android with Compose, together with the narrower Appmost Design capabilities.
 
 | Format surface | iOS (SwiftUI) | Android (Compose) | Appmost Design |
 | --- | ---: | ---: | ---: |
-| Row types | 116/116 | 37/116 | 116/116 in the SwiftUI preview |
+| Row types | 116/116 | 116/116 | 116/116 in the SwiftUI preview |
 | Action types | 74/75 | 52/75 | 15/75 in the editor and interactive preview |
 | Value types | 19/19 | 19/19 | 19/19 readable; 16/19 directly selectable |
 
@@ -89,6 +90,19 @@ The registry exposes this distinction per type:
 
 These product capability flags do not affect whether a package is structurally
 valid.
+
+## Renderable row catalog
+
+[`examples/compose-row-catalog.appmostapp`](examples/compose-row-catalog.appmostapp)
+contains all 116 row types and focused pages for Action, Content, Input, Layout,
+Media, Data, and Location examples. It is the fixture used for the Android
+Compose screenshots on [appmost.ai/format](https://www.appmost.ai/format/).
+
+Validate it with:
+
+```sh
+npm run validate -- examples/compose-row-catalog.appmostapp
+```
 
 ## License
 
