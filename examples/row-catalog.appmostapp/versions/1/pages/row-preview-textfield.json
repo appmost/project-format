@@ -1,0 +1,65 @@
+{
+  "id": "row-preview-textfield",
+  "index": 44,
+  "listProperties": {
+    "hidesStickySeparator": true,
+    "style": "p"
+  },
+  "parentId": "",
+  "parentRelationship": "none",
+  "properties": {
+    "hideFirstSection": false
+  },
+  "rows": [
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "row-textfield",
+      "images": [],
+      "labelModels": [],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [
+        {
+          "enabled": {
+            "type": "boolean",
+            "value": {
+              "childType": "b",
+              "value": "true"
+            }
+          },
+          "placeholder": {
+            "type": "string",
+            "value": {
+              "childType": "s",
+              "value": "Type here"
+            }
+          }
+        }
+      ],
+      "textViews": [],
+      "type": "textField",
+      "weekDatePickers": []
+    }
+  ],
+  "title": "Text field",
+  "type": "normal"
+}

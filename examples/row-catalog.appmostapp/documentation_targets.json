@@ -1,0 +1,58 @@
+{
+  "fixture": "row-catalog",
+  "formatVersion": "2.0.0",
+  "rowCount": 93,
+  "coveragePages": [
+    "catalog-action",
+    "catalog-content",
+    "catalog-input",
+    "catalog-layout",
+    "catalog-media",
+    "catalog-data",
+    "catalog-location"
+  ],
+  "targets": [
+    {
+      "pageId": "docs-action",
+      "title": "Action",
+      "fileName": "android-action.png",
+      "alt": "Appmost action row examples rendered on Android"
+    },
+    {
+      "pageId": "docs-content",
+      "title": "Content",
+      "fileName": "android-content.png",
+      "alt": "Appmost content row examples rendered on Android"
+    },
+    {
+      "pageId": "docs-input",
+      "title": "Input",
+      "fileName": "android-input.png",
+      "alt": "Appmost input row examples rendered on Android"
+    },
+    {
+      "pageId": "docs-layout",
+      "title": "Layout",
+      "fileName": "android-layout.png",
+      "alt": "Appmost layout row examples rendered on Android"
+    },
+    {
+      "pageId": "docs-media",
+      "title": "Media",
+      "fileName": "android-media.png",
+      "alt": "Appmost media row examples rendered on Android"
+    },
+    {
+      "pageId": "docs-data",
+      "title": "Data",
+      "fileName": "android-data.png",
+      "alt": "Appmost data row examples rendered on Android"
+    },
+    {
+      "pageId": "docs-location",
+      "title": "Location",
+      "fileName": "android-location.png",
+      "alt": "Appmost location row examples rendered on Android"
+    }
+  ]
+}

@@ -1,0 +1,73 @@
+{
+  "id": "row-preview-textsandcolorswatches",
+  "index": 19,
+  "listProperties": {
+    "hidesStickySeparator": true,
+    "style": "p"
+  },
+  "parentId": "",
+  "parentRelationship": "none",
+  "properties": {
+    "hideFirstSection": false
+  },
+  "rows": [
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [
+        {
+          "color": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "accent1"
+            }
+          }
+        }
+      ],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "row-textsandcolorswatches",
+      "images": [],
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "lineBreak": "no",
+          "text": "Texts and color swatches"
+        },
+        {
+          "lineBreak": "yes",
+          "text": "Input",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "textsAndColorSwatches",
+      "weekDatePickers": []
+    }
+  ],
+  "title": "Texts and color swatches",
+  "type": "normal"
+}

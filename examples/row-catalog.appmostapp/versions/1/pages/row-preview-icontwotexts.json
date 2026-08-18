@@ -1,0 +1,79 @@
+{
+  "id": "row-preview-icontwotexts",
+  "index": 17,
+  "listProperties": {
+    "hidesStickySeparator": true,
+    "style": "p"
+  },
+  "parentId": "",
+  "parentRelationship": "none",
+  "properties": {
+    "hideFirstSection": false
+  },
+  "rows": [
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "row-icontwotexts",
+      "images": [
+        {
+          "iconName": null,
+          "imageBgColor": null,
+          "imageTintCol": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "accent1"
+            }
+          },
+          "localImageSize": 22,
+          "parentType": "imageView",
+          "scaleMode": "keepAspectRatio",
+          "size": null,
+          "target": "format-list-bulleted",
+          "type": "local"
+        }
+      ],
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "text": "Workspace"
+        },
+        {
+          "text": "Updated 2 minutes ago",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "iconTwoTexts",
+      "weekDatePickers": []
+    }
+  ],
+  "title": "Icon two texts",
+  "type": "normal"
+}

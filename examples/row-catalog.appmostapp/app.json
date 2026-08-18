@@ -1,0 +1,33 @@
+{
+  "androidAppId": "ai.appmost.rowcatalog",
+  "androidBundleIdPerEnvironment": {
+    "production": "",
+    "staging": ""
+  },
+  "appCategory": "",
+  "appDescription": "Cross-platform reference package for Appmost row rendering and format documentation.",
+  "buildIOSProjectTeamId": "",
+  "buildIOSTeamName": "",
+  "bundleId": "",
+  "currentVersion": 1,
+  "documentVersion": 2,
+  "highestVersion": 1,
+  "iOSProjectTeamId": "",
+  "iOSTeamName": "",
+  "id": null,
+  "iosBundleIdPerEnvironment": {
+    "production": "",
+    "staging": ""
+  },
+  "keywords": "",
+  "latestIconDescription": "",
+  "name": "Appmost Row Catalog",
+  "namePerEnvironment": {
+    "production": "Appmost Row Catalog",
+    "staging": "Appmost Row Catalog"
+  },
+  "owningUser": "local",
+  "versionNumbers": [
+    1
+  ]
+}

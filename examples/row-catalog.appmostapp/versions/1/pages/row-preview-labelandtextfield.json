@@ -1,0 +1,71 @@
+{
+  "id": "row-preview-labelandtextfield",
+  "index": 46,
+  "listProperties": {
+    "hidesStickySeparator": true,
+    "style": "p"
+  },
+  "parentId": "",
+  "parentRelationship": "none",
+  "properties": {
+    "hideFirstSection": false
+  },
+  "rows": [
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "row-labelandtextfield",
+      "images": [],
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "lineBreak": "no",
+          "text": "Label and text field"
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [
+        {
+          "enabled": {
+            "type": "boolean",
+            "value": {
+              "childType": "b",
+              "value": "true"
+            }
+          },
+          "placeholder": {
+            "type": "string",
+            "value": {
+              "childType": "s",
+              "value": "Type here"
+            }
+          }
+        }
+      ],
+      "textViews": [],
+      "type": "labelAndTextField",
+      "weekDatePickers": []
+    }
+  ],
+  "title": "Label and text field",
+  "type": "normal"
+}

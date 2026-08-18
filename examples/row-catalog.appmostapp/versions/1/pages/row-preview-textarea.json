@@ -1,0 +1,54 @@
+{
+  "id": "row-preview-textarea",
+  "index": 38,
+  "listProperties": {
+    "hidesStickySeparator": true,
+    "style": "p"
+  },
+  "parentId": "",
+  "parentRelationship": "none",
+  "properties": {
+    "hideFirstSection": false
+  },
+  "rows": [
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "row-textarea",
+      "images": [],
+      "labelModels": [],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [
+        {
+          "editable": true,
+          "multiRow": true,
+          "placeholder": "Longer note text"
+        }
+      ],
+      "type": "textArea",
+      "weekDatePickers": []
+    }
+  ],
+  "title": "Text area",
+  "type": "normal"
+}

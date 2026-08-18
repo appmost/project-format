@@ -1,0 +1,375 @@
+{
+  "id": "docs-media",
+  "index": 5,
+  "listProperties": {
+    "hidesStickySeparator": true,
+    "style": "p"
+  },
+  "parentId": "",
+  "parentRelationship": "none",
+  "properties": {
+    "hideFirstSection": false
+  },
+  "rows": [
+    {
+      "buttons": [
+        {
+          "adaptiveColor": {
+            "adaptive": true,
+            "dc": {
+              "hex": "48D2BC"
+            },
+            "lc": {
+              "hex": "1D8273"
+            }
+          },
+          "enabled": {
+            "type": "boolean",
+            "value": {
+              "childType": "b",
+              "value": "true"
+            }
+          },
+          "extraPadding": {
+            "bottom": 0,
+            "left": 12,
+            "linkedType": "none",
+            "right": 12,
+            "top": 0
+          },
+          "imageNameVarExpVal": {
+            "type": "iconName",
+            "value": {
+              "value": "arrow-right"
+            }
+          },
+          "manualImageTextSpacing": 4,
+          "roundMode": "r",
+          "style": "tinted",
+          "titleVarExp": {
+            "type": "string",
+            "value": {
+              "childType": "s",
+              "value": "Route"
+            }
+          }
+        }
+      ],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "docs-mediahero",
+      "images": [
+        {
+          "iconName": null,
+          "imageBgColor": null,
+          "imageTintCol": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": ""
+            }
+          },
+          "parentType": "imageView",
+          "rounding": "corn8",
+          "scaleMode": "scaleAspectFill",
+          "size": null,
+          "target": "trailnest_pine_lookout.jpg",
+          "type": "data"
+        }
+      ],
+      "labelModels": [
+        {
+          "fontSize": 24,
+          "fontWeight": "bold",
+          "lineBreak": "yes",
+          "text": "Pine Lookout"
+        },
+        {
+          "lineBreak": "yes",
+          "text": "Sunset hike · 6.8 km"
+        },
+        {
+          "fontWeight": "semibold",
+          "text": "Featured"
+        },
+        {
+          "lineBreak": "no",
+          "text": "2h 10m"
+        },
+        {
+          "lineBreak": "no",
+          "text": "64%"
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 210
+      },
+      "progressBarViews": [
+        {
+          "maxValue": {
+            "type": "integer",
+            "value": {
+              "childType": "i",
+              "value": "100"
+            }
+          },
+          "value": {
+            "type": "integer",
+            "value": {
+              "childType": "i",
+              "value": "64"
+            }
+          }
+        }
+      ],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "mediaHero",
+      "weekDatePickers": []
+    },
+    {
+      "buttons": [
+        {
+          "adaptiveColor": {
+            "adaptive": true,
+            "dc": {
+              "hex": "48D2BC"
+            },
+            "lc": {
+              "hex": "1D8273"
+            }
+          },
+          "enabled": {
+            "type": "boolean",
+            "value": {
+              "childType": "b",
+              "value": "true"
+            }
+          },
+          "extraPadding": {
+            "bottom": 0,
+            "left": 12,
+            "linkedType": "none",
+            "right": 12,
+            "top": 0
+          },
+          "imageNameVarExpVal": {
+            "type": "iconName",
+            "value": {
+              "value": "arrow-right"
+            }
+          },
+          "manualImageTextSpacing": 4,
+          "roundMode": "r",
+          "style": "tinted",
+          "titleVarExp": {
+            "type": "string",
+            "value": {
+              "childType": "s",
+              "value": ""
+            }
+          }
+        }
+      ],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "docs-mediacard",
+      "images": [
+        {
+          "iconName": null,
+          "imageBgColor": null,
+          "imageTintCol": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": ""
+            }
+          },
+          "parentType": "imageView",
+          "rounding": "corn8",
+          "scaleMode": "scaleAspectFill",
+          "size": null,
+          "target": "trailnest_pine_lookout.jpg",
+          "type": "data"
+        }
+      ],
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "text": "Coastal Bluff"
+        },
+        {
+          "text": "4.2 km · moderate",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "text": "Updated today",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "text": "72%",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 106
+      },
+      "progressBarViews": [
+        {
+          "maxValue": {
+            "type": "integer",
+            "value": {
+              "childType": "i",
+              "value": "100"
+            }
+          },
+          "value": {
+            "type": "integer",
+            "value": {
+              "childType": "i",
+              "value": "64"
+            }
+          }
+        }
+      ],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "mediaCard",
+      "weekDatePickers": []
+    },
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "docs-imagemetadata",
+      "images": [
+        {
+          "iconName": null,
+          "imageBgColor": null,
+          "imageTintCol": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": ""
+            }
+          },
+          "parentType": "imageView",
+          "rounding": "corn8",
+          "scaleMode": "scaleAspectFill",
+          "size": null,
+          "target": "trailnest_pine_lookout.jpg",
+          "type": "data"
+        }
+      ],
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "text": "Pine lookout"
+        },
+        {
+          "text": "JPG",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "text": "2400 × 1600",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "text": "3.8 MB",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "text": "Today",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 99
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "imageMetadata",
+      "weekDatePickers": []
+    }
+  ],
+  "title": "Media",
+  "type": "normal"
+}

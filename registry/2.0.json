@@ -1,31 +1,27 @@
 {
-  "registryVersion": 1,
-  "formatVersion": "2.0",
+  "registryVersion": 2,
+  "formatVersion": "2.0.0",
   "documentVersion": 2,
   "referenceRenderer": "iosSwiftUI",
+  "versionPolicy": {
+    "patch": "Editorial clarifications and compatible fixes.",
+    "minor": "Backward-compatible additions such as new row, action, or value types.",
+    "major": "Breaking package or semantic changes; the major matches documentVersion."
+  },
   "notes": [
     "Type names are normative; visual examples are explanatory.",
-    "Published row renderer targets are iOS with SwiftUI and Android with Compose.",
+    "Published row renderer targets are iOS and Android.",
     "Appmost Design uses the iOS SwiftUI preview and exposes a smaller authoring surface through its Appmost Design support flags.",
-    "A valid project may contain a type that a particular renderer does not support."
+    "A valid project may contain a type that a particular renderer does not support.",
+    "Each public semantic type declares the format release where it was introduced."
   ],
   "rowTypes": [
-    {
-      "type": "singleButton",
-      "name": "Single button",
-      "category": "Action",
-      "summary": "A single full-width action button.",
-      "support": {
-        "iosSwiftUI": true,
-        "androidCompose": true,
-        "appmostDesignPreview": true
-      }
-    },
     {
       "type": "dualText",
       "name": "Dual text",
       "category": "Content",
       "summary": "Leading and trailing text on one line.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -37,6 +33,7 @@
       "name": "Plain leading label",
       "category": "Content",
       "summary": "A single leading-aligned label without a container treatment.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -48,6 +45,7 @@
       "name": "Icon two texts",
       "category": "Content",
       "summary": "A leading icon followed by two text values.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -59,6 +57,7 @@
       "name": "Text trailing icon",
       "category": "Content",
       "summary": "Leading text with a trailing icon.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -70,6 +69,7 @@
       "name": "Texts and color swatches",
       "category": "Input",
       "summary": "Text values paired with color swatches.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -81,17 +81,7 @@
       "name": "Settings dual text",
       "category": "Content",
       "summary": "A settings-style title with a trailing value.",
-      "support": {
-        "iosSwiftUI": true,
-        "androidCompose": true,
-        "appmostDesignPreview": true
-      }
-    },
-    {
-      "type": "containerPreview",
-      "name": "Container preview",
-      "category": "Layout",
-      "summary": "A preview surface for nested row content.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -103,6 +93,7 @@
       "name": "Inset secondary label",
       "category": "Content",
       "summary": "An inset secondary or supporting label.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -114,6 +105,7 @@
       "name": "Label and switch",
       "category": "Input",
       "summary": "A label paired with an on/off switch.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -125,6 +117,7 @@
       "name": "Centered label",
       "category": "Content",
       "summary": "A single centered label.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -136,6 +129,7 @@
       "name": "Stacked labels",
       "category": "Content",
       "summary": "Several labels stacked vertically.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -147,28 +141,7 @@
       "name": "Light header label",
       "category": "Content",
       "summary": "A low-emphasis section header.",
-      "support": {
-        "iosSwiftUI": true,
-        "androidCompose": true,
-        "appmostDesignPreview": true
-      }
-    },
-    {
-      "type": "centeredSeparatorLabel",
-      "name": "Centered separator label",
-      "category": "Content",
-      "summary": "A centered label that separates surrounding content.",
-      "support": {
-        "iosSwiftUI": true,
-        "androidCompose": true,
-        "appmostDesignPreview": true
-      }
-    },
-    {
-      "type": "centeredMessage",
-      "name": "Centered message",
-      "category": "Content",
-      "summary": "A centered multiline message.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -180,17 +153,7 @@
       "name": "Centered alert label",
       "category": "Content",
       "summary": "A centered alert or warning label.",
-      "support": {
-        "iosSwiftUI": true,
-        "androidCompose": true,
-        "appmostDesignPreview": true
-      }
-    },
-    {
-      "type": "twoColumnEditor",
-      "name": "Two column editor",
-      "category": "Content",
-      "summary": "Two editable content columns.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -202,17 +165,7 @@
       "name": "Centered padded label",
       "category": "Content",
       "summary": "A centered label with built-in padding.",
-      "support": {
-        "iosSwiftUI": true,
-        "androidCompose": true,
-        "appmostDesignPreview": true
-      }
-    },
-    {
-      "type": "filterSpacer",
-      "name": "Filter spacer",
-      "category": "Layout",
-      "summary": "Empty spacing used between filter content.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -224,6 +177,7 @@
       "name": "Inset button",
       "category": "Action",
       "summary": "An inset action button.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -235,6 +189,7 @@
       "name": "Single image",
       "category": "Media",
       "summary": "A single image.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -246,6 +201,7 @@
       "name": "Spacer",
       "category": "Layout",
       "summary": "Empty vertical spacing between content groups.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -257,6 +213,7 @@
       "name": "Icon over text",
       "category": "Content",
       "summary": "An icon placed above a text label.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -268,17 +225,7 @@
       "name": "Compact dual text",
       "category": "Content",
       "summary": "A compact leading and trailing text row.",
-      "support": {
-        "iosSwiftUI": true,
-        "androidCompose": true,
-        "appmostDesignPreview": true
-      }
-    },
-    {
-      "type": "appSummary",
-      "name": "App summary",
-      "category": "Data",
-      "summary": "A summary of app-level information.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -290,6 +237,7 @@
       "name": "Map",
       "category": "Location",
       "summary": "An interactive or static map.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -301,6 +249,7 @@
       "name": "Title subtitle stacked",
       "category": "Content",
       "summary": "A title and subtitle stacked vertically.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -312,39 +261,7 @@
       "name": "Full width image display",
       "category": "Media",
       "summary": "An edge-to-edge image.",
-      "support": {
-        "iosSwiftUI": true,
-        "androidCompose": true,
-        "appmostDesignPreview": true
-      }
-    },
-    {
-      "type": "multilineLabel",
-      "name": "Multiline label",
-      "category": "Content",
-      "summary": "A label that supports multiple lines.",
-      "support": {
-        "iosSwiftUI": true,
-        "androidCompose": true,
-        "appmostDesignPreview": true
-      }
-    },
-    {
-      "type": "variableSummaryTrailingTitle",
-      "name": "Variable summary trailing title",
-      "category": "Data",
-      "summary": "A variable summary with a trailing title.",
-      "support": {
-        "iosSwiftUI": true,
-        "androidCompose": true,
-        "appmostDesignPreview": true
-      }
-    },
-    {
-      "type": "facebookButtonBar",
-      "name": "Facebook button bar",
-      "category": "Action",
-      "summary": "A horizontal social-style action bar.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -356,6 +273,7 @@
       "name": "Label and stepper",
       "category": "Input",
       "summary": "A label paired with a numeric stepper.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -367,6 +285,7 @@
       "name": "Default segmented control",
       "category": "Input",
       "summary": "A standard segmented control.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -378,6 +297,7 @@
       "name": "Text area",
       "category": "Input",
       "summary": "An editable multiline text area.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -389,6 +309,7 @@
       "name": "Image background label",
       "category": "Media",
       "summary": "A label displayed over an image background.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -400,6 +321,7 @@
       "name": "Five star rating",
       "category": "Input",
       "summary": "A five-star rating control.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -411,6 +333,7 @@
       "name": "Text above image",
       "category": "Media",
       "summary": "Text displayed above an image.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -422,17 +345,7 @@
       "name": "Image text area",
       "category": "Input",
       "summary": "An image paired with a multiline text area.",
-      "support": {
-        "iosSwiftUI": true,
-        "androidCompose": true,
-        "appmostDesignPreview": true
-      }
-    },
-    {
-      "type": "dotted",
-      "name": "Dotted",
-      "category": "Layout",
-      "summary": "A dotted visual separator.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -444,6 +357,7 @@
       "name": "Title status description",
       "category": "Data",
       "summary": "A title, status, and supporting description.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -455,6 +369,7 @@
       "name": "Text field",
       "category": "Input",
       "summary": "A single-line text input.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -466,6 +381,7 @@
       "name": "Leading image text",
       "category": "Media",
       "summary": "A leading image followed by text.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -477,17 +393,7 @@
       "name": "Label and text field",
       "category": "Input",
       "summary": "A label paired with a single-line text input.",
-      "support": {
-        "iosSwiftUI": true,
-        "androidCompose": true,
-        "appmostDesignPreview": true
-      }
-    },
-    {
-      "type": "variableActionButtons",
-      "name": "Variable action buttons",
-      "category": "Action",
-      "summary": "Variable values paired with action buttons.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -499,6 +405,7 @@
       "name": "Centered accent label",
       "category": "Content",
       "summary": "A centered label using the accent color.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -510,6 +417,7 @@
       "name": "Icon with two stacked texts",
       "category": "Content",
       "summary": "An icon followed by two stacked text lines.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -521,17 +429,7 @@
       "name": "Leading icon metadata title",
       "category": "Content",
       "summary": "A leading icon with metadata and a title.",
-      "support": {
-        "iosSwiftUI": true,
-        "androidCompose": true,
-        "appmostDesignPreview": true
-      }
-    },
-    {
-      "type": "dualTextField",
-      "name": "Dual text field",
-      "category": "Input",
-      "summary": "Two single-line text inputs.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -543,6 +441,7 @@
       "name": "Number badge title subtitle status",
       "category": "Data",
       "summary": "A numbered badge with title, subtitle, and status.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -554,6 +453,7 @@
       "name": "Badge title subtitle status",
       "category": "Data",
       "summary": "A badge with title, subtitle, and status.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -565,6 +465,7 @@
       "name": "Title footnote metric pairs",
       "category": "Data",
       "summary": "A title and footnote with paired metrics.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -576,6 +477,7 @@
       "name": "Image metadata trailing title button",
       "category": "Media",
       "summary": "An image and metadata with a trailing title and button.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -587,6 +489,7 @@
       "name": "Image metadata",
       "category": "Media",
       "summary": "An image with supporting metadata.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -598,6 +501,7 @@
       "name": "Bold header",
       "category": "Content",
       "summary": "A bold section header.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -609,6 +513,7 @@
       "name": "Button",
       "category": "Action",
       "summary": "A standard action button.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -620,6 +525,7 @@
       "name": "Title highlight two column stats",
       "category": "Content",
       "summary": "A title and highlighted value with two-column statistics.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -631,6 +537,7 @@
       "name": "Title highlight two column detail pairs",
       "category": "Content",
       "summary": "A title and highlighted value with two-column detail pairs.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -642,6 +549,7 @@
       "name": "Centered title label",
       "category": "Content",
       "summary": "A centered title label.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -653,6 +561,7 @@
       "name": "Plain text area",
       "category": "Input",
       "summary": "A plain multiline text area.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -664,6 +573,7 @@
       "name": "Icon text",
       "category": "Content",
       "summary": "An icon followed by text.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -675,6 +585,7 @@
       "name": "Image grid content",
       "category": "Media",
       "summary": "A grid of images with supporting content.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -686,6 +597,7 @@
       "name": "Large image detail metrics",
       "category": "Data",
       "summary": "A large image with details and metrics.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -697,6 +609,7 @@
       "name": "Full width image with text",
       "category": "Media",
       "summary": "A full-width image with supporting text.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -708,6 +621,7 @@
       "name": "Text area button",
       "category": "Input",
       "summary": "A multiline text area with an action button.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -719,6 +633,7 @@
       "name": "Page caption description",
       "category": "Content",
       "summary": "A page caption with supporting description.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -730,6 +645,7 @@
       "name": "Paged image carousel",
       "category": "Media",
       "summary": "A horizontally paged image carousel.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -741,94 +657,7 @@
       "name": "Avatar dual label",
       "category": "Media",
       "summary": "An avatar followed by two text labels.",
-      "support": {
-        "iosSwiftUI": true,
-        "androidCompose": true,
-        "appmostDesignPreview": true
-      }
-    },
-    {
-      "type": "variableSummary",
-      "name": "Variable summary",
-      "category": "Data",
-      "summary": "A compact summary of variable values.",
-      "support": {
-        "iosSwiftUI": true,
-        "androidCompose": true,
-        "appmostDesignPreview": true
-      }
-    },
-    {
-      "type": "colorTextField",
-      "name": "Color text field",
-      "category": "Input",
-      "summary": "A text input for a color value.",
-      "support": {
-        "iosSwiftUI": true,
-        "androidCompose": true,
-        "appmostDesignPreview": true
-      }
-    },
-    {
-      "type": "horizontalChildren",
-      "name": "Horizontal children",
-      "category": "Layout",
-      "summary": "Child rows arranged horizontally.",
-      "support": {
-        "iosSwiftUI": true,
-        "androidCompose": true,
-        "appmostDesignPreview": true
-      }
-    },
-    {
-      "type": "iconTextField",
-      "name": "Icon text field",
-      "category": "Input",
-      "summary": "An icon paired with a single-line text input.",
-      "support": {
-        "iosSwiftUI": true,
-        "androidCompose": true,
-        "appmostDesignPreview": true
-      }
-    },
-    {
-      "type": "insetFields",
-      "name": "Inset fields",
-      "category": "Input",
-      "summary": "A grouped inset collection of input fields.",
-      "support": {
-        "iosSwiftUI": true,
-        "androidCompose": true,
-        "appmostDesignPreview": true
-      }
-    },
-    {
-      "type": "androidIconPreview",
-      "name": "Android icon preview",
-      "category": "Media",
-      "summary": "A preview of Android launcher icon output.",
-      "support": {
-        "iosSwiftUI": true,
-        "androidCompose": true,
-        "appmostDesignPreview": true
-      }
-    },
-    {
-      "type": "androidMaskPreview",
-      "name": "Android mask preview",
-      "category": "Media",
-      "summary": "A preview of Android adaptive icon masking.",
-      "support": {
-        "iosSwiftUI": true,
-        "androidCompose": true,
-        "appmostDesignPreview": true
-      }
-    },
-    {
-      "type": "verticalChildren",
-      "name": "Vertical children",
-      "category": "Layout",
-      "summary": "Child rows arranged vertically.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -840,6 +669,7 @@
       "name": "Text and icon button",
       "category": "Action",
       "summary": "Text paired with an icon button.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -851,6 +681,7 @@
       "name": "Centered icon text",
       "category": "Content",
       "summary": "A centered icon and text label.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -862,17 +693,7 @@
       "name": "Progress bar",
       "category": "Data",
       "summary": "A horizontal progress indicator.",
-      "support": {
-        "iosSwiftUI": true,
-        "androidCompose": true,
-        "appmostDesignPreview": true
-      }
-    },
-    {
-      "type": "scrollableHorizontalChildren",
-      "name": "Scrollable horizontal children",
-      "category": "Layout",
-      "summary": "Child rows in a horizontally scrolling container.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -884,17 +705,7 @@
       "name": "Bold header with button",
       "category": "Action",
       "summary": "A bold section header with a trailing action.",
-      "support": {
-        "iosSwiftUI": true,
-        "androidCompose": true,
-        "appmostDesignPreview": true
-      }
-    },
-    {
-      "type": "dualAdaptiveColor",
-      "name": "Dual adaptive color",
-      "category": "Input",
-      "summary": "Two adaptive-color samples.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -906,6 +717,7 @@
       "name": "Icon text switch",
       "category": "Input",
       "summary": "An icon and text paired with an on/off switch.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -917,6 +729,7 @@
       "name": "Centered text between buttons",
       "category": "Action",
       "summary": "Centered text between two actions.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -928,6 +741,7 @@
       "name": "Icon text icon",
       "category": "Content",
       "summary": "Text placed between leading and trailing icons.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -939,6 +753,7 @@
       "name": "Icon label text field stepper",
       "category": "Input",
       "summary": "An icon, label, text input, and numeric stepper.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -950,6 +765,7 @@
       "name": "Tall icon text switch",
       "category": "Input",
       "summary": "A tall icon and text row with an on/off switch.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -961,6 +777,7 @@
       "name": "Texts and trailing colors",
       "category": "Input",
       "summary": "Text values with trailing color samples.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -972,6 +789,7 @@
       "name": "Image large color blocks",
       "category": "Input",
       "summary": "An image paired with large color blocks.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -983,6 +801,7 @@
       "name": "Bar chart",
       "category": "Data",
       "summary": "A bar chart.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -994,6 +813,7 @@
       "name": "Image texts button",
       "category": "Media",
       "summary": "An image, text values, and an action button.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -1005,6 +825,7 @@
       "name": "Label text field stepper",
       "category": "Input",
       "summary": "A label, text input, and numeric stepper.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -1016,6 +837,7 @@
       "name": "Wide label and stepper",
       "category": "Input",
       "summary": "A wide label paired with a numeric stepper.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -1027,6 +849,7 @@
       "name": "Image body text button",
       "category": "Media",
       "summary": "An image, body text, and an action button.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -1038,6 +861,7 @@
       "name": "Circle progress",
       "category": "Data",
       "summary": "A circular progress indicator.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -1049,6 +873,7 @@
       "name": "Texts and circle progress",
       "category": "Data",
       "summary": "Text labels paired with circular progress.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -1060,6 +885,7 @@
       "name": "Circle progress and texts",
       "category": "Data",
       "summary": "Circular progress followed by text values.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -1071,6 +897,7 @@
       "name": "Date picker",
       "category": "Input",
       "summary": "A full date picker.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -1082,6 +909,7 @@
       "name": "Line bar chart",
       "category": "Data",
       "summary": "A combined line and bar chart.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -1093,6 +921,7 @@
       "name": "Area chart",
       "category": "Data",
       "summary": "An area chart.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -1104,6 +933,7 @@
       "name": "Range chart",
       "category": "Data",
       "summary": "A chart for a numeric or time range.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -1115,6 +945,7 @@
       "name": "Texts and trailing image",
       "category": "Media",
       "summary": "Text labels with a trailing image.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -1126,6 +957,7 @@
       "name": "Large image and texts",
       "category": "Media",
       "summary": "A large image with supporting text values.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -1137,6 +969,7 @@
       "name": "Small date picker",
       "category": "Input",
       "summary": "A compact date picker.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -1148,6 +981,7 @@
       "name": "Single label",
       "category": "Content",
       "summary": "A single text label.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -1159,6 +993,7 @@
       "name": "Small image and texts",
       "category": "Media",
       "summary": "A small image followed by text values.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -1170,6 +1005,7 @@
       "name": "Text field stepper button",
       "category": "Input",
       "summary": "A text input, numeric stepper, and action button.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -1181,6 +1017,7 @@
       "name": "Icon label segmented control",
       "category": "Input",
       "summary": "An icon and label paired with a segmented control.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -1192,6 +1029,7 @@
       "name": "Icon label button label",
       "category": "Action",
       "summary": "An icon, label, action button, and trailing label.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -1203,6 +1041,7 @@
       "name": "Slider",
       "category": "Input",
       "summary": "A continuous value slider.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -1214,6 +1053,7 @@
       "name": "Week date picker",
       "category": "Input",
       "summary": "A picker for selecting a week.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -1225,6 +1065,7 @@
       "name": "Media hero",
       "category": "Media",
       "summary": "A prominent media hero with overlaid or adjacent content.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -1236,6 +1077,7 @@
       "name": "Media card",
       "category": "Media",
       "summary": "A compact media card with supporting content.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -1247,6 +1089,7 @@
       "name": "Stat grid",
       "category": "Data",
       "summary": "A grid of key statistics.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -1258,6 +1101,7 @@
       "name": "Status list",
       "category": "Data",
       "summary": "A list of labelled statuses.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -1269,6 +1113,7 @@
       "name": "Segmented chip",
       "category": "Input",
       "summary": "A compact segmented chip selector.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -1280,6 +1125,7 @@
       "name": "Form section",
       "category": "Input",
       "summary": "A grouped section of form controls.",
+      "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,
         "androidCompose": true,
@@ -1291,6 +1137,7 @@
     {
       "type": "abortActions",
       "name": "Abort actions",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1300,6 +1147,7 @@
     {
       "type": "showActionSheet",
       "name": "Show action sheet",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1309,6 +1157,7 @@
     {
       "type": "openAppleMaps",
       "name": "Open apple maps",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1318,6 +1167,7 @@
     {
       "type": "appendToFirebaseDatabase",
       "name": "Append to firebase database",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": false,
@@ -1327,6 +1177,7 @@
     {
       "type": "promptForAppReview",
       "name": "Prompt for app review",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": false,
@@ -1336,6 +1187,7 @@
     {
       "type": "openAppInAppStore",
       "name": "Open app in app store",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": false,
@@ -1345,6 +1197,7 @@
     {
       "type": "askForPush",
       "name": "Ask for push",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1354,6 +1207,7 @@
     {
       "type": "openBarcodeScanner",
       "name": "Open barcode scanner",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1363,6 +1217,7 @@
     {
       "type": "callFirebaseFunction",
       "name": "Call firebase function",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1372,6 +1227,7 @@
     {
       "type": "callJsonApi",
       "name": "Call json api",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": false,
@@ -1381,6 +1237,7 @@
     {
       "type": "composeEmail",
       "name": "Compose email",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1390,6 +1247,7 @@
     {
       "type": "clearStripeConnection",
       "name": "Clear stripe connection",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": false,
@@ -1399,6 +1257,7 @@
     {
       "type": "callPhoneNumber",
       "name": "Call phone number",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1408,6 +1267,7 @@
     {
       "type": "connectStripe",
       "name": "Connect stripe",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": false,
@@ -1417,6 +1277,7 @@
     {
       "type": "showContactPicker",
       "name": "Show contact picker",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": false,
         "android": true,
@@ -1426,6 +1287,7 @@
     {
       "type": "copyString",
       "name": "Copy string",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1435,6 +1297,7 @@
     {
       "type": "createFirebaseUser",
       "name": "Create firebase user",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1444,6 +1307,7 @@
     {
       "type": "delay",
       "name": "Delay",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1453,6 +1317,7 @@
     {
       "type": "deleteFirebaseUser",
       "name": "Delete firebase user",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": false,
@@ -1462,6 +1327,7 @@
     {
       "type": "showDialog",
       "name": "Show dialog",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1471,6 +1337,7 @@
     {
       "type": "dismiss",
       "name": "Dismiss",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1480,6 +1347,7 @@
     {
       "type": "dismissTabBar",
       "name": "Dismiss tab bar",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1489,6 +1357,7 @@
     {
       "type": "selectOrCaptureImage",
       "name": "Select or capture image",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1498,6 +1367,7 @@
     {
       "type": "openVariableEditing",
       "name": "Open variable editing",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1507,6 +1377,7 @@
     {
       "type": "fetchGPS",
       "name": "Fetch gps",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1516,6 +1387,7 @@
     {
       "type": "fetchJsonValueToVariable",
       "name": "Fetch json value to variable",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": false,
@@ -1525,6 +1397,7 @@
     {
       "type": "generateSwishQrCode",
       "name": "Generate swish qr code",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": false,
@@ -1534,6 +1407,7 @@
     {
       "type": "googleSheet",
       "name": "Google sheet",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": false,
@@ -1543,6 +1417,7 @@
     {
       "type": "justHighlightRow",
       "name": "Just highlight row",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": false,
@@ -1552,6 +1427,7 @@
     {
       "type": "ifElse",
       "name": "If else",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1561,6 +1437,7 @@
     {
       "type": "readTextFile",
       "name": "Read text file",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1570,6 +1447,7 @@
     {
       "type": "showLicenses",
       "name": "Show licenses",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1579,6 +1457,7 @@
     {
       "type": "logToFirebaseAnalytics",
       "name": "Log to firebase analytics",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1588,6 +1467,7 @@
     {
       "type": "manipulateVariables",
       "name": "Manipulate variables",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1597,6 +1477,7 @@
     {
       "type": "openMessenger",
       "name": "Open messenger",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1606,6 +1487,7 @@
     {
       "type": "modifyImage",
       "name": "Modify image",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1615,6 +1497,7 @@
     {
       "type": "multipleActions",
       "name": "Multiple actions",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1624,6 +1507,7 @@
     {
       "type": "doNothing",
       "name": "Do nothing",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1633,6 +1517,7 @@
     {
       "type": "openSwishApp",
       "name": "Open swish app",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": false,
@@ -1642,6 +1527,7 @@
     {
       "type": "openAnotherPage",
       "name": "Open another page",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1651,6 +1537,7 @@
     {
       "type": "pairBluetooth",
       "name": "Pair bluetooth",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": false,
@@ -1660,6 +1547,7 @@
     {
       "type": "performFunction",
       "name": "Perform function",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1669,6 +1557,7 @@
     {
       "type": "playSound",
       "name": "Play sound",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1678,6 +1567,7 @@
     {
       "type": "playVideo",
       "name": "Play video",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1687,6 +1577,7 @@
     {
       "type": "popPage",
       "name": "Pop page",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1696,6 +1587,7 @@
     {
       "type": "pushStripePaymentOptions",
       "name": "Push stripe payment options",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": false,
@@ -1705,6 +1597,7 @@
     {
       "type": "pushStripeShipping",
       "name": "Push stripe shipping",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": false,
@@ -1714,6 +1607,7 @@
     {
       "type": "readNfcTag",
       "name": "Read nfc tag",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": false,
@@ -1723,6 +1617,7 @@
     {
       "type": "reloadFirebaseUser",
       "name": "Reload firebase user",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1732,6 +1627,7 @@
     {
       "type": "reloadIAPSubscriptions",
       "name": "Reload iap subscriptions",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1741,6 +1637,7 @@
     {
       "type": "reloadVariableFromDataSource",
       "name": "Reload variable from data source",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1750,6 +1647,7 @@
     {
       "type": "resetNavigation",
       "name": "Reset navigation",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1759,6 +1657,7 @@
     {
       "type": "resetPage",
       "name": "Reset page",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1768,6 +1667,7 @@
     {
       "type": "restoreIAP",
       "name": "Restore iap",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1777,6 +1677,7 @@
     {
       "type": "scrollPage",
       "name": "Scroll page",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1786,6 +1687,7 @@
     {
       "type": "scrollPagination",
       "name": "Scroll pagination",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1795,6 +1697,7 @@
     {
       "type": "sendFirebasePasswordResetEmail",
       "name": "Send firebase password reset email",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": false,
@@ -1804,6 +1707,7 @@
     {
       "type": "shareLink",
       "name": "Share link",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1813,6 +1717,7 @@
     {
       "type": "sharePdf",
       "name": "Share pdf",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1822,6 +1727,7 @@
     {
       "type": "showInfoPopup",
       "name": "Show info popup",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1831,6 +1737,7 @@
     {
       "type": "showStripeExpressDashboard",
       "name": "Show stripe express dashboard",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": false,
@@ -1840,6 +1747,7 @@
     {
       "type": "signIn",
       "name": "Sign in",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1849,6 +1757,7 @@
     {
       "type": "signOut",
       "name": "Sign out",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1858,6 +1767,7 @@
     {
       "type": "composeSMS",
       "name": "Compose sms",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1867,6 +1777,7 @@
     {
       "type": "startAudioRecording",
       "name": "Start audio recording",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": false,
@@ -1876,6 +1787,7 @@
     {
       "type": "startStripePayment",
       "name": "Start stripe payment",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": false,
@@ -1885,6 +1797,7 @@
     {
       "type": "stopAudioRecording",
       "name": "Stop audio recording",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": false,
@@ -1894,6 +1807,7 @@
     {
       "type": "subscribeToIAP",
       "name": "Subscribe to iap",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1903,6 +1817,7 @@
     {
       "type": "syncBackFirebaseSubscribedTopics",
       "name": "Sync back firebase subscribed topics",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1912,6 +1827,7 @@
     {
       "type": "syncBackFirebaseUser",
       "name": "Sync back firebase user",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": false,
@@ -1921,6 +1837,7 @@
     {
       "type": "manuallyUpdateUI",
       "name": "Manually update ui",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1930,6 +1847,7 @@
     {
       "type": "uploadFileToFirebaseStorage",
       "name": "Upload file to firebase storage",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1939,6 +1857,7 @@
     {
       "type": "updatePaginationView",
       "name": "Update pagination view",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1948,6 +1867,7 @@
     {
       "type": "openWebPage",
       "name": "Open web page",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1957,6 +1877,7 @@
     {
       "type": "writeNfcTag",
       "name": "Write nfc tag",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": false,
@@ -1969,6 +1890,7 @@
       "type": "adaptiveColor",
       "name": "Adaptive color",
       "representation": "adaptive color object",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1980,6 +1902,7 @@
       "type": "boolean",
       "name": "Boolean",
       "representation": "boolean",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -1991,6 +1914,7 @@
       "type": "color",
       "name": "Color",
       "representation": "color string",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -2002,6 +1926,7 @@
       "type": "coordinate",
       "name": "Coordinate",
       "representation": "coordinate string/object",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -2013,6 +1938,7 @@
       "type": "custom",
       "name": "Custom",
       "representation": "custom object",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -2024,6 +1950,7 @@
       "type": "date",
       "name": "Date",
       "representation": "date string",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -2035,6 +1962,7 @@
       "type": "double",
       "name": "Double",
       "representation": "double-precision number",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -2046,6 +1974,7 @@
       "type": "dateTime",
       "name": "Date time",
       "representation": "date-time string",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -2057,6 +1986,7 @@
       "type": "element",
       "name": "Element",
       "representation": "runtime list element",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -2068,6 +1998,7 @@
       "type": "float",
       "name": "Float",
       "representation": "floating-point number",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -2079,6 +2010,7 @@
       "type": "integer",
       "name": "Integer",
       "representation": "32-bit integer",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -2090,6 +2022,7 @@
       "type": "image",
       "name": "Image",
       "representation": "image resource identifier",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -2101,6 +2034,7 @@
       "type": "iconName",
       "name": "Icon name",
       "representation": "icon identifier",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -2112,6 +2046,7 @@
       "type": "longInteger",
       "name": "Long integer",
       "representation": "64-bit integer compatibility value",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -2123,6 +2058,7 @@
       "type": "list",
       "name": "List",
       "representation": "ordered child value list",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -2134,6 +2070,7 @@
       "type": "location",
       "name": "Location",
       "representation": "location string/object",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -2145,6 +2082,7 @@
       "type": "string",
       "name": "String",
       "representation": "string",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -2156,6 +2094,7 @@
       "type": "time",
       "name": "Time",
       "representation": "time string",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,
@@ -2167,6 +2106,7 @@
       "type": "unknown",
       "name": "Unknown",
       "representation": "unknown sentinel",
+      "introducedIn": "2.0.0",
       "support": {
         "ios": true,
         "android": true,

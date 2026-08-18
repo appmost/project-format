@@ -1,0 +1,81 @@
+{
+  "id": "row-preview-numberbadgetitlesubtitlestatus",
+  "index": 50,
+  "listProperties": {
+    "hidesStickySeparator": true,
+    "style": "p"
+  },
+  "parentId": "",
+  "parentRelationship": "none",
+  "properties": {
+    "hideFirstSection": false
+  },
+  "rows": [
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "row-numberbadgetitlesubtitlestatus",
+      "images": [],
+      "labelModels": [
+        {
+          "fontWeight": "bold",
+          "text": "12",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "accent1"
+            }
+          }
+        },
+        {
+          "fontWeight": "semibold",
+          "text": "Builds"
+        },
+        {
+          "text": "This week",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "text": "Ready",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "accent1"
+            }
+          }
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "numberBadgeTitleSubtitleStatus",
+      "weekDatePickers": []
+    }
+  ],
+  "title": "Number badge title subtitle status",
+  "type": "normal"
+}

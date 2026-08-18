@@ -1,0 +1,136 @@
+{
+  "id": "row-preview-centeredtextbetweenbuttons",
+  "index": 74,
+  "listProperties": {
+    "hidesStickySeparator": true,
+    "style": "p"
+  },
+  "parentId": "",
+  "parentRelationship": "none",
+  "properties": {
+    "hideFirstSection": false
+  },
+  "rows": [
+    {
+      "buttons": [
+        {
+          "adaptiveColor": {
+            "adaptive": true,
+            "dc": {
+              "hex": "48D2BC"
+            },
+            "lc": {
+              "hex": "1D8273"
+            }
+          },
+          "enabled": {
+            "type": "boolean",
+            "value": {
+              "childType": "b",
+              "value": "true"
+            }
+          },
+          "extraPadding": {
+            "bottom": 0,
+            "left": 12,
+            "linkedType": "none",
+            "right": 12,
+            "top": 0
+          },
+          "imageNameVarExpVal": {
+            "type": "iconName",
+            "value": {
+              "value": ""
+            }
+          },
+          "manualImageTextSpacing": 4,
+          "roundMode": "r",
+          "style": "tinted",
+          "titleVarExp": {
+            "type": "string",
+            "value": {
+              "childType": "s",
+              "value": "Back"
+            }
+          }
+        },
+        {
+          "adaptiveColor": {
+            "adaptive": true,
+            "dc": {
+              "hex": "48D2BC"
+            },
+            "lc": {
+              "hex": "1D8273"
+            }
+          },
+          "enabled": {
+            "type": "boolean",
+            "value": {
+              "childType": "b",
+              "value": "true"
+            }
+          },
+          "extraPadding": {
+            "bottom": 0,
+            "left": 12,
+            "linkedType": "none",
+            "right": 12,
+            "top": 0
+          },
+          "imageNameVarExpVal": {
+            "type": "iconName",
+            "value": {
+              "value": ""
+            }
+          },
+          "manualImageTextSpacing": 4,
+          "roundMode": "r",
+          "style": "color",
+          "titleVarExp": {
+            "type": "string",
+            "value": {
+              "childType": "s",
+              "value": "Next"
+            }
+          }
+        }
+      ],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "row-centeredtextbetweenbuttons",
+      "images": [],
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "text": "Choose an action"
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "centeredTextBetweenButtons",
+      "weekDatePickers": []
+    }
+  ],
+  "title": "Centered text between buttons",
+  "type": "normal"
+}

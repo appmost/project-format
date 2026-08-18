@@ -1,0 +1,572 @@
+{
+  "id": "docs-data",
+  "index": 6,
+  "listProperties": {
+    "hidesStickySeparator": true,
+    "style": "p"
+  },
+  "parentId": "",
+  "parentRelationship": "none",
+  "properties": {
+    "hideFirstSection": false
+  },
+  "rows": [
+    {
+      "buttons": [],
+      "chartViewModels": [
+        {
+          "showXAxis": true,
+          "showYAxis": true
+        }
+      ],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "docs-barchart",
+      "images": [],
+      "labelModels": [],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "barChart",
+      "weekDatePickers": []
+    },
+    {
+      "buttons": [],
+      "chartViewModels": [
+        {
+          "showXAxis": true,
+          "showYAxis": true
+        }
+      ],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "docs-linebarchart",
+      "images": [],
+      "labelModels": [],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "lineBarChart",
+      "weekDatePickers": []
+    },
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [
+        {
+          "color": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "accent1"
+            }
+          }
+        },
+        {
+          "color": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "accent1"
+            }
+          }
+        },
+        {
+          "color": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "accent1"
+            }
+          }
+        },
+        {
+          "color": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryGroupedBackground"
+            }
+          }
+        },
+        {
+          "color": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryGroupedBackground"
+            }
+          }
+        },
+        {
+          "color": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryGroupedBackground"
+            }
+          }
+        },
+        {
+          "color": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryGroupedBackground"
+            }
+          }
+        },
+        {
+          "color": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryGroupedBackground"
+            }
+          }
+        },
+        {
+          "color": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryGroupedBackground"
+            }
+          }
+        }
+      ],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "docs-statgrid",
+      "images": [
+        {
+          "iconName": null,
+          "imageBgColor": null,
+          "imageTintCol": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "accent1"
+            }
+          },
+          "localImageSize": 22,
+          "parentType": "imageView",
+          "scaleMode": "keepAspectRatio",
+          "size": null,
+          "target": "gesture-tap",
+          "type": "local"
+        },
+        {
+          "iconName": null,
+          "imageBgColor": null,
+          "imageTintCol": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "accent1"
+            }
+          },
+          "localImageSize": 22,
+          "parentType": "imageView",
+          "scaleMode": "keepAspectRatio",
+          "size": null,
+          "target": "bookmark-outline",
+          "type": "local"
+        },
+        {
+          "iconName": null,
+          "imageBgColor": null,
+          "imageTintCol": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "accent1"
+            }
+          },
+          "localImageSize": 22,
+          "parentType": "imageView",
+          "scaleMode": "keepAspectRatio",
+          "size": null,
+          "target": "heart-outline",
+          "type": "local"
+        }
+      ],
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "text": "12.4k"
+        },
+        {
+          "text": "Views",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "fontWeight": "semibold",
+          "text": "842"
+        },
+        {
+          "text": "Saves",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "fontWeight": "semibold",
+          "text": "96%"
+        },
+        {
+          "text": "Uptime",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 100
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "statGrid",
+      "weekDatePickers": []
+    },
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [
+        {
+          "color": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "accent1"
+            }
+          }
+        },
+        {
+          "color": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "accent1"
+            }
+          }
+        },
+        {
+          "color": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "accent1"
+            }
+          }
+        },
+        {
+          "color": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "accent1"
+            }
+          }
+        },
+        {
+          "color": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "groupedBackground"
+            }
+          }
+        },
+        {
+          "color": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "groupedBackground"
+            }
+          }
+        },
+        {
+          "color": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "groupedBackground"
+            }
+          }
+        },
+        {
+          "color": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "groupedBackground"
+            }
+          }
+        },
+        {
+          "color": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryGroupedBackground"
+            }
+          }
+        },
+        {
+          "color": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryGroupedBackground"
+            }
+          }
+        },
+        {
+          "color": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryGroupedBackground"
+            }
+          }
+        },
+        {
+          "color": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryGroupedBackground"
+            }
+          }
+        },
+        {
+          "color": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryGroupedBackground"
+            }
+          }
+        }
+      ],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "docs-statuslist",
+      "images": [
+        {
+          "iconName": null,
+          "imageBgColor": null,
+          "imageTintCol": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "accent1"
+            }
+          },
+          "localImageSize": 22,
+          "parentType": "imageView",
+          "scaleMode": "keepAspectRatio",
+          "size": null,
+          "target": "heart-outline",
+          "type": "local"
+        },
+        {
+          "iconName": null,
+          "imageBgColor": null,
+          "imageTintCol": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "accent1"
+            }
+          },
+          "localImageSize": 22,
+          "parentType": "imageView",
+          "scaleMode": "keepAspectRatio",
+          "size": null,
+          "target": "format-list-bulleted",
+          "type": "local"
+        },
+        {
+          "iconName": null,
+          "imageBgColor": null,
+          "imageTintCol": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "accent1"
+            }
+          },
+          "localImageSize": 22,
+          "parentType": "imageView",
+          "scaleMode": "keepAspectRatio",
+          "size": null,
+          "target": "alert-circle-outline",
+          "type": "local"
+        },
+        {
+          "iconName": null,
+          "imageBgColor": null,
+          "imageTintCol": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "accent1"
+            }
+          },
+          "localImageSize": 22,
+          "parentType": "imageView",
+          "scaleMode": "keepAspectRatio",
+          "size": null,
+          "target": "bookmark-outline",
+          "type": "local"
+        }
+      ],
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "text": "API"
+        },
+        {
+          "text": "Healthy",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "text": "Live",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "fontWeight": "semibold",
+          "text": "Storage"
+        },
+        {
+          "text": "72% used",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "text": "Watch",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "fontWeight": "semibold",
+          "text": "Messages"
+        },
+        {
+          "text": "Delivered",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "text": "Live",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "fontWeight": "semibold",
+          "text": "Build"
+        },
+        {
+          "text": "1.8.0",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "text": "Ready",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "statusList",
+      "weekDatePickers": []
+    }
+  ],
+  "title": "Data",
+  "type": "normal"
+}

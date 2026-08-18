@@ -1,0 +1,311 @@
+{
+  "appGlobalUISettings": {
+    "forceComposeRendering": true,
+    "forceSwiftUIRendering": true,
+    "preloadTabItems": true
+  },
+  "buildVersion": 1,
+  "bundleVersion": "1.0",
+  "changeLog": "",
+  "currentEnvironment": "prod",
+  "documentVersion": 2,
+  "frameworks": "",
+  "functions": [],
+  "globalTheme": {
+    "androidStatusBarMode": "auto",
+    "buttonColor": {
+      "adaptive": true,
+      "dc": {
+        "hex": "48D2BC"
+      },
+      "lc": {
+        "hex": "1D8273"
+      }
+    },
+    "chartTintColor": {
+      "adaptive": true,
+      "dc": {
+        "hex": "48D2BC"
+      },
+      "lc": {
+        "hex": "1D8273"
+      }
+    },
+    "clearColorForNavBarWithLargeTitles": true,
+    "customColors": [
+      {
+        "color": {
+          "adaptive": true,
+          "dc": {
+            "hex": "111817"
+          },
+          "lc": {
+            "hex": "EFF8F4"
+          }
+        },
+        "name": "background"
+      },
+      {
+        "color": {
+          "adaptive": true,
+          "dc": {
+            "hex": "1A2220"
+          },
+          "lc": {
+            "hex": "F8FCFA"
+          }
+        },
+        "name": "secondaryBackground"
+      },
+      {
+        "color": {
+          "adaptive": true,
+          "dc": {
+            "hex": "121A18"
+          },
+          "lc": {
+            "hex": "EAF4EF"
+          }
+        },
+        "name": "groupedBackground"
+      },
+      {
+        "color": {
+          "adaptive": true,
+          "dc": {
+            "hex": "202B28"
+          },
+          "lc": {
+            "hex": "FFFFFF"
+          }
+        },
+        "name": "secondaryGroupedBackground"
+      },
+      {
+        "color": {
+          "adaptive": true,
+          "dc": {
+            "hex": "48D2BC"
+          },
+          "lc": {
+            "hex": "1D8273"
+          }
+        },
+        "name": "accent1"
+      },
+      {
+        "color": {
+          "adaptive": true,
+          "dc": {
+            "hex": "FF9A71"
+          },
+          "lc": {
+            "hex": "A53A22"
+          }
+        },
+        "name": "accent2"
+      },
+      {
+        "color": {
+          "adaptive": true,
+          "dc": {
+            "hex": "A99DFF"
+          },
+          "lc": {
+            "hex": "6C5CE7"
+          }
+        },
+        "name": "accent3"
+      }
+    ],
+    "iconTintColor": {
+      "hex": "1D8273"
+    },
+    "iconTintColorDark": {
+      "hex": "48D2BC"
+    },
+    "linkButtonColor": {
+      "adaptive": true,
+      "dc": {
+        "hex": "48D2BC"
+      },
+      "lc": {
+        "hex": "1D8273"
+      }
+    },
+    "navBarBgCol": {
+      "adaptive": true,
+      "dc": {
+        "hex": "111817"
+      },
+      "lc": {
+        "hex": "EFF8F4"
+      }
+    },
+    "newTintColor": {
+      "hex": "1D8273"
+    },
+    "tabBarBgCol": {
+      "adaptive": true,
+      "dc": {
+        "hex": "111817"
+      },
+      "lc": {
+        "hex": "EFF8F4"
+      }
+    },
+    "tintColorDark": {
+      "hex": "48D2BC"
+    }
+  },
+  "icon": {},
+  "ipad_scaling": 1,
+  "manuallyAddedIconNames": [],
+  "pageFileNames": [
+    "row-catalog.json",
+    "docs-action.json",
+    "docs-content.json",
+    "docs-input.json",
+    "docs-layout.json",
+    "docs-media.json",
+    "docs-data.json",
+    "docs-location.json",
+    "catalog-action.json",
+    "catalog-content.json",
+    "catalog-input.json",
+    "catalog-layout.json",
+    "catalog-media.json",
+    "catalog-data.json",
+    "catalog-location.json",
+    "row-preview-dualtext.json",
+    "row-preview-plainleadinglabel.json",
+    "row-preview-icontwotexts.json",
+    "row-preview-texttrailingicon.json",
+    "row-preview-textsandcolorswatches.json",
+    "row-preview-settingsdualtext.json",
+    "row-preview-insetsecondarylabel.json",
+    "row-preview-labelandswitch.json",
+    "row-preview-centeredlabel.json",
+    "row-preview-stackedlabels.json",
+    "row-preview-lightheaderlabel.json",
+    "row-preview-centeredalertlabel.json",
+    "row-preview-centeredpaddedlabel.json",
+    "row-preview-insetbutton.json",
+    "row-preview-singleimage.json",
+    "row-preview-spacer.json",
+    "row-preview-iconovertext.json",
+    "row-preview-compactdualtext.json",
+    "row-preview-map.json",
+    "row-preview-titlesubtitlestacked.json",
+    "row-preview-fullwidthimagedisplay.json",
+    "row-preview-labelandstepper.json",
+    "row-preview-defaultsegmentedcontrol.json",
+    "row-preview-textarea.json",
+    "row-preview-imagebackgroundlabel.json",
+    "row-preview-fivestarrating.json",
+    "row-preview-textaboveimage.json",
+    "row-preview-imagetextarea.json",
+    "row-preview-titlestatusdescription.json",
+    "row-preview-textfield.json",
+    "row-preview-leadingimagetext.json",
+    "row-preview-labelandtextfield.json",
+    "row-preview-centeredaccentlabel.json",
+    "row-preview-iconwithtwostackedtexts.json",
+    "row-preview-leadingiconmetadatatitle.json",
+    "row-preview-numberbadgetitlesubtitlestatus.json",
+    "row-preview-badgetitlesubtitlestatus.json",
+    "row-preview-titlefootnotemetricpairs.json",
+    "row-preview-imagemetadatatrailingtitlebutton.json",
+    "row-preview-imagemetadata.json",
+    "row-preview-boldheader.json",
+    "row-preview-button.json",
+    "row-preview-titlehighlighttwocolumnstats.json",
+    "row-preview-titlehighlighttwocolumndetailpairs.json",
+    "row-preview-centeredtitlelabel.json",
+    "row-preview-plaintextarea.json",
+    "row-preview-icontext.json",
+    "row-preview-imagegridcontent.json",
+    "row-preview-largeimagedetailmetrics.json",
+    "row-preview-fullwidthimagewithtext.json",
+    "row-preview-textareabutton.json",
+    "row-preview-pagecaptiondescription.json",
+    "row-preview-pagedimagecarousel.json",
+    "row-preview-avatarduallabel.json",
+    "row-preview-textandiconbutton.json",
+    "row-preview-centeredicontext.json",
+    "row-preview-progressbar.json",
+    "row-preview-boldheaderwithbutton.json",
+    "row-preview-icontextswitch.json",
+    "row-preview-centeredtextbetweenbuttons.json",
+    "row-preview-icontexticon.json",
+    "row-preview-iconlabeltextfieldstepper.json",
+    "row-preview-tallicontextswitch.json",
+    "row-preview-textsandtrailingcolors.json",
+    "row-preview-imagelargecolorblocks.json",
+    "row-preview-barchart.json",
+    "row-preview-imagetextsbutton.json",
+    "row-preview-labeltextfieldstepper.json",
+    "row-preview-widelabelandstepper.json",
+    "row-preview-imagebodytextbutton.json",
+    "row-preview-circleprogress.json",
+    "row-preview-textsandcircleprogress.json",
+    "row-preview-circleprogressandtexts.json",
+    "row-preview-datepicker.json",
+    "row-preview-linebarchart.json",
+    "row-preview-areachart.json",
+    "row-preview-rangechart.json",
+    "row-preview-textsandtrailingimage.json",
+    "row-preview-largeimageandtexts.json",
+    "row-preview-smalldatepicker.json",
+    "row-preview-singlelabel.json",
+    "row-preview-smallimageandtexts.json",
+    "row-preview-textfieldstepperbutton.json",
+    "row-preview-iconlabelsegmentedcontrol.json",
+    "row-preview-iconlabelbuttonlabel.json",
+    "row-preview-slider.json",
+    "row-preview-weekdatepicker.json",
+    "row-preview-mediahero.json",
+    "row-preview-mediacard.json",
+    "row-preview-statgrid.json",
+    "row-preview-statuslist.json",
+    "row-preview-segmentedchip.json",
+    "row-preview-formsection.json"
+  ],
+  "permissionDescriptions": {},
+  "startPageId": "row-catalog",
+  "supportedLocalizations": "",
+  "useAppClip": false,
+  "useDynamicFontSizesOniOS": true,
+  "useIPad": false,
+  "useInAppNotifications": true,
+  "usePushNotifications": false,
+  "usedIconNames": [
+    "alert-circle-outline",
+    "arrow-right",
+    "arrow-top-right",
+    "bookmark-outline",
+    "camera",
+    "camera-flip-outline",
+    "chevron-right",
+    "flashlight-on",
+    "format-list-bulleted",
+    "gesture-tap",
+    "heart-outline",
+    "map-marker",
+    "shape-outline",
+    "sparkles",
+    "tune-variant"
+  ],
+  "usesAudioManager": false,
+  "usesAuth0": false,
+  "usesBluetooth": false,
+  "usesFirebase": false,
+  "usesFirebaseAnalytics": false,
+  "usesFirebaseMessaging": false,
+  "usesFreshChat": false,
+  "usesIOSIAP": false,
+  "usesMsalIntegration": false,
+  "usesNfcActions": false,
+  "version": 1,
+  "versionName": "3.9.1"
+}

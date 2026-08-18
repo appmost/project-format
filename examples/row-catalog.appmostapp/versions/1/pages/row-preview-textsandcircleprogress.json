@@ -1,0 +1,81 @@
+{
+  "id": "row-preview-textsandcircleprogress",
+  "index": 86,
+  "listProperties": {
+    "hidesStickySeparator": true,
+    "style": "p"
+  },
+  "parentId": "",
+  "parentRelationship": "none",
+  "properties": {
+    "hideFirstSection": false
+  },
+  "rows": [
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "row-textsandcircleprogress",
+      "images": [],
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "lineBreak": "no",
+          "text": "Texts and circle progress"
+        },
+        {
+          "lineBreak": "yes",
+          "text": "Data",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [
+        {
+          "maxValue": {
+            "type": "integer",
+            "value": {
+              "childType": "i",
+              "value": "100"
+            }
+          },
+          "value": {
+            "type": "integer",
+            "value": {
+              "childType": "i",
+              "value": "64"
+            }
+          }
+        }
+      ],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "textsAndCircleProgress",
+      "weekDatePickers": []
+    }
+  ],
+  "title": "Texts and circle progress",
+  "type": "normal"
+}

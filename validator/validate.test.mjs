@@ -9,7 +9,7 @@ import { FormatValidationError, validateProject } from './validate.mjs';
 
 const repositoryRoot = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
 const example = path.join(repositoryRoot, 'examples/minimal.appmostapp');
-const composeRowCatalog = path.join(repositoryRoot, 'examples/compose-row-catalog.appmostapp');
+const rowCatalog = path.join(repositoryRoot, 'examples/row-catalog.appmostapp');
 
 async function temporaryExample() {
   const directory = await mkdtemp(path.join(tmpdir(), 'appmost-format-'));
@@ -28,12 +28,12 @@ test('the minimal example is a valid format 2.0 package', async () => {
   });
 });
 
-test('the Compose row catalog covers every registered row type', async () => {
-  const result = await validateProject(composeRowCatalog);
+test('the row catalog covers every registered row type', async () => {
+  const result = await validateProject(rowCatalog);
   assert.equal(result.currentVersion, 1);
   assert.deepEqual(result.versionNumbers, [1]);
 
-  const versionDirectory = path.join(composeRowCatalog, 'versions/1');
+  const versionDirectory = path.join(rowCatalog, 'versions/1');
   const version = JSON.parse(await readFile(path.join(versionDirectory, 'version.json'), 'utf8'));
   const pages = await Promise.all(version.pageFileNames.map(async (fileName) => (
     JSON.parse(await readFile(path.join(versionDirectory, 'pages', fileName), 'utf8'))
@@ -51,7 +51,7 @@ test('Appmost Design support is explicit and intentionally narrower', async () =
     .map((action) => action.type)
     .sort();
 
-  assert.equal(registry.rowTypes.filter((row) => row.support.appmostDesignPreview).length, 116);
+  assert.equal(registry.rowTypes.filter((row) => row.support.appmostDesignPreview).length, 93);
   assert.deepEqual(designActions, [
     'delay',
     'dismiss',

@@ -1,0 +1,1589 @@
+{
+  "id": "catalog-content",
+  "index": 9,
+  "listProperties": {
+    "hidesStickySeparator": true,
+    "style": "p"
+  },
+  "parentId": "",
+  "parentRelationship": "none",
+  "properties": {
+    "hideFirstSection": false
+  },
+  "rows": [
+    {
+      "childProperties": {},
+      "contentPadding": {
+        "bottom": 2,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 20
+      },
+      "id": "intro-content-catalog",
+      "labelModels": [
+        {
+          "fontSize": 28,
+          "fontWeight": "bold",
+          "lineBreak": "yes",
+          "text": "Content Catalog"
+        }
+      ],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 36
+      },
+      "type": "singleLabel"
+    },
+    {
+      "childProperties": {},
+      "contentPadding": {
+        "bottom": 14,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 2
+      },
+      "id": "intro-body-content-catalog",
+      "labelModels": [
+        {
+          "fontSize": 15,
+          "lineBreak": "yes",
+          "text": "Android Compose rendering from the public Appmost row catalog.",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        }
+      ],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 44
+      },
+      "type": "singleLabel"
+    },
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "catalog-dualtext",
+      "images": [],
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "lineBreak": "no",
+          "text": "Dual text"
+        },
+        {
+          "lineBreak": "yes",
+          "text": "Content",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "dualText",
+      "weekDatePickers": []
+    },
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "catalog-plainleadinglabel",
+      "images": [],
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "lineBreak": "no",
+          "text": "Plain leading label"
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "plainLeadingLabel",
+      "weekDatePickers": []
+    },
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "catalog-icontwotexts",
+      "images": [
+        {
+          "iconName": null,
+          "imageBgColor": null,
+          "imageTintCol": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "accent1"
+            }
+          },
+          "localImageSize": 22,
+          "parentType": "imageView",
+          "scaleMode": "keepAspectRatio",
+          "size": null,
+          "target": "format-list-bulleted",
+          "type": "local"
+        }
+      ],
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "text": "Workspace"
+        },
+        {
+          "text": "Updated 2 minutes ago",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "iconTwoTexts",
+      "weekDatePickers": []
+    },
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "catalog-texttrailingicon",
+      "images": [
+        {
+          "darkModeTarget": "no_image_placeholder_dark.jpg",
+          "iconName": null,
+          "imageBgColor": null,
+          "imageTintCol": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": ""
+            }
+          },
+          "parentType": "imageView",
+          "rounding": "corn8",
+          "scaleMode": "scaleAspectFill",
+          "size": null,
+          "target": "no_image_placeholder.jpg",
+          "type": "data"
+        }
+      ],
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "lineBreak": "no",
+          "text": "Text trailing icon"
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "textTrailingIcon",
+      "weekDatePickers": []
+    },
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "catalog-settingsdualtext",
+      "images": [],
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "lineBreak": "no",
+          "text": "Settings dual text"
+        },
+        {
+          "lineBreak": "yes",
+          "text": "Content",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "settingsDualText",
+      "weekDatePickers": []
+    },
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "catalog-insetsecondarylabel",
+      "images": [],
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "lineBreak": "no",
+          "text": "Inset secondary label"
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "insetSecondaryLabel",
+      "weekDatePickers": []
+    },
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "catalog-centeredlabel",
+      "images": [],
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "lineBreak": "no",
+          "text": "Centered label"
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "centeredLabel",
+      "weekDatePickers": []
+    },
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "catalog-stackedlabels",
+      "images": [],
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "lineBreak": "no",
+          "text": "Stacked labels"
+        },
+        {
+          "lineBreak": "yes",
+          "text": "Content",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "lineBreak": "yes",
+          "text": "Content",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "stackedLabels",
+      "weekDatePickers": []
+    },
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "catalog-lightheaderlabel",
+      "images": [],
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "lineBreak": "no",
+          "text": "Light header label"
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "lightHeaderLabel",
+      "weekDatePickers": []
+    },
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "catalog-centeredalertlabel",
+      "images": [],
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "lineBreak": "no",
+          "text": "Centered alert label"
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "centeredAlertLabel",
+      "weekDatePickers": []
+    },
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "catalog-centeredpaddedlabel",
+      "images": [],
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "lineBreak": "no",
+          "text": "Centered padded label"
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "centeredPaddedLabel",
+      "weekDatePickers": []
+    },
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "catalog-iconovertext",
+      "images": [
+        {
+          "darkModeTarget": "no_image_placeholder_dark.jpg",
+          "iconName": null,
+          "imageBgColor": null,
+          "imageTintCol": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": ""
+            }
+          },
+          "parentType": "imageView",
+          "rounding": "corn8",
+          "scaleMode": "scaleAspectFill",
+          "size": null,
+          "target": "no_image_placeholder.jpg",
+          "type": "data"
+        }
+      ],
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "lineBreak": "no",
+          "text": "Icon over text"
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "iconOverText",
+      "weekDatePickers": []
+    },
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "catalog-compactdualtext",
+      "images": [],
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "lineBreak": "no",
+          "text": "Compact dual text"
+        },
+        {
+          "lineBreak": "yes",
+          "text": "Content",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "compactDualText",
+      "weekDatePickers": []
+    },
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "catalog-titlesubtitlestacked",
+      "images": [],
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "lineBreak": "no",
+          "text": "Title subtitle stacked"
+        },
+        {
+          "lineBreak": "yes",
+          "text": "Content",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "titleSubtitleStacked",
+      "weekDatePickers": []
+    },
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "catalog-centeredaccentlabel",
+      "images": [],
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "lineBreak": "no",
+          "text": "Centered accent label"
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "centeredAccentLabel",
+      "weekDatePickers": []
+    },
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "catalog-iconwithtwostackedtexts",
+      "images": [
+        {
+          "darkModeTarget": "no_image_placeholder_dark.jpg",
+          "iconName": null,
+          "imageBgColor": null,
+          "imageTintCol": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": ""
+            }
+          },
+          "parentType": "imageView",
+          "rounding": "corn8",
+          "scaleMode": "scaleAspectFill",
+          "size": null,
+          "target": "no_image_placeholder.jpg",
+          "type": "data"
+        }
+      ],
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "lineBreak": "no",
+          "text": "Icon with two stacked texts"
+        },
+        {
+          "lineBreak": "yes",
+          "text": "Content",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "iconWithTwoStackedTexts",
+      "weekDatePickers": []
+    },
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "catalog-leadingiconmetadatatitle",
+      "images": [
+        {
+          "iconName": null,
+          "imageBgColor": null,
+          "imageTintCol": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "accent1"
+            }
+          },
+          "localImageSize": 22,
+          "parentType": "imageView",
+          "scaleMode": "keepAspectRatio",
+          "size": null,
+          "target": "bookmark-outline",
+          "type": "local"
+        }
+      ],
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "text": "Release"
+        },
+        {
+          "text": "1.8.0",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "text": "Stable",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "text": "Today",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "text": "14 MB",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "text": "Ready",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "accent1"
+            }
+          }
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "leadingIconMetadataTitle",
+      "weekDatePickers": []
+    },
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "catalog-boldheader",
+      "images": [],
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "lineBreak": "no",
+          "text": "Bold header"
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "boldHeader",
+      "weekDatePickers": []
+    },
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "catalog-titlehighlighttwocolumnstats",
+      "images": [],
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "text": "Storage"
+        },
+        {
+          "fontWeight": "semibold",
+          "text": "Today",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "accent1"
+            }
+          }
+        },
+        {
+          "text": "Workspace summary",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "text": "Documents",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "text": "2,481",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "text": "Images",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "text": "842",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "text": "Audio",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "text": "128",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "text": "Shared",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "text": "56",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "text": "Archived",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "text": "17",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "text": "",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "text": "",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "titleHighlightTwoColumnStats",
+      "weekDatePickers": []
+    },
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "catalog-titlehighlighttwocolumndetailpairs",
+      "images": [],
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "text": "Activity"
+        },
+        {
+          "fontWeight": "semibold",
+          "text": "Today",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "accent1"
+            }
+          }
+        },
+        {
+          "text": "Workspace details",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "fontWeight": "semibold",
+          "text": "Created",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "text": "24 items",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "fontWeight": "semibold",
+          "text": "Reviewed",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "text": "18 items",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "fontWeight": "semibold",
+          "text": "Shared",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "text": "9 items",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "fontWeight": "semibold",
+          "text": "Archived",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "text": "3 items",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "fontWeight": "semibold",
+          "text": "Storage",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "text": "2.4 GB",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "fontWeight": "semibold",
+          "text": "Members",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "text": "12 active",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "titleHighlightTwoColumnDetailPairs",
+      "weekDatePickers": []
+    },
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "catalog-centeredtitlelabel",
+      "images": [],
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "lineBreak": "no",
+          "text": "Centered title label"
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "centeredTitleLabel",
+      "weekDatePickers": []
+    },
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "catalog-icontext",
+      "images": [
+        {
+          "darkModeTarget": "no_image_placeholder_dark.jpg",
+          "iconName": null,
+          "imageBgColor": null,
+          "imageTintCol": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": ""
+            }
+          },
+          "parentType": "imageView",
+          "rounding": "corn8",
+          "scaleMode": "scaleAspectFill",
+          "size": null,
+          "target": "no_image_placeholder.jpg",
+          "type": "data"
+        }
+      ],
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "lineBreak": "no",
+          "text": "Icon text"
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "iconText",
+      "weekDatePickers": []
+    },
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "catalog-pagecaptiondescription",
+      "images": [],
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "text": "Release notes"
+        },
+        {
+          "text": "1.8",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "lineBreak": "yes",
+          "text": "Independent Compose templates for every supported row.",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "pageCaptionDescription",
+      "weekDatePickers": []
+    },
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "catalog-centeredicontext",
+      "images": [
+        {
+          "darkModeTarget": "no_image_placeholder_dark.jpg",
+          "iconName": null,
+          "imageBgColor": null,
+          "imageTintCol": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": ""
+            }
+          },
+          "parentType": "imageView",
+          "rounding": "corn8",
+          "scaleMode": "scaleAspectFill",
+          "size": null,
+          "target": "no_image_placeholder.jpg",
+          "type": "data"
+        }
+      ],
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "lineBreak": "no",
+          "text": "Centered icon text"
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "centeredIconText",
+      "weekDatePickers": []
+    },
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "catalog-icontexticon",
+      "images": [
+        {
+          "darkModeTarget": "no_image_placeholder_dark.jpg",
+          "iconName": null,
+          "imageBgColor": null,
+          "imageTintCol": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": ""
+            }
+          },
+          "parentType": "imageView",
+          "rounding": "corn8",
+          "scaleMode": "scaleAspectFill",
+          "size": null,
+          "target": "no_image_placeholder.jpg",
+          "type": "data"
+        },
+        {
+          "darkModeTarget": "no_image_placeholder_dark.jpg",
+          "iconName": null,
+          "imageBgColor": null,
+          "imageTintCol": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": ""
+            }
+          },
+          "parentType": "imageView",
+          "rounding": "corn8",
+          "scaleMode": "scaleAspectFill",
+          "size": null,
+          "target": "no_image_placeholder.jpg",
+          "type": "data"
+        }
+      ],
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "lineBreak": "no",
+          "text": "Icon text icon"
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "iconTextIcon",
+      "weekDatePickers": []
+    },
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "catalog-singlelabel",
+      "images": [],
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "lineBreak": "no",
+          "text": "Single label"
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "singleLabel",
+      "weekDatePickers": []
+    }
+  ],
+  "title": "Content Catalog",
+  "type": "normal"
+}

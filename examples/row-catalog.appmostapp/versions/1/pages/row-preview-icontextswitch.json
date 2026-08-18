@@ -1,0 +1,89 @@
+{
+  "id": "row-preview-icontextswitch",
+  "index": 73,
+  "listProperties": {
+    "hidesStickySeparator": true,
+    "style": "p"
+  },
+  "parentId": "",
+  "parentRelationship": "none",
+  "properties": {
+    "hideFirstSection": false
+  },
+  "rows": [
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "row-icontextswitch",
+      "images": [
+        {
+          "darkModeTarget": "no_image_placeholder_dark.jpg",
+          "iconName": null,
+          "imageBgColor": null,
+          "imageTintCol": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": ""
+            }
+          },
+          "parentType": "imageView",
+          "rounding": "corn8",
+          "scaleMode": "scaleAspectFill",
+          "size": null,
+          "target": "no_image_placeholder.jpg",
+          "type": "data"
+        }
+      ],
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "lineBreak": "no",
+          "text": "Icon text switch"
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [
+        {
+          "isEnabled": {
+            "type": "boolean",
+            "value": {
+              "childType": "b",
+              "value": "true"
+            }
+          },
+          "isOn": {
+            "type": "boolean",
+            "value": {
+              "childType": "b",
+              "value": "true"
+            }
+          }
+        }
+      ],
+      "textFields": [],
+      "textViews": [],
+      "type": "iconTextSwitch",
+      "weekDatePickers": []
+    }
+  ],
+  "title": "Icon text switch",
+  "type": "normal"
+}

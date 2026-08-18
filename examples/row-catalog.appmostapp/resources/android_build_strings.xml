@@ -1,0 +1,21 @@
+<resources>
+    <string name="app_name" translatable="false">Appmost Row Catalog</string>
+    <string name="app_id" translatable="false">ai.appmost.rowcatalog</string>
+    <string name="app_link_domain" translatable="false"></string>
+    <string name="app_link_path" translatable="false">/</string>
+    <string name="custom_url_schemes" translatable="false"></string>
+    <string name="version_name" translatable="false">1.0</string>
+    <string name="version_code" translatable="false">1</string>
+    <string name="auth0Domain" translatable="false"></string>
+    <string name="auth0Scheme" translatable="false"></string>
+    <string name="auth0Host" translatable="false"></string>
+    <string name="useAuth0" translatable="false">false</string>
+    <string name="useAndroidAppLinks" translatable="false">false</string>
+    <string name="useCameraPermission" translatable="false">false</string>
+    <string name="default_notification_channel_id" translatable="false">ai.appmost.rowcatalog.urgent</string>
+    <string name="launchScreenBgColor" translatable="false">#FFFFFF</string>
+    <string name="launchScreenBgColorNight" translatable="false">#000000</string>
+    <string name="navBarColor" translatable="false">#EEF7F3</string>
+    <string name="navBarColorNight" translatable="false">#151817</string>
+    <string name="google_maps_api_key" translatable="false"></string>
+</resources>

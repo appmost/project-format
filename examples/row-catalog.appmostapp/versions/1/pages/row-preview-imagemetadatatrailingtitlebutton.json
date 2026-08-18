@@ -1,0 +1,163 @@
+{
+  "id": "row-preview-imagemetadatatrailingtitlebutton",
+  "index": 53,
+  "listProperties": {
+    "hidesStickySeparator": true,
+    "style": "p"
+  },
+  "parentId": "",
+  "parentRelationship": "none",
+  "properties": {
+    "hideFirstSection": false
+  },
+  "rows": [
+    {
+      "buttons": [
+        {
+          "adaptiveColor": {
+            "adaptive": true,
+            "dc": {
+              "hex": "48D2BC"
+            },
+            "lc": {
+              "hex": "1D8273"
+            }
+          },
+          "enabled": {
+            "type": "boolean",
+            "value": {
+              "childType": "b",
+              "value": "true"
+            }
+          },
+          "extraPadding": {
+            "bottom": 0,
+            "left": 12,
+            "linkedType": "none",
+            "right": 12,
+            "top": 0
+          },
+          "imageNameVarExpVal": {
+            "type": "iconName",
+            "value": {
+              "value": "arrow-right"
+            }
+          },
+          "manualImageTextSpacing": 4,
+          "roundMode": "r",
+          "style": "color",
+          "titleVarExp": {
+            "type": "string",
+            "value": {
+              "childType": "s",
+              "value": "Open"
+            }
+          }
+        }
+      ],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "row-imagemetadatatrailingtitlebutton",
+      "images": [
+        {
+          "iconName": null,
+          "imageBgColor": null,
+          "imageTintCol": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": ""
+            }
+          },
+          "parentType": "imageView",
+          "rounding": "corn8",
+          "scaleMode": "scaleAspectFill",
+          "size": null,
+          "target": "trailnest_pine_lookout.jpg",
+          "type": "data"
+        }
+      ],
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "lineBreak": "no",
+          "text": "Photo"
+        },
+        {
+          "lineBreak": "no",
+          "text": "JPG",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "lineBreak": "no",
+          "text": "2.4k",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "lineBreak": "no",
+          "text": "3.8 MB",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "lineBreak": "no",
+          "text": "Today",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "lineBreak": "no",
+          "text": "Ready",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "accent1"
+            }
+          }
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 99
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "imageMetadataTrailingTitleButton",
+      "weekDatePickers": []
+    }
+  ],
+  "title": "Image metadata trailing title button",
+  "type": "normal"
+}

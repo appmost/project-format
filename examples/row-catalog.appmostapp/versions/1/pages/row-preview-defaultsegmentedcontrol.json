@@ -1,0 +1,56 @@
+{
+  "id": "row-preview-defaultsegmentedcontrol",
+  "index": 37,
+  "listProperties": {
+    "hidesStickySeparator": true,
+    "style": "p"
+  },
+  "parentId": "",
+  "parentRelationship": "none",
+  "properties": {
+    "hideFirstSection": false
+  },
+  "rows": [
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "row-defaultsegmentedcontrol",
+      "images": [],
+      "labelModels": [],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [
+        {
+          "titles": [
+            "All",
+            "Ready",
+            "Saved"
+          ]
+        }
+      ],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "defaultSegmentedControl",
+      "weekDatePickers": []
+    }
+  ],
+  "title": "Default segmented control",
+  "type": "normal"
+}

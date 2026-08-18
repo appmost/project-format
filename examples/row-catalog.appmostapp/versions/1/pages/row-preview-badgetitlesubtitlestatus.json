@@ -1,0 +1,84 @@
+{
+  "id": "row-preview-badgetitlesubtitlestatus",
+  "index": 51,
+  "listProperties": {
+    "hidesStickySeparator": true,
+    "style": "p"
+  },
+  "parentId": "",
+  "parentRelationship": "none",
+  "properties": {
+    "hideFirstSection": false
+  },
+  "rows": [
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [
+        {
+          "color": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "accent1"
+            }
+          }
+        }
+      ],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "row-badgetitlesubtitlestatus",
+      "images": [],
+      "labelModels": [
+        {
+          "fontWeight": "bold",
+          "text": "Pro"
+        },
+        {
+          "fontWeight": "semibold",
+          "text": "Workspace"
+        },
+        {
+          "text": "Team plan",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "text": "Active",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "accent1"
+            }
+          }
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "badgeTitleSubtitleStatus",
+      "weekDatePickers": []
+    }
+  ],
+  "title": "Badge title subtitle status",
+  "type": "normal"
+}

@@ -1,0 +1,752 @@
+{
+  "fixture": "row-catalog",
+  "formatVersion": "2.0.0",
+  "rowCount": 93,
+  "pageConvention": "One root row per target page",
+  "targets": [
+    {
+      "rowType": "dualText",
+      "category": "Content",
+      "cellId": 2,
+      "pageId": "row-preview-dualtext",
+      "rowId": "row-dualtext",
+      "fileName": "dualtext.png"
+    },
+    {
+      "rowType": "plainLeadingLabel",
+      "category": "Content",
+      "cellId": 3,
+      "pageId": "row-preview-plainleadinglabel",
+      "rowId": "row-plainleadinglabel",
+      "fileName": "plainleadinglabel.png"
+    },
+    {
+      "rowType": "iconTwoTexts",
+      "category": "Content",
+      "cellId": 4,
+      "pageId": "row-preview-icontwotexts",
+      "rowId": "row-icontwotexts",
+      "fileName": "icontwotexts.png"
+    },
+    {
+      "rowType": "textTrailingIcon",
+      "category": "Content",
+      "cellId": 5,
+      "pageId": "row-preview-texttrailingicon",
+      "rowId": "row-texttrailingicon",
+      "fileName": "texttrailingicon.png"
+    },
+    {
+      "rowType": "textsAndColorSwatches",
+      "category": "Input",
+      "cellId": 6,
+      "pageId": "row-preview-textsandcolorswatches",
+      "rowId": "row-textsandcolorswatches",
+      "fileName": "textsandcolorswatches.png"
+    },
+    {
+      "rowType": "settingsDualText",
+      "category": "Content",
+      "cellId": 7,
+      "pageId": "row-preview-settingsdualtext",
+      "rowId": "row-settingsdualtext",
+      "fileName": "settingsdualtext.png"
+    },
+    {
+      "rowType": "insetSecondaryLabel",
+      "category": "Content",
+      "cellId": 9,
+      "pageId": "row-preview-insetsecondarylabel",
+      "rowId": "row-insetsecondarylabel",
+      "fileName": "insetsecondarylabel.png"
+    },
+    {
+      "rowType": "labelAndSwitch",
+      "category": "Input",
+      "cellId": 10,
+      "pageId": "row-preview-labelandswitch",
+      "rowId": "row-labelandswitch",
+      "fileName": "labelandswitch.png"
+    },
+    {
+      "rowType": "centeredLabel",
+      "category": "Content",
+      "cellId": 11,
+      "pageId": "row-preview-centeredlabel",
+      "rowId": "row-centeredlabel",
+      "fileName": "centeredlabel.png"
+    },
+    {
+      "rowType": "stackedLabels",
+      "category": "Content",
+      "cellId": 12,
+      "pageId": "row-preview-stackedlabels",
+      "rowId": "row-stackedlabels",
+      "fileName": "stackedlabels.png"
+    },
+    {
+      "rowType": "lightHeaderLabel",
+      "category": "Content",
+      "cellId": 13,
+      "pageId": "row-preview-lightheaderlabel",
+      "rowId": "row-lightheaderlabel",
+      "fileName": "lightheaderlabel.png"
+    },
+    {
+      "rowType": "centeredAlertLabel",
+      "category": "Content",
+      "cellId": 16,
+      "pageId": "row-preview-centeredalertlabel",
+      "rowId": "row-centeredalertlabel",
+      "fileName": "centeredalertlabel.png"
+    },
+    {
+      "rowType": "centeredPaddedLabel",
+      "category": "Content",
+      "cellId": 18,
+      "pageId": "row-preview-centeredpaddedlabel",
+      "rowId": "row-centeredpaddedlabel",
+      "fileName": "centeredpaddedlabel.png"
+    },
+    {
+      "rowType": "insetButton",
+      "category": "Action",
+      "cellId": 20,
+      "pageId": "row-preview-insetbutton",
+      "rowId": "row-insetbutton",
+      "fileName": "insetbutton.png"
+    },
+    {
+      "rowType": "singleImage",
+      "category": "Media",
+      "cellId": 21,
+      "pageId": "row-preview-singleimage",
+      "rowId": "row-singleimage",
+      "fileName": "singleimage.png"
+    },
+    {
+      "rowType": "spacer",
+      "category": "Layout",
+      "cellId": 22,
+      "pageId": "row-preview-spacer",
+      "rowId": "row-spacer",
+      "fileName": "spacer.png"
+    },
+    {
+      "rowType": "iconOverText",
+      "category": "Content",
+      "cellId": 23,
+      "pageId": "row-preview-iconovertext",
+      "rowId": "row-iconovertext",
+      "fileName": "iconovertext.png"
+    },
+    {
+      "rowType": "compactDualText",
+      "category": "Content",
+      "cellId": 24,
+      "pageId": "row-preview-compactdualtext",
+      "rowId": "row-compactdualtext",
+      "fileName": "compactdualtext.png"
+    },
+    {
+      "rowType": "map",
+      "category": "Location",
+      "cellId": 26,
+      "pageId": "row-preview-map",
+      "rowId": "row-map",
+      "fileName": "map.png"
+    },
+    {
+      "rowType": "titleSubtitleStacked",
+      "category": "Content",
+      "cellId": 27,
+      "pageId": "row-preview-titlesubtitlestacked",
+      "rowId": "row-titlesubtitlestacked",
+      "fileName": "titlesubtitlestacked.png"
+    },
+    {
+      "rowType": "fullWidthImageDisplay",
+      "category": "Media",
+      "cellId": 28,
+      "pageId": "row-preview-fullwidthimagedisplay",
+      "rowId": "row-fullwidthimagedisplay",
+      "fileName": "fullwidthimagedisplay.png"
+    },
+    {
+      "rowType": "labelAndStepper",
+      "category": "Input",
+      "cellId": 33,
+      "pageId": "row-preview-labelandstepper",
+      "rowId": "row-labelandstepper",
+      "fileName": "labelandstepper.png"
+    },
+    {
+      "rowType": "defaultSegmentedControl",
+      "category": "Input",
+      "cellId": 35,
+      "pageId": "row-preview-defaultsegmentedcontrol",
+      "rowId": "row-defaultsegmentedcontrol",
+      "fileName": "defaultsegmentedcontrol.png"
+    },
+    {
+      "rowType": "textArea",
+      "category": "Input",
+      "cellId": 36,
+      "pageId": "row-preview-textarea",
+      "rowId": "row-textarea",
+      "fileName": "textarea.png"
+    },
+    {
+      "rowType": "imageBackgroundLabel",
+      "category": "Media",
+      "cellId": 37,
+      "pageId": "row-preview-imagebackgroundlabel",
+      "rowId": "row-imagebackgroundlabel",
+      "fileName": "imagebackgroundlabel.png"
+    },
+    {
+      "rowType": "fiveStarRating",
+      "category": "Input",
+      "cellId": 38,
+      "pageId": "row-preview-fivestarrating",
+      "rowId": "row-fivestarrating",
+      "fileName": "fivestarrating.png"
+    },
+    {
+      "rowType": "textAboveImage",
+      "category": "Media",
+      "cellId": 39,
+      "pageId": "row-preview-textaboveimage",
+      "rowId": "row-textaboveimage",
+      "fileName": "textaboveimage.png"
+    },
+    {
+      "rowType": "imageTextArea",
+      "category": "Input",
+      "cellId": 40,
+      "pageId": "row-preview-imagetextarea",
+      "rowId": "row-imagetextarea",
+      "fileName": "imagetextarea.png"
+    },
+    {
+      "rowType": "titleStatusDescription",
+      "category": "Data",
+      "cellId": 42,
+      "pageId": "row-preview-titlestatusdescription",
+      "rowId": "row-titlestatusdescription",
+      "fileName": "titlestatusdescription.png"
+    },
+    {
+      "rowType": "textField",
+      "category": "Input",
+      "cellId": 43,
+      "pageId": "row-preview-textfield",
+      "rowId": "row-textfield",
+      "fileName": "textfield.png"
+    },
+    {
+      "rowType": "leadingImageText",
+      "category": "Media",
+      "cellId": 44,
+      "pageId": "row-preview-leadingimagetext",
+      "rowId": "row-leadingimagetext",
+      "fileName": "leadingimagetext.png"
+    },
+    {
+      "rowType": "labelAndTextField",
+      "category": "Input",
+      "cellId": 45,
+      "pageId": "row-preview-labelandtextfield",
+      "rowId": "row-labelandtextfield",
+      "fileName": "labelandtextfield.png"
+    },
+    {
+      "rowType": "centeredAccentLabel",
+      "category": "Content",
+      "cellId": 47,
+      "pageId": "row-preview-centeredaccentlabel",
+      "rowId": "row-centeredaccentlabel",
+      "fileName": "centeredaccentlabel.png"
+    },
+    {
+      "rowType": "iconWithTwoStackedTexts",
+      "category": "Content",
+      "cellId": 48,
+      "pageId": "row-preview-iconwithtwostackedtexts",
+      "rowId": "row-iconwithtwostackedtexts",
+      "fileName": "iconwithtwostackedtexts.png"
+    },
+    {
+      "rowType": "leadingIconMetadataTitle",
+      "category": "Content",
+      "cellId": 49,
+      "pageId": "row-preview-leadingiconmetadatatitle",
+      "rowId": "row-leadingiconmetadatatitle",
+      "fileName": "leadingiconmetadatatitle.png"
+    },
+    {
+      "rowType": "numberBadgeTitleSubtitleStatus",
+      "category": "Data",
+      "cellId": 51,
+      "pageId": "row-preview-numberbadgetitlesubtitlestatus",
+      "rowId": "row-numberbadgetitlesubtitlestatus",
+      "fileName": "numberbadgetitlesubtitlestatus.png"
+    },
+    {
+      "rowType": "badgeTitleSubtitleStatus",
+      "category": "Data",
+      "cellId": 52,
+      "pageId": "row-preview-badgetitlesubtitlestatus",
+      "rowId": "row-badgetitlesubtitlestatus",
+      "fileName": "badgetitlesubtitlestatus.png"
+    },
+    {
+      "rowType": "titleFootnoteMetricPairs",
+      "category": "Data",
+      "cellId": 53,
+      "pageId": "row-preview-titlefootnotemetricpairs",
+      "rowId": "row-titlefootnotemetricpairs",
+      "fileName": "titlefootnotemetricpairs.png"
+    },
+    {
+      "rowType": "imageMetadataTrailingTitleButton",
+      "category": "Media",
+      "cellId": 54,
+      "pageId": "row-preview-imagemetadatatrailingtitlebutton",
+      "rowId": "row-imagemetadatatrailingtitlebutton",
+      "fileName": "imagemetadatatrailingtitlebutton.png"
+    },
+    {
+      "rowType": "imageMetadata",
+      "category": "Media",
+      "cellId": 55,
+      "pageId": "row-preview-imagemetadata",
+      "rowId": "row-imagemetadata",
+      "fileName": "imagemetadata.png"
+    },
+    {
+      "rowType": "boldHeader",
+      "category": "Content",
+      "cellId": 56,
+      "pageId": "row-preview-boldheader",
+      "rowId": "row-boldheader",
+      "fileName": "boldheader.png"
+    },
+    {
+      "rowType": "button",
+      "category": "Action",
+      "cellId": 57,
+      "pageId": "row-preview-button",
+      "rowId": "row-button",
+      "fileName": "button.png"
+    },
+    {
+      "rowType": "titleHighlightTwoColumnStats",
+      "category": "Content",
+      "cellId": 58,
+      "pageId": "row-preview-titlehighlighttwocolumnstats",
+      "rowId": "row-titlehighlighttwocolumnstats",
+      "fileName": "titlehighlighttwocolumnstats.png"
+    },
+    {
+      "rowType": "titleHighlightTwoColumnDetailPairs",
+      "category": "Content",
+      "cellId": 59,
+      "pageId": "row-preview-titlehighlighttwocolumndetailpairs",
+      "rowId": "row-titlehighlighttwocolumndetailpairs",
+      "fileName": "titlehighlighttwocolumndetailpairs.png"
+    },
+    {
+      "rowType": "centeredTitleLabel",
+      "category": "Content",
+      "cellId": 60,
+      "pageId": "row-preview-centeredtitlelabel",
+      "rowId": "row-centeredtitlelabel",
+      "fileName": "centeredtitlelabel.png"
+    },
+    {
+      "rowType": "plainTextArea",
+      "category": "Input",
+      "cellId": 61,
+      "pageId": "row-preview-plaintextarea",
+      "rowId": "row-plaintextarea",
+      "fileName": "plaintextarea.png"
+    },
+    {
+      "rowType": "iconText",
+      "category": "Content",
+      "cellId": 62,
+      "pageId": "row-preview-icontext",
+      "rowId": "row-icontext",
+      "fileName": "icontext.png"
+    },
+    {
+      "rowType": "imageGridContent",
+      "category": "Media",
+      "cellId": 63,
+      "pageId": "row-preview-imagegridcontent",
+      "rowId": "row-imagegridcontent",
+      "fileName": "imagegridcontent.png"
+    },
+    {
+      "rowType": "largeImageDetailMetrics",
+      "category": "Data",
+      "cellId": 64,
+      "pageId": "row-preview-largeimagedetailmetrics",
+      "rowId": "row-largeimagedetailmetrics",
+      "fileName": "largeimagedetailmetrics.png"
+    },
+    {
+      "rowType": "fullWidthImageWithText",
+      "category": "Media",
+      "cellId": 65,
+      "pageId": "row-preview-fullwidthimagewithtext",
+      "rowId": "row-fullwidthimagewithtext",
+      "fileName": "fullwidthimagewithtext.png"
+    },
+    {
+      "rowType": "textAreaButton",
+      "category": "Input",
+      "cellId": 66,
+      "pageId": "row-preview-textareabutton",
+      "rowId": "row-textareabutton",
+      "fileName": "textareabutton.png"
+    },
+    {
+      "rowType": "pageCaptionDescription",
+      "category": "Content",
+      "cellId": 67,
+      "pageId": "row-preview-pagecaptiondescription",
+      "rowId": "row-pagecaptiondescription",
+      "fileName": "pagecaptiondescription.png"
+    },
+    {
+      "rowType": "pagedImageCarousel",
+      "category": "Media",
+      "cellId": 68,
+      "pageId": "row-preview-pagedimagecarousel",
+      "rowId": "row-pagedimagecarousel",
+      "fileName": "pagedimagecarousel.png"
+    },
+    {
+      "rowType": "avatarDualLabel",
+      "category": "Media",
+      "cellId": 69,
+      "pageId": "row-preview-avatarduallabel",
+      "rowId": "row-avatarduallabel",
+      "fileName": "avatarduallabel.png"
+    },
+    {
+      "rowType": "textAndIconButton",
+      "category": "Action",
+      "cellId": 78,
+      "pageId": "row-preview-textandiconbutton",
+      "rowId": "row-textandiconbutton",
+      "fileName": "textandiconbutton.png"
+    },
+    {
+      "rowType": "centeredIconText",
+      "category": "Content",
+      "cellId": 79,
+      "pageId": "row-preview-centeredicontext",
+      "rowId": "row-centeredicontext",
+      "fileName": "centeredicontext.png"
+    },
+    {
+      "rowType": "progressBar",
+      "category": "Data",
+      "cellId": 80,
+      "pageId": "row-preview-progressbar",
+      "rowId": "row-progressbar",
+      "fileName": "progressbar.png"
+    },
+    {
+      "rowType": "boldHeaderWithButton",
+      "category": "Action",
+      "cellId": 82,
+      "pageId": "row-preview-boldheaderwithbutton",
+      "rowId": "row-boldheaderwithbutton",
+      "fileName": "boldheaderwithbutton.png"
+    },
+    {
+      "rowType": "iconTextSwitch",
+      "category": "Input",
+      "cellId": 84,
+      "pageId": "row-preview-icontextswitch",
+      "rowId": "row-icontextswitch",
+      "fileName": "icontextswitch.png"
+    },
+    {
+      "rowType": "centeredTextBetweenButtons",
+      "category": "Action",
+      "cellId": 85,
+      "pageId": "row-preview-centeredtextbetweenbuttons",
+      "rowId": "row-centeredtextbetweenbuttons",
+      "fileName": "centeredtextbetweenbuttons.png"
+    },
+    {
+      "rowType": "iconTextIcon",
+      "category": "Content",
+      "cellId": 86,
+      "pageId": "row-preview-icontexticon",
+      "rowId": "row-icontexticon",
+      "fileName": "icontexticon.png"
+    },
+    {
+      "rowType": "iconLabelTextFieldStepper",
+      "category": "Input",
+      "cellId": 87,
+      "pageId": "row-preview-iconlabeltextfieldstepper",
+      "rowId": "row-iconlabeltextfieldstepper",
+      "fileName": "iconlabeltextfieldstepper.png"
+    },
+    {
+      "rowType": "tallIconTextSwitch",
+      "category": "Input",
+      "cellId": 88,
+      "pageId": "row-preview-tallicontextswitch",
+      "rowId": "row-tallicontextswitch",
+      "fileName": "tallicontextswitch.png"
+    },
+    {
+      "rowType": "textsAndTrailingColors",
+      "category": "Input",
+      "cellId": 89,
+      "pageId": "row-preview-textsandtrailingcolors",
+      "rowId": "row-textsandtrailingcolors",
+      "fileName": "textsandtrailingcolors.png"
+    },
+    {
+      "rowType": "imageLargeColorBlocks",
+      "category": "Input",
+      "cellId": 90,
+      "pageId": "row-preview-imagelargecolorblocks",
+      "rowId": "row-imagelargecolorblocks",
+      "fileName": "imagelargecolorblocks.png"
+    },
+    {
+      "rowType": "barChart",
+      "category": "Data",
+      "cellId": 91,
+      "pageId": "row-preview-barchart",
+      "rowId": "row-barchart",
+      "fileName": "barchart.png"
+    },
+    {
+      "rowType": "imageTextsButton",
+      "category": "Media",
+      "cellId": 92,
+      "pageId": "row-preview-imagetextsbutton",
+      "rowId": "row-imagetextsbutton",
+      "fileName": "imagetextsbutton.png"
+    },
+    {
+      "rowType": "labelTextFieldStepper",
+      "category": "Input",
+      "cellId": 93,
+      "pageId": "row-preview-labeltextfieldstepper",
+      "rowId": "row-labeltextfieldstepper",
+      "fileName": "labeltextfieldstepper.png"
+    },
+    {
+      "rowType": "wideLabelAndStepper",
+      "category": "Input",
+      "cellId": 94,
+      "pageId": "row-preview-widelabelandstepper",
+      "rowId": "row-widelabelandstepper",
+      "fileName": "widelabelandstepper.png"
+    },
+    {
+      "rowType": "imageBodyTextButton",
+      "category": "Media",
+      "cellId": 95,
+      "pageId": "row-preview-imagebodytextbutton",
+      "rowId": "row-imagebodytextbutton",
+      "fileName": "imagebodytextbutton.png"
+    },
+    {
+      "rowType": "circleProgress",
+      "category": "Data",
+      "cellId": 96,
+      "pageId": "row-preview-circleprogress",
+      "rowId": "row-circleprogress",
+      "fileName": "circleprogress.png"
+    },
+    {
+      "rowType": "textsAndCircleProgress",
+      "category": "Data",
+      "cellId": 97,
+      "pageId": "row-preview-textsandcircleprogress",
+      "rowId": "row-textsandcircleprogress",
+      "fileName": "textsandcircleprogress.png"
+    },
+    {
+      "rowType": "circleProgressAndTexts",
+      "category": "Data",
+      "cellId": 98,
+      "pageId": "row-preview-circleprogressandtexts",
+      "rowId": "row-circleprogressandtexts",
+      "fileName": "circleprogressandtexts.png"
+    },
+    {
+      "rowType": "datePicker",
+      "category": "Input",
+      "cellId": 99,
+      "pageId": "row-preview-datepicker",
+      "rowId": "row-datepicker",
+      "fileName": "datepicker.png"
+    },
+    {
+      "rowType": "lineBarChart",
+      "category": "Data",
+      "cellId": 100,
+      "pageId": "row-preview-linebarchart",
+      "rowId": "row-linebarchart",
+      "fileName": "linebarchart.png"
+    },
+    {
+      "rowType": "areaChart",
+      "category": "Data",
+      "cellId": 101,
+      "pageId": "row-preview-areachart",
+      "rowId": "row-areachart",
+      "fileName": "areachart.png"
+    },
+    {
+      "rowType": "rangeChart",
+      "category": "Data",
+      "cellId": 102,
+      "pageId": "row-preview-rangechart",
+      "rowId": "row-rangechart",
+      "fileName": "rangechart.png"
+    },
+    {
+      "rowType": "textsAndTrailingImage",
+      "category": "Media",
+      "cellId": 103,
+      "pageId": "row-preview-textsandtrailingimage",
+      "rowId": "row-textsandtrailingimage",
+      "fileName": "textsandtrailingimage.png"
+    },
+    {
+      "rowType": "largeImageAndTexts",
+      "category": "Media",
+      "cellId": 104,
+      "pageId": "row-preview-largeimageandtexts",
+      "rowId": "row-largeimageandtexts",
+      "fileName": "largeimageandtexts.png"
+    },
+    {
+      "rowType": "smallDatePicker",
+      "category": "Input",
+      "cellId": 105,
+      "pageId": "row-preview-smalldatepicker",
+      "rowId": "row-smalldatepicker",
+      "fileName": "smalldatepicker.png"
+    },
+    {
+      "rowType": "singleLabel",
+      "category": "Content",
+      "cellId": 106,
+      "pageId": "row-preview-singlelabel",
+      "rowId": "row-singlelabel",
+      "fileName": "singlelabel.png"
+    },
+    {
+      "rowType": "smallImageAndTexts",
+      "category": "Media",
+      "cellId": 107,
+      "pageId": "row-preview-smallimageandtexts",
+      "rowId": "row-smallimageandtexts",
+      "fileName": "smallimageandtexts.png"
+    },
+    {
+      "rowType": "textFieldStepperButton",
+      "category": "Input",
+      "cellId": 108,
+      "pageId": "row-preview-textfieldstepperbutton",
+      "rowId": "row-textfieldstepperbutton",
+      "fileName": "textfieldstepperbutton.png"
+    },
+    {
+      "rowType": "iconLabelSegmentedControl",
+      "category": "Input",
+      "cellId": 109,
+      "pageId": "row-preview-iconlabelsegmentedcontrol",
+      "rowId": "row-iconlabelsegmentedcontrol",
+      "fileName": "iconlabelsegmentedcontrol.png"
+    },
+    {
+      "rowType": "iconLabelButtonLabel",
+      "category": "Action",
+      "cellId": 110,
+      "pageId": "row-preview-iconlabelbuttonlabel",
+      "rowId": "row-iconlabelbuttonlabel",
+      "fileName": "iconlabelbuttonlabel.png"
+    },
+    {
+      "rowType": "slider",
+      "category": "Input",
+      "cellId": 111,
+      "pageId": "row-preview-slider",
+      "rowId": "row-slider",
+      "fileName": "slider.png"
+    },
+    {
+      "rowType": "weekDatePicker",
+      "category": "Input",
+      "cellId": 112,
+      "pageId": "row-preview-weekdatepicker",
+      "rowId": "row-weekdatepicker",
+      "fileName": "weekdatepicker.png"
+    },
+    {
+      "rowType": "mediaHero",
+      "category": "Media",
+      "cellId": 113,
+      "pageId": "row-preview-mediahero",
+      "rowId": "row-mediahero",
+      "fileName": "mediahero.png"
+    },
+    {
+      "rowType": "mediaCard",
+      "category": "Media",
+      "cellId": 114,
+      "pageId": "row-preview-mediacard",
+      "rowId": "row-mediacard",
+      "fileName": "mediacard.png"
+    },
+    {
+      "rowType": "statGrid",
+      "category": "Data",
+      "cellId": 115,
+      "pageId": "row-preview-statgrid",
+      "rowId": "row-statgrid",
+      "fileName": "statgrid.png"
+    },
+    {
+      "rowType": "statusList",
+      "category": "Data",
+      "cellId": 116,
+      "pageId": "row-preview-statuslist",
+      "rowId": "row-statuslist",
+      "fileName": "statuslist.png"
+    },
+    {
+      "rowType": "segmentedChip",
+      "category": "Input",
+      "cellId": 117,
+      "pageId": "row-preview-segmentedchip",
+      "rowId": "row-segmentedchip",
+      "fileName": "segmentedchip.png"
+    },
+    {
+      "rowType": "formSection",
+      "category": "Input",
+      "cellId": 118,
+      "pageId": "row-preview-formsection",
+      "rowId": "row-formsection",
+      "fileName": "formsection.png"
+    }
+  ]
+}

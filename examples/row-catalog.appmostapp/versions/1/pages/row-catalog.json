@@ -1,0 +1,637 @@
+{
+  "id": "row-catalog",
+  "index": 0,
+  "listProperties": {
+    "hidesStickySeparator": true,
+    "style": "p"
+  },
+  "parentId": "",
+  "parentRelationship": "none",
+  "properties": {
+    "hideFirstSection": false
+  },
+  "rows": [
+    {
+      "childProperties": {},
+      "contentPadding": {
+        "bottom": 2,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 20
+      },
+      "id": "intro-row-catalog",
+      "labelModels": [
+        {
+          "fontSize": 28,
+          "fontWeight": "bold",
+          "lineBreak": "yes",
+          "text": "Row Catalog"
+        }
+      ],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 36
+      },
+      "type": "singleLabel"
+    },
+    {
+      "childProperties": {},
+      "contentPadding": {
+        "bottom": 14,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 2
+      },
+      "id": "intro-body-row-catalog",
+      "labelModels": [
+        {
+          "fontSize": 15,
+          "lineBreak": "yes",
+          "text": "Android Compose rendering from the public Appmost row catalog.",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        }
+      ],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 44
+      },
+      "type": "singleLabel"
+    },
+    {
+      "appActions": [
+        {
+          "autoEditTitle": true,
+          "targetId": "docs-action",
+          "type": "openAnotherPage"
+        }
+      ],
+      "buttons": [
+        {
+          "adaptiveColor": {
+            "adaptive": true,
+            "dc": {
+              "hex": "48D2BC"
+            },
+            "lc": {
+              "hex": "1D8273"
+            }
+          },
+          "enabled": {
+            "type": "boolean",
+            "value": {
+              "childType": "b",
+              "value": "true"
+            }
+          },
+          "extraPadding": {
+            "bottom": 0,
+            "left": 12,
+            "linkedType": "none",
+            "right": 12,
+            "top": 0
+          },
+          "imageNameVarExpVal": {
+            "type": "iconName",
+            "value": {
+              "value": "chevron-right"
+            }
+          },
+          "manualImageTextSpacing": 4,
+          "roundMode": "r",
+          "style": "clear",
+          "titleVarExp": {
+            "type": "string",
+            "value": {
+              "childType": "s",
+              "value": ""
+            }
+          }
+        }
+      ],
+      "childProperties": {},
+      "contentPadding": {
+        "bottom": 4,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 4
+      },
+      "id": "overview-action",
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "text": "Action"
+        },
+        {
+          "text": "Open examples",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        }
+      ],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 44
+      },
+      "type": "textAndIconButton"
+    },
+    {
+      "appActions": [
+        {
+          "autoEditTitle": true,
+          "targetId": "docs-content",
+          "type": "openAnotherPage"
+        }
+      ],
+      "buttons": [
+        {
+          "adaptiveColor": {
+            "adaptive": true,
+            "dc": {
+              "hex": "48D2BC"
+            },
+            "lc": {
+              "hex": "1D8273"
+            }
+          },
+          "enabled": {
+            "type": "boolean",
+            "value": {
+              "childType": "b",
+              "value": "true"
+            }
+          },
+          "extraPadding": {
+            "bottom": 0,
+            "left": 12,
+            "linkedType": "none",
+            "right": 12,
+            "top": 0
+          },
+          "imageNameVarExpVal": {
+            "type": "iconName",
+            "value": {
+              "value": "chevron-right"
+            }
+          },
+          "manualImageTextSpacing": 4,
+          "roundMode": "r",
+          "style": "clear",
+          "titleVarExp": {
+            "type": "string",
+            "value": {
+              "childType": "s",
+              "value": ""
+            }
+          }
+        }
+      ],
+      "childProperties": {},
+      "contentPadding": {
+        "bottom": 4,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 4
+      },
+      "id": "overview-content",
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "text": "Content"
+        },
+        {
+          "text": "Open examples",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        }
+      ],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 44
+      },
+      "type": "textAndIconButton"
+    },
+    {
+      "appActions": [
+        {
+          "autoEditTitle": true,
+          "targetId": "docs-input",
+          "type": "openAnotherPage"
+        }
+      ],
+      "buttons": [
+        {
+          "adaptiveColor": {
+            "adaptive": true,
+            "dc": {
+              "hex": "48D2BC"
+            },
+            "lc": {
+              "hex": "1D8273"
+            }
+          },
+          "enabled": {
+            "type": "boolean",
+            "value": {
+              "childType": "b",
+              "value": "true"
+            }
+          },
+          "extraPadding": {
+            "bottom": 0,
+            "left": 12,
+            "linkedType": "none",
+            "right": 12,
+            "top": 0
+          },
+          "imageNameVarExpVal": {
+            "type": "iconName",
+            "value": {
+              "value": "chevron-right"
+            }
+          },
+          "manualImageTextSpacing": 4,
+          "roundMode": "r",
+          "style": "clear",
+          "titleVarExp": {
+            "type": "string",
+            "value": {
+              "childType": "s",
+              "value": ""
+            }
+          }
+        }
+      ],
+      "childProperties": {},
+      "contentPadding": {
+        "bottom": 4,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 4
+      },
+      "id": "overview-input",
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "text": "Input"
+        },
+        {
+          "text": "Open examples",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        }
+      ],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 44
+      },
+      "type": "textAndIconButton"
+    },
+    {
+      "appActions": [
+        {
+          "autoEditTitle": true,
+          "targetId": "docs-layout",
+          "type": "openAnotherPage"
+        }
+      ],
+      "buttons": [
+        {
+          "adaptiveColor": {
+            "adaptive": true,
+            "dc": {
+              "hex": "48D2BC"
+            },
+            "lc": {
+              "hex": "1D8273"
+            }
+          },
+          "enabled": {
+            "type": "boolean",
+            "value": {
+              "childType": "b",
+              "value": "true"
+            }
+          },
+          "extraPadding": {
+            "bottom": 0,
+            "left": 12,
+            "linkedType": "none",
+            "right": 12,
+            "top": 0
+          },
+          "imageNameVarExpVal": {
+            "type": "iconName",
+            "value": {
+              "value": "chevron-right"
+            }
+          },
+          "manualImageTextSpacing": 4,
+          "roundMode": "r",
+          "style": "clear",
+          "titleVarExp": {
+            "type": "string",
+            "value": {
+              "childType": "s",
+              "value": ""
+            }
+          }
+        }
+      ],
+      "childProperties": {},
+      "contentPadding": {
+        "bottom": 4,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 4
+      },
+      "id": "overview-layout",
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "text": "Layout"
+        },
+        {
+          "text": "Open examples",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        }
+      ],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 44
+      },
+      "type": "textAndIconButton"
+    },
+    {
+      "appActions": [
+        {
+          "autoEditTitle": true,
+          "targetId": "docs-media",
+          "type": "openAnotherPage"
+        }
+      ],
+      "buttons": [
+        {
+          "adaptiveColor": {
+            "adaptive": true,
+            "dc": {
+              "hex": "48D2BC"
+            },
+            "lc": {
+              "hex": "1D8273"
+            }
+          },
+          "enabled": {
+            "type": "boolean",
+            "value": {
+              "childType": "b",
+              "value": "true"
+            }
+          },
+          "extraPadding": {
+            "bottom": 0,
+            "left": 12,
+            "linkedType": "none",
+            "right": 12,
+            "top": 0
+          },
+          "imageNameVarExpVal": {
+            "type": "iconName",
+            "value": {
+              "value": "chevron-right"
+            }
+          },
+          "manualImageTextSpacing": 4,
+          "roundMode": "r",
+          "style": "clear",
+          "titleVarExp": {
+            "type": "string",
+            "value": {
+              "childType": "s",
+              "value": ""
+            }
+          }
+        }
+      ],
+      "childProperties": {},
+      "contentPadding": {
+        "bottom": 4,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 4
+      },
+      "id": "overview-media",
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "text": "Media"
+        },
+        {
+          "text": "Open examples",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        }
+      ],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 44
+      },
+      "type": "textAndIconButton"
+    },
+    {
+      "appActions": [
+        {
+          "autoEditTitle": true,
+          "targetId": "docs-data",
+          "type": "openAnotherPage"
+        }
+      ],
+      "buttons": [
+        {
+          "adaptiveColor": {
+            "adaptive": true,
+            "dc": {
+              "hex": "48D2BC"
+            },
+            "lc": {
+              "hex": "1D8273"
+            }
+          },
+          "enabled": {
+            "type": "boolean",
+            "value": {
+              "childType": "b",
+              "value": "true"
+            }
+          },
+          "extraPadding": {
+            "bottom": 0,
+            "left": 12,
+            "linkedType": "none",
+            "right": 12,
+            "top": 0
+          },
+          "imageNameVarExpVal": {
+            "type": "iconName",
+            "value": {
+              "value": "chevron-right"
+            }
+          },
+          "manualImageTextSpacing": 4,
+          "roundMode": "r",
+          "style": "clear",
+          "titleVarExp": {
+            "type": "string",
+            "value": {
+              "childType": "s",
+              "value": ""
+            }
+          }
+        }
+      ],
+      "childProperties": {},
+      "contentPadding": {
+        "bottom": 4,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 4
+      },
+      "id": "overview-data",
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "text": "Data"
+        },
+        {
+          "text": "Open examples",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        }
+      ],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 44
+      },
+      "type": "textAndIconButton"
+    },
+    {
+      "appActions": [
+        {
+          "autoEditTitle": true,
+          "targetId": "docs-location",
+          "type": "openAnotherPage"
+        }
+      ],
+      "buttons": [
+        {
+          "adaptiveColor": {
+            "adaptive": true,
+            "dc": {
+              "hex": "48D2BC"
+            },
+            "lc": {
+              "hex": "1D8273"
+            }
+          },
+          "enabled": {
+            "type": "boolean",
+            "value": {
+              "childType": "b",
+              "value": "true"
+            }
+          },
+          "extraPadding": {
+            "bottom": 0,
+            "left": 12,
+            "linkedType": "none",
+            "right": 12,
+            "top": 0
+          },
+          "imageNameVarExpVal": {
+            "type": "iconName",
+            "value": {
+              "value": "chevron-right"
+            }
+          },
+          "manualImageTextSpacing": 4,
+          "roundMode": "r",
+          "style": "clear",
+          "titleVarExp": {
+            "type": "string",
+            "value": {
+              "childType": "s",
+              "value": ""
+            }
+          }
+        }
+      ],
+      "childProperties": {},
+      "contentPadding": {
+        "bottom": 4,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 4
+      },
+      "id": "overview-location",
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "text": "Location"
+        },
+        {
+          "text": "Open examples",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        }
+      ],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 44
+      },
+      "type": "textAndIconButton"
+    }
+  ],
+  "title": "Row Catalog",
+  "type": "normal"
+}

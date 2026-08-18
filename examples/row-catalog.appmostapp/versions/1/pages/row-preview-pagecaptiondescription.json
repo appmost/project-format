@@ -1,0 +1,72 @@
+{
+  "id": "row-preview-pagecaptiondescription",
+  "index": 66,
+  "listProperties": {
+    "hidesStickySeparator": true,
+    "style": "p"
+  },
+  "parentId": "",
+  "parentRelationship": "none",
+  "properties": {
+    "hideFirstSection": false
+  },
+  "rows": [
+    {
+      "buttons": [],
+      "chartViewModels": [],
+      "childProperties": {},
+      "colorViews": [],
+      "contentPadding": {
+        "bottom": 6,
+        "left": 16,
+        "linkedType": "none",
+        "right": 16,
+        "top": 6
+      },
+      "fiveStarViews": [],
+      "id": "row-pagecaptiondescription",
+      "images": [],
+      "labelModels": [
+        {
+          "fontWeight": "semibold",
+          "text": "Release notes"
+        },
+        {
+          "text": "1.8",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        },
+        {
+          "lineBreak": "yes",
+          "text": "Independent Compose templates for every supported row.",
+          "textColor": {
+            "type": "adaptiveColor",
+            "value": {
+              "value": "secondaryLabel"
+            }
+          }
+        }
+      ],
+      "mapProperties": [],
+      "minCellDynamicHeight": {
+        "mode": "fixedValue",
+        "value": 56
+      },
+      "progressBarViews": [],
+      "segmentedControls": [],
+      "sliders": [],
+      "steppers": [],
+      "switches": [],
+      "textFields": [],
+      "textViews": [],
+      "type": "pageCaptionDescription",
+      "weekDatePickers": []
+    }
+  ],
+  "title": "Page caption description",
+  "type": "normal"
+}
