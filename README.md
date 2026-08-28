@@ -26,15 +26,17 @@ MyProject.appmostapp/
 numbered directory contains that version's settings, pages, and optional
 localizations. Shared resources live at the package root.
 
-See [the 2.0 specification](spec/2.0.md) for the normative requirements and
-[appmost.ai/format](https://www.appmost.ai/format/) for the searchable row
-catalog and visual reference.
+See [the 2.0 specification](spec/2.0.md) for the normative requirements,
+[the row catalog](https://www.appmost.ai/format/rows/) for renderer support,
+and [the chart reference](https://www.appmost.ai/format/charts/) for chart
+properties and cross-platform examples.
 
 ## Repository contents
 
 - `spec/2.0.md` — the format specification
 - `schemas/2.0/` — schemas for app, version, and page documents
 - `registry/2.0.json` — canonical type names and renderer support
+- `registry/chart-properties-2.0.json` — chart properties, enum values, and preset defaults
 - `examples/minimal.appmostapp/` — a small valid project
 - `examples/row-catalog.appmostapp/` — the cross-platform row reference project
 - `validator/` — the dependency-free reference validator and its tests
@@ -103,6 +105,19 @@ Validate it with:
 ```sh
 npm run validate -- examples/row-catalog.appmostapp
 ```
+
+## Chart properties
+
+The four chart row types are `barChart`, `lineBarChart`, `areaChart`, and
+`rangeChart`. They read their data and presentation from
+`chartViewModels`. The machine-readable
+[`registry/chart-properties-2.0.json`](registry/chart-properties-2.0.json)
+file lists all public chart properties, enum values, applicable row types, and
+preset defaults.
+
+The [visual chart reference](https://www.appmost.ai/format/charts/) pairs that
+contract with matching iOS, Android, and Web output in light and dark
+appearances.
 
 ## License
 

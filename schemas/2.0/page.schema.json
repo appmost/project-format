@@ -3,9 +3,12 @@
   "$id": "https://www.appmost.ai/format/schemas/2.0/page.schema.json",
   "title": "Appmost Project Format 2.0 page",
   "type": "object",
-  "required": ["id"],
+  "required": ["id", "type"],
   "properties": {
     "id": { "type": "string", "minLength": 1 },
+    "type": {
+      "enum": ["normal", "tabbar", "paginated", "webview", "map", "camera", "login", "bankIdLogin", "none"]
+    },
     "rows": {
       "type": "array",
       "items": { "$ref": "#/$defs/row" }
@@ -39,6 +42,10 @@
           "type": "array",
           "items": { "$ref": "#/$defs/action" }
         },
+        "chartViewModels": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/chartViewModel" }
+        },
         "childProperties": {
           "type": "object",
           "properties": {
@@ -48,6 +55,46 @@
             }
           },
           "additionalProperties": true
+        },
+        "extensions": { "$ref": "#/$defs/extensions" }
+      },
+      "additionalProperties": true
+    },
+    "chartDataPoint": {
+      "type": "object",
+      "required": ["label", "value"],
+      "properties": {
+        "label": { "type": "string" },
+        "value": { "type": "number" },
+        "minValue": { "type": "number" },
+        "maxValue": { "type": "number" },
+        "extensions": { "$ref": "#/$defs/extensions" }
+      },
+      "additionalProperties": true
+    },
+    "chartViewModel": {
+      "type": "object",
+      "properties": {
+        "chartStyle": {
+          "enum": ["standard", "compactTrend", "sparkline", "metricInline"]
+        },
+        "usesCustomChartStyle": { "type": "boolean" },
+        "showYAxis": { "type": "boolean" },
+        "showXAxis": { "type": "boolean" },
+        "tintColor": { "type": ["object", "null"] },
+        "highlightLargestBar": { "type": "boolean" },
+        "barTopCornerRadius": { "type": "integer", "minimum": 0 },
+        "usesGradient": { "type": "boolean" },
+        "lineWidth": { "type": "number", "exclusiveMinimum": 0 },
+        "showGridLines": { "type": "boolean" },
+        "showSymbols": { "type": "boolean" },
+        "yAxisPosition": { "enum": ["leading", "trailing"] },
+        "interpolation": {
+          "enum": ["linear", "monotone", "catmullRom", "cardinal", "stepStart", "stepCenter", "stepEnd"]
+        },
+        "dataPoints": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/chartDataPoint" }
         },
         "extensions": { "$ref": "#/$defs/extensions" }
       },

@@ -173,18 +173,6 @@
       }
     },
     {
-      "type": "insetButton",
-      "name": "Inset button",
-      "category": "Action",
-      "summary": "An inset action button.",
-      "introducedIn": "2.0.0",
-      "support": {
-        "iosSwiftUI": true,
-        "androidCompose": true,
-        "appmostDesignPreview": true
-      }
-    },
-    {
       "type": "singleImage",
       "name": "Single image",
       "category": "Media",
@@ -1125,6 +1113,18 @@
       "name": "Form section",
       "category": "Input",
       "summary": "A grouped section of form controls.",
+      "introducedIn": "2.0.0",
+      "support": {
+        "iosSwiftUI": true,
+        "androidCompose": true,
+        "appmostDesignPreview": true
+      }
+    },
+    {
+      "type": "centeredHorizontalIconText",
+      "name": "Centered horizontal icon text",
+      "category": "Content",
+      "summary": "An icon and text label arranged horizontally and centered as a group.",
       "introducedIn": "2.0.0",
       "support": {
         "iosSwiftUI": true,

@@ -109,12 +109,12 @@
       "fileName": "centeredpaddedlabel.png"
     },
     {
-      "rowType": "insetButton",
-      "category": "Action",
-      "cellId": 20,
-      "pageId": "row-preview-insetbutton",
-      "rowId": "row-insetbutton",
-      "fileName": "insetbutton.png"
+      "rowType": "centeredHorizontalIconText",
+      "category": "Content",
+      "cellId": 119,
+      "pageId": "row-preview-centeredhorizontalicontext",
+      "rowId": "row-centeredhorizontalicontext",
+      "fileName": "centeredhorizontalicontext.png"
     },
     {
       "rowType": "singleImage",

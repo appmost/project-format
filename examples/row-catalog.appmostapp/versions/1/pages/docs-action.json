@@ -154,7 +154,7 @@
       "switches": [],
       "textFields": [],
       "textViews": [],
-      "type": "insetButton",
+      "type": "button",
       "weekDatePickers": []
     },
     {
