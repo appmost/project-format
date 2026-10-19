@@ -19,7 +19,7 @@ async function temporaryExample() {
 }
 
 test('the minimal example is a valid format 2.0 package', async () => {
-  const result = await validateProject(example);
+  const result = await validateProject(example, { formatVersion: '2.0.0' });
   assert.deepEqual(result, {
     currentVersion: 1,
     versionNumbers: [1],
@@ -29,7 +29,7 @@ test('the minimal example is a valid format 2.0 package', async () => {
 });
 
 test('the row catalog covers every registered row type', async () => {
-  const result = await validateProject(rowCatalog);
+  const result = await validateProject(rowCatalog, { formatVersion: '2.0.0' });
   assert.equal(result.currentVersion, 1);
   assert.deepEqual(result.versionNumbers, [1]);
 

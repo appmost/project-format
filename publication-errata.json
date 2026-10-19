@@ -1,0 +1,80 @@
+{
+  "errataVersion": 1,
+  "id": "canonical-2.0-and-2.1-introduction-metadata",
+  "canonicalBaseline": {
+    "version": "2.0.0",
+    "repository": "https://github.com/appmost/project-format",
+    "commit": "753ad8ae3dcb0369ab3bfb0b09d144d2ade71104",
+    "artifacts": {
+      "registry/2.0.json": "2d64b69aeb52ab27037636f345e82719fece2bd5092e913149913a499e091747",
+      "registry/chart-properties-2.0.json": "93310b0d2bb8ff5983c7f743335e4b552e766b62eb6772616fa9d31814efcf4b",
+      "schemas/2.0/app.schema.json": "515cfb108bc3f800c91c3f0dcef6da5bfe9566e649ccdfa9a41548a1517cce61",
+      "schemas/2.0/page.schema.json": "6f9d61350474cd6a58c1570339637edaa94be975da49e202a92381a3c207c4e1",
+      "schemas/2.0/version.schema.json": "676267709d419a04dced086ecd1ab52a56bbb343728561ccc85a6a6ba80931ce"
+    }
+  },
+  "observedMislabeledWebsite": {
+    "versionLabel": "2.0.0",
+    "hostingVersion": "sites/appmost-ai/versions/561515fb7eb65b25",
+    "evidencePath": "docs/verification/format-version-20261018/deployment-receipt.json",
+    "archivedDirectory": "publication-history/observed-web-2.0",
+    "artifacts": {
+      "registry/2.0.json": "bd464c6e83443af36282981cc2c3398748426031d1364cad40456f20783a34a8",
+      "registry/chart-properties-2.0.json": "5d1fbc2ebc0068ca896ac2344c375389964cdcb0c504b25eac696263ebb2e6c0",
+      "schemas/2.0/app.schema.json": "515cfb108bc3f800c91c3f0dcef6da5bfe9566e649ccdfa9a41548a1517cce61",
+      "schemas/2.0/page.schema.json": "b3d339160bb635eb492ca9117627e6ab9792f92bb0f7c58fa8538a9def5b6170",
+      "schemas/2.0/version.schema.json": "4f34c6c1f939b7e6a6ffdbc437d25438ee24eb421a9afad0ac86db319dc019fd"
+    },
+    "firstGlobalWebsitePublication": "unknown",
+    "meaning": "These later website bytes were observed under 2.0 URLs; they do not redefine the independently preserved canonical Git specification.",
+    "manifest": {
+      "path": "observed-releases.json",
+      "sha256": "5170b7dbb9ecb4cae47bd4fe6afd0c04d8deae19ec4463f3b2a3cd9bc5a44921",
+      "sourceCommit": "64015f8ded5e0443690fbe560071136c2fd16df7"
+    }
+  },
+  "historicalRelease": "2.1.0",
+  "historicalRegistrySHA256": "ed671760336431af77860efe4312c5233dc2fbc469954edfbaa3a7d64040bf01",
+  "correctedRelease": "2.1.1",
+  "correctedRegistrySHA256": "035c67eb8e93b57ec22371ce0d910902e1d717f2df9f1a3b055f250e8ccf0e3d",
+  "corrections": [
+    {
+      "group": "rowTypes",
+      "type": "donutChart",
+      "publishedIntroducedIn": "2.0.0",
+      "canonicalIntroducedIn": "2.1.0"
+    },
+    {
+      "group": "webAppearances",
+      "type": "standard",
+      "publishedIntroducedIn": "2.0.0",
+      "canonicalIntroducedIn": "2.1.0"
+    },
+    {
+      "group": "webAppearances",
+      "type": "glass",
+      "publishedIntroducedIn": "2.0.0",
+      "canonicalIntroducedIn": "2.1.0"
+    },
+    {
+      "group": "webAppearances",
+      "type": "brand",
+      "publishedIntroducedIn": "2.0.0",
+      "canonicalIntroducedIn": "2.1.0"
+    },
+    {
+      "group": "webAppearances",
+      "type": "material",
+      "publishedIntroducedIn": "2.0.0",
+      "canonicalIntroducedIn": "2.1.0"
+    }
+  ],
+  "scope": "Exactly five published introduction literals are historically incorrect relative to canonical 2.0. No runtime normalization, fallback, new semantic type or schema field is authorized by this record.",
+  "historicalArtifacts": {
+    "registry/2.1.json": "ed671760336431af77860efe4312c5233dc2fbc469954edfbaa3a7d64040bf01",
+    "registry/chart-properties-2.1.json": "ae6cd130d20012da65addb76c2c8b05a73f0b51312049230600168b7106bb235",
+    "schemas/2.1/app.schema.json": "cee24de2e73aa936c10f09202de6f6b52ad582ab53029af00e8b577fec4653b9",
+    "schemas/2.1/page.schema.json": "14bf9e8438fdbad35d92a3ec9e84953ae13cf415e409f1f6e0787e2cdb2949d9",
+    "schemas/2.1/version.schema.json": "cc0588964c611dbdf7b3d069945b11442367e9a40645ab4be8248e615cdf738f"
+  }
+}

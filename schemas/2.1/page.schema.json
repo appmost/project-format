@@ -1,0 +1,444 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.appmost.ai/format/schemas/2.1/page.schema.json",
+  "title": "Appmost Project Format 2.1 page",
+  "type": "object",
+  "required": ["id", "type"],
+  "properties": {
+    "id": { "type": "string", "minLength": 1 },
+    "type": {
+      "enum": ["normal", "tabbar", "paginated", "webview", "map", "camera", "login", "bankIdLogin", "none", "adaptive"]
+    },
+    "rows": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/row" }
+    },
+    "leftNavBarButtons": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/barButtonItem" }
+    },
+    "rightNavBarButtons": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/barButtonItem" }
+    },
+    "bottomToolbarItems": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/barButtonItem" }
+    },
+    "appearance": {
+      "type": "object",
+      "properties": {
+        "backgroundOverlays": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/backgroundOverlay"
+          }
+        }
+      },
+      "additionalProperties": true
+    },
+    "extensions": { "$ref": "#/$defs/extensions" },
+    "layout": { "$ref": "#/$defs/adaptiveLayout" }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "backgroundOverlay": {
+      "type": "object",
+      "required": [
+        "stops"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "direction": {
+          "enum": [
+            "topToBottom",
+            "bottomToTop",
+            "leftToRight",
+            "rightToLeft"
+          ],
+          "default": "topToBottom"
+        },
+        "start": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "default": 0
+        },
+        "end": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "default": 1
+        },
+        "anchorRowId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "offset": {
+          "type": "number",
+          "default": -80
+        },
+        "length": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "default": 180
+        },
+        "stops": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "$ref": "#/$defs/backgroundOverlayStop"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "backgroundOverlayStop": {
+      "type": "object",
+      "required": [
+        "location",
+        "color",
+        "opacity"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "location": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "color": {
+          "type": "string",
+          "pattern": "^[0-9a-fA-F]{6}$"
+        },
+        "darkColor": {
+          "type": "string",
+          "pattern": "^[0-9a-fA-F]{6}$"
+        },
+        "opacity": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "extensions": {
+      "type": "object",
+      "propertyNames": { "pattern": "^[a-z0-9.-]+/[a-zA-Z0-9._-]+$" }
+    },
+    "action": {
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "configuration": {
+          "type": "object"
+        },
+        "extensions": {
+          "$ref": "#/$defs/extensions"
+        }
+      },
+      "additionalProperties": true,
+      "allOf": [
+        {
+          "if": {
+            "required": [
+              "configuration"
+            ],
+            "properties": {
+              "configuration": {
+                "type": "object",
+                "anyOf": [
+                  {
+                    "required": [
+                      "containerId"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "paneId"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "operation"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "targetId",
+              "configuration"
+            ],
+            "properties": {
+              "targetId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "configuration": {
+                "type": "object",
+                "required": [
+                  "containerId",
+                  "paneId",
+                  "operation"
+                ],
+                "properties": {
+                  "containerId": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "paneId": {
+                    "enum": [
+                      "primary",
+                      "secondary"
+                    ]
+                  },
+                  "operation": {
+                    "const": "replace"
+                  },
+                  "openPage": {
+                    "type": "object",
+                    "properties": {
+                      "openIndirect": {
+                        "const": false
+                      },
+                      "awaitRes": {
+                        "const": "none"
+                      }
+                    }
+                  }
+                }
+              },
+              "type": {
+                "const": "openAnotherPage"
+              },
+              "openWithSheetProperties": {
+                "type": "null"
+              },
+              "openIndirect": {
+                "const": false
+              }
+            }
+          }
+        }
+      ]
+    },
+    "variableExpressionValue": {
+      "type": "object",
+      "required": ["type"],
+      "properties": {
+        "type": { "type": "string", "minLength": 1 },
+        "resolvedText": { "type": "string" },
+        "variableReference": { "type": "string" },
+        "function": { "type": "object" },
+        "value": {},
+        "extensions": { "$ref": "#/$defs/extensions" }
+      },
+      "additionalProperties": true
+    },
+    "barButtonItem": {
+      "type": "object",
+      "properties": {
+        "kind": { "enum": ["button", "flexibleSpace", "fixedSpace"] },
+        "imageNameVarExpVal": { "$ref": "#/$defs/variableExpressionValue" },
+        "clickActions": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/action" }
+        },
+        "isEnabled": { "$ref": "#/$defs/variableExpressionValue" },
+        "isVisible": { "$ref": "#/$defs/variableExpressionValue" },
+        "badgeText": { "$ref": "#/$defs/variableExpressionValue" },
+        "extensions": { "$ref": "#/$defs/extensions" }
+      },
+      "additionalProperties": true
+    },
+    "row": {
+      "type": "object",
+      "required": ["id", "type"],
+      "properties": {
+        "id": { "type": "string", "minLength": 1 },
+        "type": { "type": "string", "minLength": 1 },
+        "role": { "enum": ["header", "defaultHeader", "footer"] },
+        "appActions": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/action" }
+        },
+        "chartViewModels": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/chartViewModel" }
+        },
+        "childProperties": {
+          "type": "object",
+          "properties": {
+            "children": {
+              "type": "array",
+              "items": { "$ref": "#/$defs/row" }
+            }
+          },
+          "additionalProperties": true
+        },
+        "extensions": { "$ref": "#/$defs/extensions" }
+      },
+      "additionalProperties": true
+    },
+    "chartDataPoint": {
+      "type": "object",
+      "required": ["label", "value"],
+      "properties": {
+        "label": { "type": "string" },
+        "value": { "type": "number" },
+        "minValue": { "type": "number" },
+        "maxValue": { "type": "number" },
+        "extensions": { "$ref": "#/$defs/extensions" }
+      },
+      "additionalProperties": true
+    },
+    "chartViewModel": {
+      "type": "object",
+      "properties": {
+        "chartStyle": {
+          "enum": ["standard", "compactTrend", "sparkline", "metricInline"]
+        },
+        "usesCustomChartStyle": { "type": "boolean" },
+        "showYAxis": { "type": "boolean" },
+        "showXAxis": { "type": "boolean" },
+        "tintColor": { "type": ["object", "null"] },
+        "highlightLargestBar": { "type": "boolean" },
+        "barTopCornerRadius": { "type": "integer", "minimum": 0 },
+        "usesGradient": { "type": "boolean" },
+        "lineWidth": { "type": "number", "exclusiveMinimum": 0 },
+        "showGridLines": { "type": "boolean" },
+        "showSymbols": { "type": "boolean" },
+        "yAxisPosition": { "enum": ["leading", "trailing"] },
+        "interpolation": {
+          "enum": ["linear", "monotone", "catmullRom", "cardinal", "stepStart", "stepCenter", "stepEnd"]
+        },
+        "dataPoints": {
+          "type": "array",
+          "items": { "$ref": "#/$defs/chartDataPoint" }
+        },
+        "highlightedDataPointIndex": { "type": ["integer", "null"], "minimum": 0 },
+        "extensions": { "$ref": "#/$defs/extensions" }
+      },
+      "additionalProperties": true
+    },
+    "adaptivePane": {
+      "type": "object",
+      "required": [
+        "pageId"
+      ],
+      "properties": {
+        "pageId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "emptyPageId": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "adaptiveLayout": {
+      "type": "object",
+      "required": [
+        "kind",
+        "panes"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "navigationSplit",
+            "split"
+          ]
+        },
+        "panes": {
+          "type": "object",
+          "required": [
+            "primary",
+            "secondary"
+          ],
+          "properties": {
+            "primary": {
+              "$ref": "#/$defs/adaptivePane"
+            },
+            "secondary": {
+              "$ref": "#/$defs/adaptivePane"
+            }
+          },
+          "additionalProperties": false
+        },
+        "compact": {
+          "type": "object",
+          "required": [
+            "behavior",
+            "initialPane"
+          ],
+          "properties": {
+            "behavior": {
+              "const": "stack"
+            },
+            "initialPane": {
+              "enum": [
+                "primary",
+                "secondary"
+              ]
+            }
+          },
+          "additionalProperties": false
+        },
+        "expanded": {
+          "type": "object",
+          "required": [
+            "sizing"
+          ],
+          "properties": {
+            "sizing": {
+              "const": "automatic"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "adaptive"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "layout"
+        ]
+      },
+      "else": {
+        "not": {
+          "required": [
+            "layout"
+          ]
+        }
+      }
+    }
+  ]
+}

@@ -2,6 +2,10 @@
 import { readFile, readdir, realpath } from 'node:fs/promises';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import { loadFormatRelease } from './releases.mjs';
+import { validateReferenceSchema } from './reference-schema.mjs';
+import { validateAdaptivePages } from './adaptive-layout.mjs';
+import { validateBackgroundOverlays } from './background-overlays.mjs';
 
 const MAX_VERSION = 2147483647;
 const EXTENSION_NAME = /^[a-z0-9.-]+\/[a-zA-Z0-9._-]+$/;
@@ -27,7 +31,9 @@ function isObject(value) {
 async function readJson(filePath, displayPath) {
   let source;
   try {
-    source = await readFile(filePath, 'utf8');
+    const bytes = await readFile(filePath);
+    try { source = new TextDecoder('utf-8', { fatal: true }).decode(bytes); }
+    catch { fail('invalid_json', displayPath + ' must contain valid UTF-8 JSON.'); }
   } catch (error) {
     if (error?.code === 'ENOENT') fail('invalid_package', `Missing ${displayPath}.`);
     throw error;
@@ -84,7 +90,7 @@ function extensions(value, jsonPath = '$') {
       for (const name of Object.keys(child)) {
         if (!EXTENSION_NAME.test(name)) fail('invalid_package', `Extension '${name}' is not namespaced.`, `${jsonPath}.extensions`);
       }
-    } else {
+    } else if (key !== 'localizations') {
       extensions(child, `${jsonPath}.${key}`);
     }
   }
@@ -158,15 +164,58 @@ function validateVariables(page, registry, pagePath) {
   });
 }
 
-export async function validateProject(source) {
+function actionCollections(value, registry, jsonPath) {
+  if (Array.isArray(value)) {
+    value.forEach((child, index) => actionCollections(child, registry, jsonPath + '[' + index + ']'));
+    return;
+  }
+  if (!isObject(value)) return;
+  const types = new Set(registry.actionTypes.map(entry => entry.type));
+  for (const [key, child] of Object.entries(value)) {
+    if (key === 'extensions' || key === 'localizations') continue;
+    const childPath = jsonPath + '.' + key;
+    if (key === 'appActions' || key === 'clickActions') {
+      if (!Array.isArray(child)) fail('invalid_package', childPath + ' must be an array.', childPath);
+      child.forEach((action, index) => {
+        if (!isObject(action) || !types.has(action.type)) {
+          fail('unknown_action_type', 'Unknown action type: ' + String(action?.type), childPath + '[' + index + '].type');
+        }
+      });
+    }
+    actionCollections(child, registry, childPath);
+  }
+}
+
+function referenceSchema(value, schema, sourceName) {
+  try { validateReferenceSchema(value, schema); }
+  catch (error) {
+    if (!error.jsonPath) throw error;
+    fail('invalid_typed_value', sourceName + ': ' + error.message, error.jsonPath);
+  }
+}
+
+async function packagePath(root, filePath, displayPath) {
+  const resolved = await realpath(filePath).catch(() => fail('invalid_package', 'Missing ' + displayPath + '.'));
+  const relative = path.relative(root, resolved);
+  if (relative.startsWith('..' + path.sep) || relative === '..' || path.isAbsolute(relative)) {
+    fail('unsafe_path', displayPath + ' escapes the package.');
+  }
+  return resolved;
+}
+
+async function packageJson(root, filePath, displayPath) {
+  return readJson(await packagePath(root, filePath, displayPath), displayPath);
+}
+
+export async function validateProject(source, { formatVersion } = {}) {
   const root = await realpath(source).catch(() => fail('invalid_package', `${source} does not exist.`));
   if (!root.endsWith('.appmostapp')) fail('invalid_package', 'The package directory must end in .appmostapp.');
 
-  const registryPath = fileURLToPath(new URL('../registry/2.0.json', import.meta.url));
-  const registry = await readJson(registryPath, 'registry/2.0.json');
-  const app = await readJson(path.join(root, 'app.json'), 'app.json');
+  const { registry, schemas } = await loadFormatRelease(formatVersion);
+  const app = await packageJson(root, path.join(root, 'app.json'), 'app.json');
   documentVersion(app, 'app.json');
   extensions(app);
+  referenceSchema(app, schemas.app, 'app.json');
 
   if (typeof app.name !== 'string') fail('invalid_typed_value', '$.name must be a string.', '$.name');
   const currentVersion = positiveInteger(app.currentVersion, '$.currentVersion');
@@ -180,7 +229,7 @@ export async function validateProject(source) {
     fail('invalid_package', '$.highestVersion is lower than a stored version.', '$.highestVersion');
   }
 
-  const versionsRoot = path.join(root, 'versions');
+  const versionsRoot = await packagePath(root, path.join(root, 'versions'), 'versions/');
   const versionEntries = await visibleEntries(versionsRoot, 'versions/');
   if (versionEntries.some((entry) => !entry.isDirectory() || !/^[1-9]\d*$/.test(entry.name))) {
     fail('unsafe_path', 'versions/ may contain only positive-integer directories.');
@@ -195,7 +244,7 @@ export async function validateProject(source) {
   for (const number of [...versionNumbers].sort((left, right) => left - right)) {
     const versionRoot = path.join(versionsRoot, String(number));
     const versionPath = `versions/${number}/version.json`;
-    const version = await readJson(path.join(versionRoot, 'version.json'), versionPath);
+    const version = await packageJson(root, path.join(versionRoot, 'version.json'), versionPath);
     documentVersion(version, versionPath);
     extensions(version);
     if (positiveInteger(version.version, `${versionPath}.version`) !== number) {
@@ -212,7 +261,8 @@ export async function validateProject(source) {
     if (pageFileNames.some((name) => !PAGE_FILE_NAME.test(name))) {
       fail('unsafe_path', `${versionPath}.pageFileNames contains an unsafe filename.`, `${versionPath}.pageFileNames`);
     }
-    const pagesRoot = path.join(versionRoot, 'pages');
+    referenceSchema(version, schemas.version, versionPath);
+    const pagesRoot = await packagePath(root, path.join(versionRoot, 'pages'), 'pages/');
     const pageEntries = await visibleEntries(pagesRoot, `versions/${number}/pages/`);
     if (pageEntries.some((entry) => !entry.isFile())) fail('unsafe_path', `versions/${number}/pages/ may contain only files.`);
     const actualPages = pageEntries.map((entry) => entry.name);
@@ -221,39 +271,54 @@ export async function validateProject(source) {
     }
 
     const pageIds = new Set();
+    const pages = [];
     for (const fileName of pageFileNames) {
       const pagePath = `versions/${number}/pages/${fileName}`;
-      const page = await readJson(path.join(pagesRoot, fileName), pagePath);
+      const page = await packageJson(root, path.join(pagesRoot, fileName), pagePath);
       extensions(page);
+      referenceSchema(page, schemas.page, pagePath);
+      actionCollections(page, registry, pagePath);
       if (typeof page.id !== 'string' || page.id.length === 0) fail('broken_reference', `${pagePath}.id must be a non-empty string.`, `${pagePath}.id`);
       if (pageIds.has(page.id)) fail('duplicate_id', `Duplicate page id '${page.id}'.`, `${pagePath}.id`);
       pageIds.add(page.id);
+      pages.push(page);
       rowCount += validateRows(page.rows, registry, pagePath);
       validateVariables(page, registry, pagePath);
       pageCount += 1;
     }
+    try { validateAdaptivePages(pages); }
+    catch (error) { fail(error.code ?? 'invalid_typed_value', error.message, error.jsonPath); }
+    pages.forEach((page, index) => {
+      try { validateBackgroundOverlays(page); }
+      catch (error) { fail('invalid_typed_value', error.message, 'pages[' + index + '].appearance.backgroundOverlays'); }
+    });
     if (!pageIds.has(version.startPageId)) {
       fail('broken_reference', `${versionPath}.startPageId does not reference a stored page.`, `${versionPath}.startPageId`);
     }
 
     const versionEntries = await visibleEntries(versionRoot, `versions/${number}/`);
     const localizationEntry = versionEntries.find((entry) => entry.name === 'localizations.json');
-    if (localizationEntry) await readJson(path.join(versionRoot, 'localizations.json'), `versions/${number}/localizations.json`);
+    if (localizationEntry) await packageJson(root, path.join(versionRoot, 'localizations.json'), `versions/${number}/localizations.json`);
   }
 
   return { currentVersion, versionNumbers, pageCount, rowCount };
 }
 
 async function main() {
-  const source = process.argv[2];
-  if (!source) {
-    console.error('Usage: npm run validate -- <project.appmostapp>');
+  const args = process.argv.slice(2);
+  const option = args.find(argument => argument.startsWith('--format-version='));
+  const formatVersion = option?.slice('--format-version='.length);
+  const positional = args.filter(argument => argument !== option);
+  const source = positional[0];
+  if (!source || positional.length !== 1 || source.startsWith('--')) {
+    console.error('Usage: npm run validate -- <project.appmostapp> [--format-version=2.1.1]');
     process.exitCode = 2;
     return;
   }
   try {
-    const result = await validateProject(path.resolve(source));
-    console.log(`valid Appmost Project Format 2.0 package (${result.versionNumbers.length} version(s), ${result.pageCount} page(s), ${result.rowCount} row(s))`);
+    const release = await loadFormatRelease(formatVersion);
+    const result = await validateProject(path.resolve(source), { formatVersion: release.version });
+    console.log(`valid Appmost Project Format ${release.version} / documentVersion 2 package (${result.versionNumbers.length} version(s), ${result.pageCount} page(s), ${result.rowCount} row(s))`);
   } catch (error) {
     console.error(`${error.code ?? 'validation_failed'}: ${error.message}`);
     process.exitCode = 1;

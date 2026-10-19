@@ -1,6 +1,6 @@
 {
   "name": "@appmost/project-format",
-  "version": "2.0.0",
+  "version": "2.1.1",
   "private": true,
   "description": "Specification and validator for Appmost Project Format",
   "type": "module",
@@ -8,7 +8,8 @@
     "node": ">=20"
   },
   "scripts": {
-    "test": "node --test validator/validate.test.mjs",
-    "validate": "node validator/validate.mjs"
+    "test": "node --test validator/*.test.mjs",
+    "validate": "node validator/validate.mjs",
+    "check:releases": "node --input-type=module -e \"import {verifyPublishedArtifacts} from './validator/releases.mjs'; await verifyPublishedArtifacts();\""
   }
 }

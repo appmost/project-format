@@ -1,0 +1,176 @@
+{
+  "manifestVersion": 1,
+  "currentVersion": "2.1.1",
+  "documentVersion": 2,
+  "publicationScope": "reference",
+  "releases": {
+    "2.0.0": {
+      "directory": "2.0",
+      "artifacts": {
+        "registry/2.0.json": "2d64b69aeb52ab27037636f345e82719fece2bd5092e913149913a499e091747",
+        "registry/chart-properties-2.0.json": "93310b0d2bb8ff5983c7f743335e4b552e766b62eb6772616fa9d31814efcf4b",
+        "schemas/2.0/app.schema.json": "515cfb108bc3f800c91c3f0dcef6da5bfe9566e649ccdfa9a41548a1517cce61",
+        "schemas/2.0/page.schema.json": "6f9d61350474cd6a58c1570339637edaa94be975da49e202a92381a3c207c4e1",
+        "schemas/2.0/version.schema.json": "676267709d419a04dced086ecd1ab52a56bbb343728561ccc85a6a6ba80931ce"
+      }
+    },
+    "2.1.0": {
+      "directory": "2.1",
+      "previousVersion": "2.0.0",
+      "changes": [
+        "Adaptive page composition and Open page panel destinations.",
+        "Optional page background contrast overlays.",
+        "Speech transcription action and versioned remote row values."
+      ],
+      "retiredTypes": {
+        "actionTypes": {
+          "appendToFirebaseDatabase": "Realtime Database actions are no longer supported by current renderers."
+        }
+      },
+      "artifacts": {
+        "registry/2.1.json": "ed671760336431af77860efe4312c5233dc2fbc469954edfbaa3a7d64040bf01",
+        "registry/chart-properties-2.1.json": "ae6cd130d20012da65addb76c2c8b05a73f0b51312049230600168b7106bb235",
+        "schemas/2.1/app.schema.json": "cee24de2e73aa936c10f09202de6f6b52ad582ab53029af00e8b577fec4653b9",
+        "schemas/2.1/page.schema.json": "14bf9e8438fdbad35d92a3ec9e84953ae13cf415e409f1f6e0787e2cdb2949d9",
+        "schemas/2.1/version.schema.json": "cc0588964c611dbdf7b3d069945b11442367e9a40645ab4be8248e615cdf738f"
+      },
+      "features": [
+        {
+          "id": "adaptivePages",
+          "introducedIn": "2.1.0",
+          "description": "Adaptive pages compose primary and secondary normal pages through layout metadata."
+        },
+        {
+          "id": "openPagePaneDestination",
+          "introducedIn": "2.1.0",
+          "actionType": "openAnotherPage",
+          "properties": [
+            "configuration.containerId",
+            "configuration.paneId",
+            "configuration.operation"
+          ]
+        },
+        {
+          "id": "backgroundOverlays",
+          "introducedIn": "2.1.0",
+          "properties": [
+            "appearance.backgroundOverlays"
+          ]
+        }
+      ]
+    },
+    "2.1.1": {
+      "directory": "2.1.1",
+      "previousVersion": "2.1.0",
+      "changes": [
+        "Editorial introduction metadata correction against canonical public Git 2.0; no new decoder or runtime semantics.",
+        "Historical 2.1.0 reference bytes remain immutable; previously mislabeled website 2.0 artifacts are retained as publication evidence."
+      ],
+      "retiredTypes": {
+        "actionTypes": {
+          "appendToFirebaseDatabase": "Realtime Database actions are no longer supported by current renderers."
+        }
+      },
+      "features": [
+        {
+          "id": "adaptivePages",
+          "introducedIn": "2.1.0",
+          "description": "Adaptive pages compose primary and secondary normal pages through layout metadata."
+        },
+        {
+          "id": "openPagePaneDestination",
+          "introducedIn": "2.1.0",
+          "actionType": "openAnotherPage",
+          "properties": [
+            "configuration.containerId",
+            "configuration.paneId",
+            "configuration.operation"
+          ]
+        },
+        {
+          "id": "backgroundOverlays",
+          "introducedIn": "2.1.0",
+          "properties": [
+            "appearance.backgroundOverlays"
+          ]
+        }
+      ],
+      "editorialCorrections": [
+        {
+          "id": "chartSelectionDocumentation",
+          "introducedIn": "2.1.0",
+          "properties": [
+            "chartViewModel.highlightedDataPointIndex"
+          ],
+          "evidence": {
+            "artifact": "schemas/2.1/page.schema.json",
+            "sha256": "14bf9e8438fdbad35d92a3ec9e84953ae13cf415e409f1f6e0787e2cdb2949d9",
+            "pointers": [
+              "/$defs/chartViewModel/properties/highlightedDataPointIndex"
+            ]
+          }
+        },
+        {
+          "id": "nativeBarButtonsDocumentation",
+          "introducedIn": "2.1.0",
+          "properties": [
+            "bottomToolbarItems",
+            "leftNavBarButtons",
+            "rightNavBarButtons"
+          ],
+          "evidence": {
+            "artifact": "schemas/2.1/page.schema.json",
+            "sha256": "14bf9e8438fdbad35d92a3ec9e84953ae13cf415e409f1f6e0787e2cdb2949d9",
+            "pointers": [
+              "/properties/bottomToolbarItems",
+              "/properties/leftNavBarButtons",
+              "/properties/rightNavBarButtons"
+            ]
+          }
+        },
+        {
+          "id": "webAppearanceDocumentation",
+          "introducedIn": "2.1.0",
+          "properties": [
+            "globalTheme.webAppearance"
+          ],
+          "evidence": {
+            "artifact": "schemas/2.1/version.schema.json",
+            "sha256": "cc0588964c611dbdf7b3d069945b11442367e9a40645ab4be8248e615cdf738f",
+            "pointers": [
+              "/properties/globalTheme/properties/webAppearance"
+            ]
+          }
+        },
+        {
+          "id": "androidJsonApiSupportDocumentation",
+          "introducedIn": "2.1.0",
+          "actionType": "callJsonApi",
+          "evidence": {
+            "artifact": "registry/2.1.json",
+            "sha256": "ed671760336431af77860efe4312c5233dc2fbc469954edfbaa3a7d64040bf01",
+            "type": "callJsonApi",
+            "support": {
+              "android": true
+            }
+          }
+        }
+      ],
+      "artifacts": {
+        "registry/2.1.1.json": "035c67eb8e93b57ec22371ce0d910902e1d717f2df9f1a3b055f250e8ccf0e3d",
+        "registry/chart-properties-2.1.1.json": "f8b49eae8e112e02402fb3c186b00718a84115d4df2889a961fb9a3cb161cd1f",
+        "schemas/2.1.1/app.schema.json": "ad2c8cad3ab8757a0068a476eed419abac7f6a1101e062ca86a67c4350623f93",
+        "schemas/2.1.1/page.schema.json": "a7d5f347dae7c1a463d0710c44000c7424d18d4d75b12db99299daf0c14f0a4b",
+        "schemas/2.1.1/version.schema.json": "42ab211357abe98307b6fbb2b55888bd14ed4abc04b9b6e391684f95cacdc88c"
+      },
+      "specification": {
+        "path": "spec/2.1.1.md",
+        "sha256": "73e1077d962f860ce231a8609abbd2a168f8afe0a83c3425f322d46fd31a9e89"
+      }
+    }
+  },
+  "publicationErrata": {
+    "path": "publication-errata.json",
+    "sha256": "2477d9ad22a822a72ea629dd88b6908cdbdeafd343ae7c040c6807aecc05852f"
+  }
+}

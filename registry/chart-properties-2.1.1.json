@@ -1,0 +1,287 @@
+{
+  "documentVersion": 2,
+  "formatVersion": "2.1.1",
+  "modelPath": "rows[].chartViewModels[]",
+  "rowTypes": [
+    "barChart",
+    "lineBarChart",
+    "areaChart",
+    "rangeChart",
+    "donutChart"
+  ],
+  "properties": [
+    {
+      "name": "chartStyle",
+      "type": "string",
+      "values": [
+        "standard",
+        "compactTrend",
+        "sparkline",
+        "metricInline"
+      ],
+      "default": "standard",
+      "appliesTo": [
+        "barChart",
+        "lineBarChart",
+        "areaChart",
+        "rangeChart"
+      ],
+      "description": "Selects a coordinated set of defaults. Explicit properties can override the selected preset."
+    },
+    {
+      "name": "usesCustomChartStyle",
+      "type": "boolean",
+      "default": false,
+      "appliesTo": [
+        "barChart",
+        "lineBarChart",
+        "areaChart",
+        "rangeChart"
+      ],
+      "description": "Indicates that the stored appearance no longer matches the selected preset. Renderers still resolve every explicit property."
+    },
+    {
+      "name": "showYAxis",
+      "type": "boolean",
+      "default": "preset",
+      "appliesTo": [
+        "barChart",
+        "lineBarChart",
+        "areaChart",
+        "rangeChart"
+      ],
+      "description": "Shows the numeric axis, its values, and its tick marks."
+    },
+    {
+      "name": "showXAxis",
+      "type": "boolean",
+      "default": "preset",
+      "appliesTo": [
+        "barChart",
+        "lineBarChart",
+        "areaChart",
+        "rangeChart"
+      ],
+      "description": "Shows labels and tick marks for the data-point categories."
+    },
+    {
+      "name": "tintColor",
+      "type": "adaptive color object or null",
+      "default": null,
+      "appliesTo": [
+        "barChart",
+        "lineBarChart",
+        "areaChart",
+        "rangeChart"
+      ],
+      "description": "Overrides the theme chart tint. An omitted or null value uses the current theme."
+    },
+    {
+      "name": "highlightLargestBar",
+      "type": "boolean",
+      "default": true,
+      "appliesTo": [
+        "barChart"
+      ],
+      "description": "Keeps the largest bar at full opacity and visually de-emphasizes the others."
+    },
+    {
+      "name": "barTopCornerRadius",
+      "type": "non-negative integer",
+      "default": 8,
+      "appliesTo": [
+        "barChart"
+      ],
+      "description": "Rounds the two upper corners of each bar in platform points or density-independent pixels."
+    },
+    {
+      "name": "usesGradient",
+      "type": "boolean",
+      "default": "preset",
+      "appliesTo": [
+        "barChart",
+        "lineBarChart",
+        "areaChart",
+        "rangeChart"
+      ],
+      "description": "Uses a tint-derived gradient instead of a flat chart fill or stroke treatment."
+    },
+    {
+      "name": "lineWidth",
+      "type": "positive number",
+      "default": "preset",
+      "appliesTo": [
+        "lineBarChart",
+        "areaChart"
+      ],
+      "description": "Sets the line thickness in platform points or density-independent pixels."
+    },
+    {
+      "name": "showGridLines",
+      "type": "boolean",
+      "default": "preset",
+      "appliesTo": [
+        "barChart",
+        "lineBarChart",
+        "areaChart",
+        "rangeChart"
+      ],
+      "description": "Draws chart-aligned grid lines when at least one axis is visible."
+    },
+    {
+      "name": "showSymbols",
+      "type": "boolean",
+      "default": false,
+      "appliesTo": [
+        "lineBarChart",
+        "areaChart"
+      ],
+      "description": "Draws a visible symbol at each line or area data point."
+    },
+    {
+      "name": "yAxisPosition",
+      "type": "string",
+      "values": [
+        "leading",
+        "trailing"
+      ],
+      "default": "preset",
+      "appliesTo": [
+        "barChart",
+        "lineBarChart",
+        "areaChart",
+        "rangeChart"
+      ],
+      "description": "Places the numeric axis at the leading or trailing edge for the active layout direction."
+    },
+    {
+      "name": "interpolation",
+      "type": "string",
+      "values": [
+        "linear",
+        "monotone",
+        "catmullRom",
+        "cardinal",
+        "stepStart",
+        "stepCenter",
+        "stepEnd"
+      ],
+      "default": "preset",
+      "appliesTo": [
+        "lineBarChart",
+        "areaChart"
+      ],
+      "description": "Selects how a line travels between consecutive data points."
+    },
+    {
+      "name": "dataPoints",
+      "type": "array of ChartDataPoint objects",
+      "default": [],
+      "appliesTo": [
+        "barChart",
+        "lineBarChart",
+        "areaChart",
+        "rangeChart",
+        "donutChart"
+      ],
+      "description": "Supplies ordered chart data. Each point has label and value; range charts also use minValue and maxValue."
+    },
+    {
+      "name": "highlightedDataPointIndex",
+      "type": "non-negative integer or null",
+      "default": null,
+      "appliesTo": [
+        "donutChart"
+      ],
+      "description": "Selects a donut segment by data-point index. Renderers move the selected segment radially outward and emphasize its legend entry."
+    }
+  ],
+  "chartDataPoint": {
+    "properties": [
+      {
+        "name": "label",
+        "type": "string",
+        "required": true,
+        "description": "Category label displayed on the x-axis when that axis is visible."
+      },
+      {
+        "name": "value",
+        "type": "number",
+        "required": true,
+        "description": "Primary numeric value for bars, lines, areas, and accessible chart descriptions."
+      },
+      {
+        "name": "minValue",
+        "type": "number",
+        "required": false,
+        "description": "Lower bound used by range charts."
+      },
+      {
+        "name": "maxValue",
+        "type": "number",
+        "required": false,
+        "description": "Upper bound used by range charts."
+      }
+    ]
+  },
+  "presets": [
+    {
+      "name": "standard",
+      "showXAxis": true,
+      "showYAxis": true,
+      "usesGradient": true,
+      "lineWidth": 3,
+      "showGridLines": true,
+      "showSymbols": false,
+      "yAxisPosition": "leading",
+      "interpolation": "cardinal",
+      "highlightLargestBar": true,
+      "barTopCornerRadius": 8
+    },
+    {
+      "name": "compactTrend",
+      "showXAxis": true,
+      "showYAxis": true,
+      "usesGradient": false,
+      "lineWidth": 3,
+      "showGridLines": true,
+      "showSymbols": false,
+      "yAxisPosition": "trailing",
+      "interpolation": "cardinal",
+      "highlightLargestBar": true,
+      "barTopCornerRadius": 8
+    },
+    {
+      "name": "sparkline",
+      "showXAxis": false,
+      "showYAxis": false,
+      "usesGradient": false,
+      "lineWidth": 2.5,
+      "showGridLines": false,
+      "showSymbols": false,
+      "yAxisPosition": "leading",
+      "interpolation": "monotone",
+      "highlightLargestBar": true,
+      "barTopCornerRadius": 8
+    },
+    {
+      "name": "metricInline",
+      "showXAxis": false,
+      "showYAxis": false,
+      "usesGradient": false,
+      "lineWidth": 2,
+      "showGridLines": false,
+      "showSymbols": false,
+      "yAxisPosition": "leading",
+      "interpolation": "monotone",
+      "highlightLargestBar": true,
+      "barTopCornerRadius": 8
+    }
+  ],
+  "compatibility": {
+    "v1Aliases": {
+      "useGradent": "usesGradient"
+    },
+    "note": "Writers of document version 2 use only canonical property names. The misspelled v1 alias is accepted only during migration."
+  }
+}
