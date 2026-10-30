@@ -1,0 +1,21 @@
+{
+  "id": "home",
+  "type": "normal",
+  "title": "Responsive content",
+  "rows": [
+    {
+      "id": "content",
+      "type": "singleLabel",
+      "maxCellWidth": 720,
+      "labelModels": [
+        { "text": "Centered content that shrinks to fit narrow screens." }
+      ],
+      "contentPadding": {
+        "top": 16,
+        "right": 16,
+        "bottom": 16,
+        "left": 16
+      }
+    }
+  ]
+}

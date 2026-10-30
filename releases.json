@@ -1,6 +1,6 @@
 {
   "manifestVersion": 1,
-  "currentVersion": "2.1.1",
+  "currentVersion": "2.2.0",
   "documentVersion": 2,
   "publicationScope": "reference",
   "releases": {
@@ -166,6 +166,62 @@
       "specification": {
         "path": "spec/2.1.1.md",
         "sha256": "73e1077d962f860ce231a8609abbd2a168f8afe0a83c3425f322d46fd31a9e89"
+      }
+    },
+    "2.2.0": {
+      "directory": "2.2",
+      "previousVersion": "2.1.1",
+      "changes": [
+        "Optional general row maximum width: centered styled rows that shrink within narrow containers."
+      ],
+      "retiredTypes": {
+        "actionTypes": {
+          "appendToFirebaseDatabase": "Realtime Database actions are no longer supported by current renderers."
+        }
+      },
+      "features": [
+        {
+          "id": "adaptivePages",
+          "introducedIn": "2.1.0",
+          "description": "Adaptive pages compose primary and secondary normal pages through layout metadata."
+        },
+        {
+          "id": "openPagePaneDestination",
+          "introducedIn": "2.1.0",
+          "actionType": "openAnotherPage",
+          "properties": [
+            "configuration.containerId",
+            "configuration.paneId",
+            "configuration.operation"
+          ]
+        },
+        {
+          "id": "backgroundOverlays",
+          "introducedIn": "2.1.0",
+          "properties": [
+            "appearance.backgroundOverlays"
+          ]
+        },
+        {
+          "id": "rowMaxCellWidth",
+          "introducedIn": "2.2.0",
+          "properties": [
+            "rows[].maxCellWidth",
+            "rows[].childProperties.children[].maxCellWidth"
+          ],
+          "description": "Optional maximum width in logical points (pt on Apple platforms, dp on Android, CSS px on the web). Caps the complete styled row including contentPadding and outerMargins, centers it in the available width, and shrinks it to fit narrower containers. Omission or null leaves the row uncapped."
+        }
+      ],
+      "artifacts": {
+        "registry/2.2.json": "3434f555e0662c5a3cadae4ba3b80da9aea8dcbc7d3b12e9665325f8a4c49d9c",
+        "registry/chart-properties-2.2.json": "888a0d427af4c5c1797b0a9b867d0b354ee37f22e8d8c8138633579924ab5cdc",
+        "schemas/2.2/app.schema.json": "4b9f3b50ca1b9d1cdb27a10caedef21778aaadd108d3a69541fc6be1e6348015",
+        "schemas/2.2/page.schema.json": "f9002f7891b5f3b08d6e20c2498d2c56e13ab166de47d490cf361f17de1ed155",
+        "schemas/2.2/version.schema.json": "0e7c0efcbb4aae5dbc0390908708aa903fa9650c5e5d01c97ccd2f67e6749575"
+      },
+      "specification": {
+        "path": "spec/2.2.0.md",
+        "sha256": "94dee341f81636f7e98c5fd7d8d611c779cb711091ba3fb3cb2d7543ca89bd06"
       }
     }
   },

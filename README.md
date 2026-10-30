@@ -1,13 +1,14 @@
 # Appmost Project Format
 
 Appmost Project Format is the open specification for `.appmostapp` project
-packages. The current reference release is **2.1.1**, with **documentVersion 2**.
+packages. The current reference release is **2.2.0**, with **documentVersion 2**.
 The semantic reference release, decoder major and numbered stored project
 versions are separate axes.
 
-This patch corrects introduction metadata for the existing 2.1 feature set.
-It adds no runtime type or schema field. The canonical public Git 2.0 files and
-the already published website 2.1.0 files remain byte for byte unchanged.
+Reference 2.2.0 adds the optional general row field `maxCellWidth` for centered,
+responsive content. Existing types keep their introduction versions. The
+canonical public Git 2.0 files and the published 2.1.0 and 2.1.1 artifacts
+remain byte for byte unchanged.
 See [the publication errata](publication-errata.json) for the exact five
 historical introduction errors and the separately retained mislabeled website
 2.0 evidence.
@@ -20,11 +21,13 @@ publication.
 
 ## Specification and releases
 
-- [Normative 2.1.1 specification](spec/2.1.1.md)
+- [Normative 2.2.0 specification](spec/2.2.0.md)
 - [Release manifest and artifact checksums](releases.json)
-- [Current type registry](registry/2.1.1.json)
-- [Current app, page and version schemas](schemas/2.1.1/)
-- [Chart properties and preset defaults](registry/chart-properties-2.1.1.json)
+- [Current type registry](registry/2.2.json)
+- [Current app, page and version schemas](schemas/2.2/)
+- [Chart properties and preset defaults](registry/chart-properties-2.2.json)
+- [Frozen 2.1.1 specification](spec/2.1.1.md), [registry](registry/2.1.1.json)
+  and [schemas](schemas/2.1.1/)
 - [Original 2.0 specification](spec/2.0.md), [registry](registry/2.0.json)
   and [schemas](schemas/2.0/)
 - [Frozen website 2.1.0 registry](registry/2.1.json) and [schemas](schemas/2.1/)
@@ -50,7 +53,7 @@ MyProject.appmostapp/
 
 `app.json` selects the active version and lists every stored version. Each
 numbered directory contains settings, pages and optional localizations.
-Shared resources live at the package root. A format release such as 2.1.1 is
+Shared resources live at the package root. A format release such as 2.2.0 is
 not a valid `versions/` directory name.
 
 ## Validate a project
@@ -59,6 +62,7 @@ Node.js 20 or newer is required. The validator has no package dependencies.
 
 ```sh
 npm run validate -- examples/minimal.appmostapp
+npm run validate -- examples/responsive-row-width.appmostapp
 npm run validate -- examples/row-catalog.appmostapp --format-version=2.0.0
 npm run check:releases
 npm test
@@ -79,6 +83,18 @@ The schema evaluator intentionally supports the closed assertion set used by
 these reference schemas. Unsupported schema keywords or external references
 fail explicitly. It is not a general-purpose JSON Schema implementation.
 
+## New in 2.2.0
+
+`maxCellWidth` caps the complete styled row, including content padding and
+outer margins, and centers it in the available width. Rows shrink to fit
+narrower containers. The value is a positive integer in logical points
+(Apple pt, Android dp, web CSS px); omission or `null` leaves the row uncapped.
+The field also applies to nested rows in `childProperties.children`.
+
+The [responsive row-width example](examples/responsive-row-width.appmostapp/)
+shows a capped ordinary row. Validation establishes the contract;
+it does not certify a renderer's visual behavior.
+
 ## Existing 2.1 capabilities
 
 - Adaptive pages compose two existing normal pages with compact stack behavior
@@ -97,7 +113,7 @@ arbitrary additions or normalize old project content.
 ## Implementation support
 
 A valid project may require features unavailable in a particular renderer.
-The [current registry](registry/2.1.1.json) declares support per type.
+The [current registry](registry/2.2.json) declares support per type.
 
 | Format surface | iOS (SwiftUI) | Android (Compose) | Appmost Design |
 | --- | ---: | ---: | ---: |
@@ -126,7 +142,7 @@ canonical 2.0 row types; it is not a claim to contain all 94 current types.
 
 The current chart types are `barChart`, `lineBarChart`, `areaChart`,
 `rangeChart` and `donutChart`. The
-[chart registry](registry/chart-properties-2.1.1.json) specifies their properties.
+[chart registry](registry/chart-properties-2.2.json) specifies their properties.
 The [visual row catalog](https://www.appmost.ai/format/rows/) and
 [chart reference](https://www.appmost.ai/format/charts/) are explanatory, not
 pixel-normative.

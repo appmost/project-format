@@ -37,10 +37,10 @@ async function modifiedErrata(change) {
   return {manifest, read: name => name.endsWith('/publication-errata.json') ? bytes : readFormatArtifact(name)};
 }
 
-test('canonical Git 2.0, frozen website 2.1 and editorial 2.1.1 artifacts agree', async () => {
+test('canonical Git 2.0, frozen 2.1 references and current 2.2.0 artifacts agree', async () => {
   const manifest = await readFormatReleases();
   const current = await verifyPublishedFormatReleases(manifest);
-  assert.equal(current.version, '2.1.1');
+  assert.equal(current.version, '2.2.0');
   assert.equal(current.documentVersion, 2);
   assert.equal(manifest.releases['2.0.0'].artifacts['registry/2.0.json'],
     '2d64b69aeb52ab27037636f345e82719fece2bd5092e913149913a499e091747');
@@ -51,7 +51,7 @@ test('canonical Git 2.0, frozen website 2.1 and editorial 2.1.1 artifacts agree'
 
 test('adding a schema property under any published URL fails without changing its checksum', async () => {
   const manifest = await readFormatReleases();
-  for (const directory of ['2.0', '2.1', '2.1.1']) {
+  for (const directory of ['2.0', '2.1', '2.1.1', '2.2']) {
     const target = `schemas/${directory}/page.schema.json`;
     const schema = JSON.parse(await readFormatArtifact(target));
     schema.properties.futureOptionalField = {type: 'boolean'};
@@ -154,7 +154,13 @@ test('Open page keeps its type introduction and versions its pane capability sep
   assert.equal(registry.actionTypes.find(entry => entry.type === 'openAnotherPage').introducedIn, '2.0.0');
   assert.deepEqual(registry.features.find(entry => entry.id === 'openPagePaneDestination').properties,
     ['configuration.containerId', 'configuration.paneId', 'configuration.operation']);
-  assert.ok(registry.features.every(feature => feature.introducedIn === '2.1.0'));
+  assert.ok(registry.features.filter(feature => feature.id !== 'rowMaxCellWidth')
+    .every(feature => feature.introducedIn === '2.1.0'));
+  assert.deepEqual(registry.features.find(feature => feature.id === 'rowMaxCellWidth'), {
+    id: 'rowMaxCellWidth', introducedIn: '2.2.0',
+    properties: ['rows[].maxCellWidth', 'rows[].childProperties.children[].maxCellWidth'],
+    description: 'Optional maximum width in logical points (pt on Apple platforms, dp on Android, CSS px on the web). Caps the complete styled row including contentPadding and outerMargins, centers it in the available width, and shrinks it to fit narrower containers. Omission or null leaves the row uncapped.',
+  });
   const retired = registry.actionTypes.find(entry => entry.type === 'appendToFirebaseDatabase');
   assert.equal(retired.deprecatedIn, '2.1.0');
   assert.ok(Object.values(retired.support).every(value => value === false));
