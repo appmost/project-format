@@ -1,6 +1,6 @@
 {
   "manifestVersion": 1,
-  "currentVersion": "2.2.0",
+  "currentVersion": "2.12.0",
   "documentVersion": 2,
   "publicationScope": "reference",
   "releases": {
@@ -222,6 +222,1765 @@
       "specification": {
         "path": "spec/2.2.0.md",
         "sha256": "94dee341f81636f7e98c5fd7d8d611c779cb711091ba3fb3cb2d7543ca89bd06"
+      }
+    },
+    "2.3.0": {
+      "directory": "2.3",
+      "previousVersion": "2.2.0",
+      "changes": [
+        "Optional version-scoped test-data.json for named local data sets and Firebase callable bindings."
+      ],
+      "retiredTypes": {
+        "actionTypes": {
+          "appendToFirebaseDatabase": "Realtime Database actions are no longer supported by current renderers."
+        }
+      },
+      "features": [
+        {
+          "id": "adaptivePages",
+          "introducedIn": "2.1.0",
+          "description": "Adaptive pages compose primary and secondary normal pages through layout metadata."
+        },
+        {
+          "id": "openPagePaneDestination",
+          "introducedIn": "2.1.0",
+          "actionType": "openAnotherPage",
+          "properties": [
+            "configuration.containerId",
+            "configuration.paneId",
+            "configuration.operation"
+          ]
+        },
+        {
+          "id": "backgroundOverlays",
+          "introducedIn": "2.1.0",
+          "properties": [
+            "appearance.backgroundOverlays"
+          ]
+        },
+        {
+          "id": "rowMaxCellWidth",
+          "introducedIn": "2.2.0",
+          "properties": [
+            "rows[].maxCellWidth",
+            "rows[].childProperties.children[].maxCellWidth"
+          ],
+          "description": "Optional maximum width in logical points (pt on Apple platforms, dp on Android, CSS px on the web). Caps the complete styled row including contentPadding and outerMargins, centers it in the available width, and shrinks it to fit narrower containers. Omission or null leaves the row uncapped."
+        },
+        {
+          "id": "testData",
+          "introducedIn": "2.3.0",
+          "properties": [
+            "versions/<number>/test-data.json"
+          ],
+          "description": "Optional version-scoped collections, Firebase callable bindings and data sets for isolated test runs."
+        }
+      ],
+      "artifacts": {
+        "schemas/2.3/app.schema.json": "10d65b4c2d277350e054e391adebcb4e948f9e172443624d14bb9b39624b5a29",
+        "schemas/2.3/page.schema.json": "5b1879bba02b56633fffd52c7d014818a78f64199a722b9ae970be2f90c3eaf2",
+        "schemas/2.3/version.schema.json": "2002ab90cad7686daaa299b34f06c9128410b44eab3efe3520dad611058be0d2",
+        "schemas/2.3/test-data.schema.json": "a58c2a3275436040816b62fbffab3bb6e2b1d95f37f93cbf7d367819ee27d889",
+        "registry/chart-properties-2.3.json": "780de0ae358fe4007b017752177a2cf7828fbe1bc7e0f63ec53888e8bcfac42d",
+        "registry/2.3.json": "ef98a467afe35ea645fafc2ca3294cf5102a2c6f22618aab33403a1e1c3d70ec"
+      },
+      "specification": {
+        "path": "spec/2.3.0.md",
+        "sha256": "3254e1575d4b0f543dd4a3180511455f61575b622cb7e68155f9cf3510788788"
+      }
+    },
+    "2.4.0": {
+      "directory": "2.4",
+      "previousVersion": "2.3.0",
+      "changes": [
+        "Optional version-scoped override for native system text scaling."
+      ],
+      "retiredTypes": {
+        "actionTypes": {
+          "appendToFirebaseDatabase": "Realtime Database actions are no longer supported by current renderers."
+        }
+      },
+      "features": [
+        {
+          "id": "adaptivePages",
+          "introducedIn": "2.1.0",
+          "description": "Adaptive pages compose primary and secondary normal pages through layout metadata."
+        },
+        {
+          "id": "openPagePaneDestination",
+          "introducedIn": "2.1.0",
+          "actionType": "openAnotherPage",
+          "properties": [
+            "configuration.containerId",
+            "configuration.paneId",
+            "configuration.operation"
+          ]
+        },
+        {
+          "id": "backgroundOverlays",
+          "introducedIn": "2.1.0",
+          "properties": [
+            "appearance.backgroundOverlays"
+          ]
+        },
+        {
+          "id": "rowMaxCellWidth",
+          "introducedIn": "2.2.0",
+          "properties": [
+            "rows[].maxCellWidth",
+            "rows[].childProperties.children[].maxCellWidth"
+          ],
+          "description": "Optional maximum width in logical points (pt on Apple platforms, dp on Android, CSS px on the web). Caps the complete styled row including contentPadding and outerMargins, centers it in the available width, and shrinks it to fit narrower containers. Omission or null leaves the row uncapped."
+        },
+        {
+          "id": "testData",
+          "introducedIn": "2.3.0",
+          "properties": [
+            "versions/<number>/test-data.json"
+          ],
+          "description": "Optional version-scoped collections, Firebase callable bindings and data sets for isolated test runs."
+        },
+        {
+          "id": "disableSystemTextScaling",
+          "introducedIn": "2.4.0",
+          "properties": [
+            "versions/<number>/version.json.disableSystemTextScaling"
+          ],
+          "description": "When true, Appmost's native iOS and Android renderers use the authored text scale without system text scaling. False, null, or omission preserves the platform's existing behavior."
+        }
+      ],
+      "artifacts": {
+        "schemas/2.4/app.schema.json": "96263f77169c8f5d1358f75902509d72511e4577d081bf34bb28299023232a4a",
+        "schemas/2.4/page.schema.json": "e1ff83ea9602961751059343e0b2b368950b0dfa2ef7bcc812ff3d4d633b849b",
+        "schemas/2.4/version.schema.json": "cade18ac2983eb38e8efcfaaf41291365e72cc90c03e24851961e4bc5fa054df",
+        "schemas/2.4/test-data.schema.json": "22cc7034c4c60d2be8b9febd53988bc4a348d5d0310c1b9d216165a455edbde9",
+        "registry/chart-properties-2.4.json": "2aa95c69aff0ec44bfb0f9814d9467ede93114595ea89c0ee8d1b053434ed0b0",
+        "registry/2.4.json": "ba7162d1146f56a495b0f68544fff410867ffb5f4f86b5e374ec3d86e8020982"
+      },
+      "specification": {
+        "path": "spec/2.4.0.md",
+        "sha256": "7ae2134bacd129d411c97cfd695021004ead5ee4b16b616627434caec6f5009c"
+      }
+    },
+    "2.5.0": {
+      "directory": "2.5",
+      "previousVersion": "2.4.0",
+      "changes": [
+        "Audio playback actions and read-only playback state on supported iOS, Android and web runtimes.",
+        "Optional test data bindings for JSON GET endpoints that return lists of declared objects."
+      ],
+      "retiredTypes": {
+        "actionTypes": {
+          "appendToFirebaseDatabase": "Realtime Database actions are no longer supported by current renderers."
+        }
+      },
+      "features": [
+        {
+          "id": "adaptivePages",
+          "introducedIn": "2.1.0",
+          "description": "Adaptive pages compose primary and secondary normal pages through layout metadata."
+        },
+        {
+          "id": "openPagePaneDestination",
+          "introducedIn": "2.1.0",
+          "actionType": "openAnotherPage",
+          "properties": [
+            "configuration.containerId",
+            "configuration.paneId",
+            "configuration.operation"
+          ]
+        },
+        {
+          "id": "backgroundOverlays",
+          "introducedIn": "2.1.0",
+          "properties": [
+            "appearance.backgroundOverlays"
+          ]
+        },
+        {
+          "id": "rowMaxCellWidth",
+          "introducedIn": "2.2.0",
+          "properties": [
+            "rows[].maxCellWidth",
+            "rows[].childProperties.children[].maxCellWidth"
+          ],
+          "description": "Optional maximum width in logical points (pt on Apple platforms, dp on Android, CSS px on the web). Caps the complete styled row including contentPadding and outerMargins, centers it in the available width, and shrinks it to fit narrower containers. Omission or null leaves the row uncapped."
+        },
+        {
+          "id": "testData",
+          "introducedIn": "2.3.0",
+          "properties": [
+            "versions/<number>/test-data.json"
+          ],
+          "description": "Optional version-scoped collections, Firebase callable bindings and data sets for isolated test runs."
+        },
+        {
+          "id": "disableSystemTextScaling",
+          "introducedIn": "2.4.0",
+          "properties": [
+            "versions/<number>/version.json.disableSystemTextScaling"
+          ],
+          "description": "When true, Appmost's native iOS and Android renderers use the authored text scale without system text scaling. False, null, or omission preserves the platform's existing behavior."
+        },
+        {
+          "id": "audioPlayback",
+          "introducedIn": "2.5.0",
+          "actionTypes": [
+            "setAudioQueue",
+            "playAudio",
+            "pauseAudio",
+            "toggleAudioPlayback",
+            "stopAudio",
+            "nextAudioTrack",
+            "previousAudioTrack",
+            "seekAudio",
+            "setAudioShuffle",
+            "setAudioRepeat"
+          ],
+          "properties": [
+            "configuration.audio",
+            "audioPlayer"
+          ],
+          "description": "One session-owned audio queue, transport actions and read-only playback state; runtime availability is platform-specific."
+        },
+        {
+          "id": "androidAudioPlayback",
+          "introducedIn": "2.5.0",
+          "actionTypes": [
+            "setAudioQueue",
+            "playAudio",
+            "pauseAudio",
+            "toggleAudioPlayback",
+            "stopAudio",
+            "nextAudioTrack",
+            "previousAudioTrack",
+            "seekAudio",
+            "setAudioShuffle",
+            "setAudioRepeat"
+          ],
+          "platforms": [
+            "android"
+          ],
+          "description": "Android implements the existing audio actions and readonly playback state with one project-owned Media3 service, native player presentation and system media controls."
+        },
+        {
+          "id": "testDataJsonGetListBindings",
+          "introducedIn": "2.5.0",
+          "properties": [
+            "versions/<number>/test-data.json.bindings[].source"
+          ],
+          "description": "List-mode test data bindings can use the ID of a JSON GET endpoint whose response maps to a list of the collection\u2019s object type."
+        }
+      ],
+      "artifacts": {
+        "schemas/2.5/app.schema.json": "351f32afaaa7f8fa261b96531cf83412fc6a46f87857ca98a13b921f0821c8d2",
+        "schemas/2.5/page.schema.json": "ea0b44acdf46bf76882a178922d23c682c272861b3c687c70f3cd5f455c20957",
+        "schemas/2.5/version.schema.json": "58ba735ab612c2a6f0f97db4b69dc7bc0bd508b61f57dda13f1b361fb0c3a428",
+        "schemas/2.5/test-data.schema.json": "7cb5535958a3f878a8b0fd1f2f84ddfa182ed097d46b4b30236ae9d37ca6c0f7",
+        "registry/chart-properties-2.5.json": "53dd3bd3f06434790d83d1fa2318412500f5a1a3843bccbb6a675331e12442e2",
+        "registry/2.5.json": "8a93b53d45922dd4f6df5f6a8e158638a156717320dd53908817292ee65cea45"
+      },
+      "specification": {
+        "path": "spec/2.5.0.md",
+        "sha256": "d87c2be19d442928746c80bce4bb0da1e7b345ab4e147a9a538a31b668eaad33"
+      }
+    },
+    "2.6.0": {
+      "directory": "2.6",
+      "previousVersion": "2.5.0",
+      "changes": [
+        "Optional per-data-set exact image URL mappings to imported local PNG and JPEG images for isolated native test runs."
+      ],
+      "retiredTypes": {
+        "actionTypes": {
+          "appendToFirebaseDatabase": "Realtime Database actions are no longer supported by current renderers."
+        }
+      },
+      "features": [
+        {
+          "id": "adaptivePages",
+          "introducedIn": "2.1.0",
+          "description": "Adaptive pages compose primary and secondary normal pages through layout metadata."
+        },
+        {
+          "id": "openPagePaneDestination",
+          "introducedIn": "2.1.0",
+          "actionType": "openAnotherPage",
+          "properties": [
+            "configuration.containerId",
+            "configuration.paneId",
+            "configuration.operation"
+          ]
+        },
+        {
+          "id": "backgroundOverlays",
+          "introducedIn": "2.1.0",
+          "properties": [
+            "appearance.backgroundOverlays"
+          ]
+        },
+        {
+          "id": "rowMaxCellWidth",
+          "introducedIn": "2.2.0",
+          "properties": [
+            "rows[].maxCellWidth",
+            "rows[].childProperties.children[].maxCellWidth"
+          ],
+          "description": "Optional maximum width in logical points (pt on Apple platforms, dp on Android, CSS px on the web). Caps the complete styled row including contentPadding and outerMargins, centers it in the available width, and shrinks it to fit narrower containers. Omission or null leaves the row uncapped."
+        },
+        {
+          "id": "testData",
+          "introducedIn": "2.3.0",
+          "properties": [
+            "versions/<number>/test-data.json"
+          ],
+          "description": "Optional version-scoped collections, Firebase callable bindings and data sets for isolated test runs."
+        },
+        {
+          "id": "disableSystemTextScaling",
+          "introducedIn": "2.4.0",
+          "properties": [
+            "versions/<number>/version.json.disableSystemTextScaling"
+          ],
+          "description": "When true, Appmost's native iOS and Android renderers use the authored text scale without system text scaling. False, null, or omission preserves the platform's existing behavior."
+        },
+        {
+          "id": "audioPlayback",
+          "introducedIn": "2.5.0",
+          "actionTypes": [
+            "setAudioQueue",
+            "playAudio",
+            "pauseAudio",
+            "toggleAudioPlayback",
+            "stopAudio",
+            "nextAudioTrack",
+            "previousAudioTrack",
+            "seekAudio",
+            "setAudioShuffle",
+            "setAudioRepeat"
+          ],
+          "properties": [
+            "configuration.audio",
+            "audioPlayer"
+          ],
+          "description": "One session-owned audio queue, transport actions and read-only playback state; runtime availability is platform-specific."
+        },
+        {
+          "id": "androidAudioPlayback",
+          "introducedIn": "2.5.0",
+          "actionTypes": [
+            "setAudioQueue",
+            "playAudio",
+            "pauseAudio",
+            "toggleAudioPlayback",
+            "stopAudio",
+            "nextAudioTrack",
+            "previousAudioTrack",
+            "seekAudio",
+            "setAudioShuffle",
+            "setAudioRepeat"
+          ],
+          "platforms": [
+            "android"
+          ],
+          "description": "Android implements the existing audio actions and readonly playback state with one project-owned Media3 service, native player presentation and system media controls."
+        },
+        {
+          "id": "testDataJsonGetListBindings",
+          "introducedIn": "2.5.0",
+          "properties": [
+            "versions/<number>/test-data.json.bindings[].source"
+          ],
+          "description": "List-mode test data bindings can use the ID of a JSON GET endpoint whose response maps to a list of the collection\u2019s object type."
+        },
+        {
+          "id": "testDataImageFixtures",
+          "introducedIn": "2.6.0",
+          "properties": [
+            "versions/<number>/test-data.json.dataSets[].imageFixtures"
+          ],
+          "description": "Exact HTTP(S) URL mappings to ordinary imported project images in native test data sessions.",
+          "support": {
+            "iosSwiftUI": true,
+            "androidCompose": true,
+            "appmostDesignPreview": true,
+            "web": false
+          }
+        }
+      ],
+      "artifacts": {
+        "schemas/2.6/app.schema.json": "933d67b716134753db31944c399870ddd62c60373536ea8913d728afcf721fc3",
+        "schemas/2.6/page.schema.json": "6e2d878dfc3154a164bda70bd76ec0f63a563543ed5b81fca8d3ae15af2e9ae1",
+        "schemas/2.6/version.schema.json": "295ee27d9e9fc9fb4065186895aa8e5adb77cb5cb285ca10925ee85afb66b918",
+        "schemas/2.6/test-data.schema.json": "c5e5cf1790ea404ca5c4ebdbdabc9eaa9025b84535835106ea706fe8832671e7",
+        "registry/chart-properties-2.6.json": "a933928e7b435e7a5538a82254e5ec00477f769ca63b155597bb8fbabc26b254",
+        "registry/2.6.json": "51e98c7fc62d5699182c00880b21759176c933ba11db18479891835f8d5c9220"
+      },
+      "specification": {
+        "path": "spec/2.6.0.md",
+        "sha256": "fb672fdf6b2b9ad130c2fb1bb3428d337f2b47578e17d0a53fcedd09ae08788d"
+      }
+    },
+    "2.7.0": {
+      "directory": "2.7",
+      "previousVersion": "2.6.0",
+      "changes": [
+        "Optional chart data bindings map existing object-list variables to chart points."
+      ],
+      "retiredTypes": {
+        "actionTypes": {
+          "appendToFirebaseDatabase": "Realtime Database actions are no longer supported by current renderers."
+        }
+      },
+      "features": [
+        {
+          "id": "adaptivePages",
+          "introducedIn": "2.1.0",
+          "description": "Adaptive pages compose primary and secondary normal pages through layout metadata."
+        },
+        {
+          "id": "openPagePaneDestination",
+          "introducedIn": "2.1.0",
+          "actionType": "openAnotherPage",
+          "properties": [
+            "configuration.containerId",
+            "configuration.paneId",
+            "configuration.operation"
+          ]
+        },
+        {
+          "id": "backgroundOverlays",
+          "introducedIn": "2.1.0",
+          "properties": [
+            "appearance.backgroundOverlays"
+          ]
+        },
+        {
+          "id": "rowMaxCellWidth",
+          "introducedIn": "2.2.0",
+          "properties": [
+            "rows[].maxCellWidth",
+            "rows[].childProperties.children[].maxCellWidth"
+          ],
+          "description": "Optional maximum width in logical points (pt on Apple platforms, dp on Android, CSS px on the web). Caps the complete styled row including contentPadding and outerMargins, centers it in the available width, and shrinks it to fit narrower containers. Omission or null leaves the row uncapped."
+        },
+        {
+          "id": "testData",
+          "introducedIn": "2.3.0",
+          "properties": [
+            "versions/<number>/test-data.json"
+          ],
+          "description": "Optional version-scoped collections, Firebase callable bindings and data sets for isolated test runs."
+        },
+        {
+          "id": "disableSystemTextScaling",
+          "introducedIn": "2.4.0",
+          "properties": [
+            "versions/<number>/version.json.disableSystemTextScaling"
+          ],
+          "description": "When true, Appmost's native iOS and Android renderers use the authored text scale without system text scaling. False, null, or omission preserves the platform's existing behavior."
+        },
+        {
+          "id": "audioPlayback",
+          "introducedIn": "2.5.0",
+          "actionTypes": [
+            "setAudioQueue",
+            "playAudio",
+            "pauseAudio",
+            "toggleAudioPlayback",
+            "stopAudio",
+            "nextAudioTrack",
+            "previousAudioTrack",
+            "seekAudio",
+            "setAudioShuffle",
+            "setAudioRepeat"
+          ],
+          "properties": [
+            "configuration.audio",
+            "audioPlayer"
+          ],
+          "description": "One session-owned audio queue, transport actions and read-only playback state; runtime availability is platform-specific."
+        },
+        {
+          "id": "androidAudioPlayback",
+          "introducedIn": "2.5.0",
+          "actionTypes": [
+            "setAudioQueue",
+            "playAudio",
+            "pauseAudio",
+            "toggleAudioPlayback",
+            "stopAudio",
+            "nextAudioTrack",
+            "previousAudioTrack",
+            "seekAudio",
+            "setAudioShuffle",
+            "setAudioRepeat"
+          ],
+          "platforms": [
+            "android"
+          ],
+          "description": "Android implements the existing audio actions and readonly playback state with one project-owned Media3 service, native player presentation and system media controls."
+        },
+        {
+          "id": "testDataJsonGetListBindings",
+          "introducedIn": "2.5.0",
+          "properties": [
+            "versions/<number>/test-data.json.bindings[].source"
+          ],
+          "description": "List-mode test data bindings can use the ID of a JSON GET endpoint whose response maps to a list of the collection\u2019s object type."
+        },
+        {
+          "id": "testDataImageFixtures",
+          "introducedIn": "2.6.0",
+          "properties": [
+            "versions/<number>/test-data.json.dataSets[].imageFixtures"
+          ],
+          "description": "Exact HTTP(S) URL mappings to ordinary imported project images in native test data sessions.",
+          "support": {
+            "iosSwiftUI": true,
+            "androidCompose": true,
+            "appmostDesignPreview": true,
+            "web": false
+          }
+        },
+        {
+          "id": "chartListDataBinding",
+          "introducedIn": "2.7.0",
+          "properties": [
+            "rows[].chartViewModels[].dataBinding"
+          ],
+          "description": "Connect chart points to an existing list of custom objects and map label, numeric value and optional range fields."
+        }
+      ],
+      "artifacts": {
+        "schemas/2.7/app.schema.json": "890c978cba7fdf76f06b8d8adab0e754666d7ed535d7798b42f9018b91c93a45",
+        "schemas/2.7/page.schema.json": "a03ce2c7911caa050ff99bcf0bc93e9321c766ff9608ce905474892ef5f23b38",
+        "schemas/2.7/version.schema.json": "7d41732d1df5f5eacdebea57a8a8497b9db2d837e971c8f0b1cdca14b6399745",
+        "schemas/2.7/test-data.schema.json": "9a6a8c0d873718ff90aef2a9ffab8804745f56a6733b491664dd2cbe447b885c",
+        "registry/chart-properties-2.7.json": "19560853a5f4178f84ff86cbf4824f49e830e86d694bf0ab006c0c3c09352316",
+        "registry/2.7.json": "fca201a4b40cf6339a3f3b2cf664014d93ddc29813bfe11309940f68fc5225b6"
+      },
+      "specification": {
+        "path": "spec/2.7.0.md",
+        "sha256": "a050b311c6863174c107df1574249d50e977d5fbb003aba31607f092251e9366"
+      }
+    },
+    "2.8.0": {
+      "directory": "2.8",
+      "previousVersion": "2.7.0",
+      "changes": [
+        "Optional image bottom fading makes a configurable fraction of an image fade to transparency."
+      ],
+      "retiredTypes": {
+        "actionTypes": {
+          "appendToFirebaseDatabase": "Realtime Database actions are no longer supported by current renderers."
+        }
+      },
+      "features": [
+        {
+          "id": "adaptivePages",
+          "introducedIn": "2.1.0",
+          "description": "Adaptive pages compose primary and secondary normal pages through layout metadata."
+        },
+        {
+          "id": "openPagePaneDestination",
+          "introducedIn": "2.1.0",
+          "actionType": "openAnotherPage",
+          "properties": [
+            "configuration.containerId",
+            "configuration.paneId",
+            "configuration.operation"
+          ]
+        },
+        {
+          "id": "backgroundOverlays",
+          "introducedIn": "2.1.0",
+          "properties": [
+            "appearance.backgroundOverlays"
+          ]
+        },
+        {
+          "id": "rowMaxCellWidth",
+          "introducedIn": "2.2.0",
+          "properties": [
+            "rows[].maxCellWidth",
+            "rows[].childProperties.children[].maxCellWidth"
+          ],
+          "description": "Optional maximum width in logical points (pt on Apple platforms, dp on Android, CSS px on the web). Caps the complete styled row including contentPadding and outerMargins, centers it in the available width, and shrinks it to fit narrower containers. Omission or null leaves the row uncapped."
+        },
+        {
+          "id": "testData",
+          "introducedIn": "2.3.0",
+          "properties": [
+            "versions/<number>/test-data.json"
+          ],
+          "description": "Optional version-scoped collections, Firebase callable bindings and data sets for isolated test runs."
+        },
+        {
+          "id": "disableSystemTextScaling",
+          "introducedIn": "2.4.0",
+          "properties": [
+            "versions/<number>/version.json.disableSystemTextScaling"
+          ],
+          "description": "When true, Appmost's native iOS and Android renderers use the authored text scale without system text scaling. False, null, or omission preserves the platform's existing behavior."
+        },
+        {
+          "id": "audioPlayback",
+          "introducedIn": "2.5.0",
+          "actionTypes": [
+            "setAudioQueue",
+            "playAudio",
+            "pauseAudio",
+            "toggleAudioPlayback",
+            "stopAudio",
+            "nextAudioTrack",
+            "previousAudioTrack",
+            "seekAudio",
+            "setAudioShuffle",
+            "setAudioRepeat"
+          ],
+          "properties": [
+            "configuration.audio",
+            "audioPlayer"
+          ],
+          "description": "One session-owned audio queue, transport actions and read-only playback state; runtime availability is platform-specific."
+        },
+        {
+          "id": "androidAudioPlayback",
+          "introducedIn": "2.5.0",
+          "actionTypes": [
+            "setAudioQueue",
+            "playAudio",
+            "pauseAudio",
+            "toggleAudioPlayback",
+            "stopAudio",
+            "nextAudioTrack",
+            "previousAudioTrack",
+            "seekAudio",
+            "setAudioShuffle",
+            "setAudioRepeat"
+          ],
+          "platforms": [
+            "android"
+          ],
+          "description": "Android implements the existing audio actions and readonly playback state with one project-owned Media3 service, native player presentation and system media controls."
+        },
+        {
+          "id": "testDataJsonGetListBindings",
+          "introducedIn": "2.5.0",
+          "properties": [
+            "versions/<number>/test-data.json.bindings[].source"
+          ],
+          "description": "List-mode test data bindings can use the ID of a JSON GET endpoint whose response maps to a list of the collection\u2019s object type."
+        },
+        {
+          "id": "testDataImageFixtures",
+          "introducedIn": "2.6.0",
+          "properties": [
+            "versions/<number>/test-data.json.dataSets[].imageFixtures"
+          ],
+          "description": "Exact HTTP(S) URL mappings to ordinary imported project images in native test data sessions.",
+          "support": {
+            "iosSwiftUI": true,
+            "androidCompose": true,
+            "appmostDesignPreview": true,
+            "web": false
+          }
+        },
+        {
+          "id": "chartListDataBinding",
+          "introducedIn": "2.7.0",
+          "properties": [
+            "rows[].chartViewModels[].dataBinding"
+          ],
+          "description": "Connect chart points to an existing list of custom objects and map label, numeric value and optional range fields."
+        },
+        {
+          "id": "imageFadeBottom",
+          "introducedIn": "2.8.0",
+          "properties": [
+            "rows[].images[].fadeBottom",
+            "rows[].backgroundImage.fadeBottom",
+            "appearance.backgroundImageViewModel.fadeBottom"
+          ],
+          "description": "The lower fraction of an image fades linearly to transparency. Zero, null, or omission leaves the image unchanged."
+        }
+      ],
+      "artifacts": {
+        "schemas/2.8/app.schema.json": "60bb6a875bb86f109e133d78caa65678b5cde831bf4afae528a04f654c55de0b",
+        "schemas/2.8/page.schema.json": "d6e2516d479f4d6edd27b39655d544b331b6d009fe99782fbea71ee224892549",
+        "schemas/2.8/version.schema.json": "64a1e74d4f0ccd7cf8d1e49445e51adb989d2ca953ad3f35fd129f22fa6d294c",
+        "schemas/2.8/test-data.schema.json": "fd69e44e3a6e7eea2ad533d1f227dadd64d7d3b7f38079842484eb041a7a0e55",
+        "registry/chart-properties-2.8.json": "a4aeac1ff8714792f450e618d421e7071cc02effbfc79ba49f21f8d53b9245d1",
+        "registry/2.8.json": "a52026f768c3b214840935bde9fe3b4017eeb2224868a937347e420f685316c7"
+      },
+      "specification": {
+        "path": "spec/2.8.0.md",
+        "sha256": "7ae69c795ada1afb5943af7c9109f894cae36cd8fffca260cdd1936d73134168"
+      }
+    },
+    "2.9.0": {
+      "directory": "2.9",
+      "previousVersion": "2.8.0",
+      "changes": [
+        "Optional numeric value labels and configurable bar widths for bar charts.",
+        "Optional top scroll edge visibility and row content clipping with existing behavior as the default."
+      ],
+      "retiredTypes": {
+        "actionTypes": {
+          "appendToFirebaseDatabase": "Realtime Database actions are no longer supported by current renderers."
+        }
+      },
+      "features": [
+        {
+          "id": "adaptivePages",
+          "introducedIn": "2.1.0",
+          "description": "Adaptive pages compose primary and secondary normal pages through layout metadata."
+        },
+        {
+          "id": "openPagePaneDestination",
+          "introducedIn": "2.1.0",
+          "actionType": "openAnotherPage",
+          "properties": [
+            "configuration.containerId",
+            "configuration.paneId",
+            "configuration.operation"
+          ]
+        },
+        {
+          "id": "backgroundOverlays",
+          "introducedIn": "2.1.0",
+          "properties": [
+            "appearance.backgroundOverlays"
+          ]
+        },
+        {
+          "id": "rowMaxCellWidth",
+          "introducedIn": "2.2.0",
+          "properties": [
+            "rows[].maxCellWidth",
+            "rows[].childProperties.children[].maxCellWidth"
+          ],
+          "description": "Optional maximum width in logical points (pt on Apple platforms, dp on Android, CSS px on the web). Caps the complete styled row including contentPadding and outerMargins, centers it in the available width, and shrinks it to fit narrower containers. Omission or null leaves the row uncapped."
+        },
+        {
+          "id": "testData",
+          "introducedIn": "2.3.0",
+          "properties": [
+            "versions/<number>/test-data.json"
+          ],
+          "description": "Optional version-scoped collections, Firebase callable bindings and data sets for isolated test runs."
+        },
+        {
+          "id": "disableSystemTextScaling",
+          "introducedIn": "2.4.0",
+          "properties": [
+            "versions/<number>/version.json.disableSystemTextScaling"
+          ],
+          "description": "When true, Appmost's native iOS and Android renderers use the authored text scale without system text scaling. False, null, or omission preserves the platform's existing behavior."
+        },
+        {
+          "id": "audioPlayback",
+          "introducedIn": "2.5.0",
+          "actionTypes": [
+            "setAudioQueue",
+            "playAudio",
+            "pauseAudio",
+            "toggleAudioPlayback",
+            "stopAudio",
+            "nextAudioTrack",
+            "previousAudioTrack",
+            "seekAudio",
+            "setAudioShuffle",
+            "setAudioRepeat"
+          ],
+          "properties": [
+            "configuration.audio",
+            "audioPlayer"
+          ],
+          "description": "One session-owned audio queue, transport actions and read-only playback state; runtime availability is platform-specific."
+        },
+        {
+          "id": "androidAudioPlayback",
+          "introducedIn": "2.5.0",
+          "actionTypes": [
+            "setAudioQueue",
+            "playAudio",
+            "pauseAudio",
+            "toggleAudioPlayback",
+            "stopAudio",
+            "nextAudioTrack",
+            "previousAudioTrack",
+            "seekAudio",
+            "setAudioShuffle",
+            "setAudioRepeat"
+          ],
+          "platforms": [
+            "android"
+          ],
+          "description": "Android implements the existing audio actions and readonly playback state with one project-owned Media3 service, native player presentation and system media controls."
+        },
+        {
+          "id": "testDataJsonGetListBindings",
+          "introducedIn": "2.5.0",
+          "properties": [
+            "versions/<number>/test-data.json.bindings[].source"
+          ],
+          "description": "List-mode test data bindings can use the ID of a JSON GET endpoint whose response maps to a list of the collection\u2019s object type."
+        },
+        {
+          "id": "testDataImageFixtures",
+          "introducedIn": "2.6.0",
+          "properties": [
+            "versions/<number>/test-data.json.dataSets[].imageFixtures"
+          ],
+          "description": "Exact HTTP(S) URL mappings to ordinary imported project images in native test data sessions.",
+          "support": {
+            "iosSwiftUI": true,
+            "androidCompose": true,
+            "appmostDesignPreview": true,
+            "web": false
+          }
+        },
+        {
+          "id": "chartListDataBinding",
+          "introducedIn": "2.7.0",
+          "properties": [
+            "rows[].chartViewModels[].dataBinding"
+          ],
+          "description": "Connect chart points to an existing list of custom objects and map label, numeric value and optional range fields."
+        },
+        {
+          "id": "imageFadeBottom",
+          "introducedIn": "2.8.0",
+          "properties": [
+            "rows[].images[].fadeBottom",
+            "rows[].backgroundImage.fadeBottom",
+            "appearance.backgroundImageViewModel.fadeBottom"
+          ],
+          "description": "The lower fraction of an image fades linearly to transparency. Zero, null, or omission leaves the image unchanged."
+        },
+        {
+          "id": "barValueLabels",
+          "introducedIn": "2.9.0",
+          "properties": [
+            "rows[].chartViewModels[].showBarValueLabels"
+          ],
+          "description": "Show numeric values at bar ends when enabled. Omission or false preserves the existing appearance."
+        },
+        {
+          "id": "barWidth",
+          "introducedIn": "2.9.0",
+          "properties": [
+            "rows[].chartViewModels[].barWidthRatio"
+          ],
+          "description": "Optional width as a fraction of the category slot, between 0.1 and 1; omission preserves the existing width."
+        },
+        {
+          "id": "topScrollEdgeEffectVisibility",
+          "introducedIn": "2.9.0",
+          "properties": [
+            "listProperties.hideTopScrollEdgeEffect"
+          ],
+          "description": "Optionally hides the top scroll edge effect. Missing or false preserves the previous appearance."
+        },
+        {
+          "id": "rowContentClipping",
+          "introducedIn": "2.9.0",
+          "properties": [
+            "rows[].childProperties.clipsContent"
+          ],
+          "description": "Optionally clips a row to its bounds. Missing or false preserves the previous appearance."
+        }
+      ],
+      "artifacts": {
+        "schemas/2.9/app.schema.json": "baaee5fbb32a2a6e4918764c7b8511d379eaed45d7d4e44d74dbeafc97bb9d6b",
+        "schemas/2.9/page.schema.json": "e2f22b588a4248c87388b43e3ac317643b06afc71383ea317aefbca459774562",
+        "schemas/2.9/version.schema.json": "f515615157bde9cd78a6f31e4257e38b44a257a126b94ae422a25f4466905d5e",
+        "schemas/2.9/test-data.schema.json": "95c87d201944d9d29ee9e09a638ae221780681399abbbaa229ff0a976746f3ea",
+        "registry/chart-properties-2.9.json": "047380449aa275b222739b7daf53ec955c21883ed3c2c5053d487ebbdeece9d7",
+        "registry/2.9.json": "c73da35178ae8ec8c1d0189a6d994b016994504757f53e0637d07a1bd8593c81"
+      },
+      "specification": {
+        "path": "spec/2.9.0.md",
+        "sha256": "9a2c1774d6dfdad67ee4adebc6f45aede8b7a7ca01945a5479578acb011bc53d"
+      }
+    },
+    "2.10.0": {
+      "directory": "2.10",
+      "previousVersion": "2.9.0",
+      "changes": [
+        "Alexandria variable font through the existing global custom-font selection on Apple native renderers."
+      ],
+      "retiredTypes": {
+        "actionTypes": {
+          "appendToFirebaseDatabase": "Realtime Database actions are no longer supported by current renderers."
+        }
+      },
+      "features": [
+        {
+          "id": "adaptivePages",
+          "introducedIn": "2.1.0",
+          "description": "Adaptive pages compose primary and secondary normal pages through layout metadata."
+        },
+        {
+          "id": "openPagePaneDestination",
+          "introducedIn": "2.1.0",
+          "actionType": "openAnotherPage",
+          "properties": [
+            "configuration.containerId",
+            "configuration.paneId",
+            "configuration.operation"
+          ]
+        },
+        {
+          "id": "backgroundOverlays",
+          "introducedIn": "2.1.0",
+          "properties": [
+            "appearance.backgroundOverlays"
+          ]
+        },
+        {
+          "id": "rowMaxCellWidth",
+          "introducedIn": "2.2.0",
+          "properties": [
+            "rows[].maxCellWidth",
+            "rows[].childProperties.children[].maxCellWidth"
+          ],
+          "description": "Optional maximum width in logical points (pt on Apple platforms, dp on Android, CSS px on the web). Caps the complete styled row including contentPadding and outerMargins, centers it in the available width, and shrinks it to fit narrower containers. Omission or null leaves the row uncapped."
+        },
+        {
+          "id": "testData",
+          "introducedIn": "2.3.0",
+          "properties": [
+            "versions/<number>/test-data.json"
+          ],
+          "description": "Optional version-scoped collections, Firebase callable bindings and data sets for isolated test runs."
+        },
+        {
+          "id": "disableSystemTextScaling",
+          "introducedIn": "2.4.0",
+          "properties": [
+            "versions/<number>/version.json.disableSystemTextScaling"
+          ],
+          "description": "When true, Appmost's native iOS and Android renderers use the authored text scale without system text scaling. False, null, or omission preserves the platform's existing behavior."
+        },
+        {
+          "id": "audioPlayback",
+          "introducedIn": "2.5.0",
+          "actionTypes": [
+            "setAudioQueue",
+            "playAudio",
+            "pauseAudio",
+            "toggleAudioPlayback",
+            "stopAudio",
+            "nextAudioTrack",
+            "previousAudioTrack",
+            "seekAudio",
+            "setAudioShuffle",
+            "setAudioRepeat"
+          ],
+          "properties": [
+            "configuration.audio",
+            "audioPlayer"
+          ],
+          "description": "One session-owned audio queue, transport actions and read-only playback state; runtime availability is platform-specific."
+        },
+        {
+          "id": "androidAudioPlayback",
+          "introducedIn": "2.5.0",
+          "actionTypes": [
+            "setAudioQueue",
+            "playAudio",
+            "pauseAudio",
+            "toggleAudioPlayback",
+            "stopAudio",
+            "nextAudioTrack",
+            "previousAudioTrack",
+            "seekAudio",
+            "setAudioShuffle",
+            "setAudioRepeat"
+          ],
+          "platforms": [
+            "android"
+          ],
+          "description": "Android implements the existing audio actions and readonly playback state with one project-owned Media3 service, native player presentation and system media controls."
+        },
+        {
+          "id": "testDataJsonGetListBindings",
+          "introducedIn": "2.5.0",
+          "properties": [
+            "versions/<number>/test-data.json.bindings[].source"
+          ],
+          "description": "List-mode test data bindings can use the ID of a JSON GET endpoint whose response maps to a list of the collection\u2019s object type."
+        },
+        {
+          "id": "testDataImageFixtures",
+          "introducedIn": "2.6.0",
+          "properties": [
+            "versions/<number>/test-data.json.dataSets[].imageFixtures"
+          ],
+          "description": "Exact HTTP(S) URL mappings to ordinary imported project images in native test data sessions.",
+          "support": {
+            "iosSwiftUI": true,
+            "androidCompose": true,
+            "appmostDesignPreview": true,
+            "web": false
+          }
+        },
+        {
+          "id": "chartListDataBinding",
+          "introducedIn": "2.7.0",
+          "properties": [
+            "rows[].chartViewModels[].dataBinding"
+          ],
+          "description": "Connect chart points to an existing list of custom objects and map label, numeric value and optional range fields."
+        },
+        {
+          "id": "imageFadeBottom",
+          "introducedIn": "2.8.0",
+          "properties": [
+            "rows[].images[].fadeBottom",
+            "rows[].backgroundImage.fadeBottom",
+            "appearance.backgroundImageViewModel.fadeBottom"
+          ],
+          "description": "The lower fraction of an image fades linearly to transparency. Zero, null, or omission leaves the image unchanged."
+        },
+        {
+          "id": "barValueLabels",
+          "introducedIn": "2.9.0",
+          "properties": [
+            "rows[].chartViewModels[].showBarValueLabels"
+          ],
+          "description": "Show numeric values at bar ends when enabled. Omission or false preserves the existing appearance."
+        },
+        {
+          "id": "barWidth",
+          "introducedIn": "2.9.0",
+          "properties": [
+            "rows[].chartViewModels[].barWidthRatio"
+          ],
+          "description": "Optional width as a fraction of the category slot, between 0.1 and 1; omission preserves the existing width."
+        },
+        {
+          "id": "topScrollEdgeEffectVisibility",
+          "introducedIn": "2.9.0",
+          "properties": [
+            "listProperties.hideTopScrollEdgeEffect"
+          ],
+          "description": "Optionally hides the top scroll edge effect. Missing or false preserves the previous appearance."
+        },
+        {
+          "id": "rowContentClipping",
+          "introducedIn": "2.9.0",
+          "properties": [
+            "rows[].childProperties.clipsContent"
+          ],
+          "description": "Optionally clips a row to its bounds. Missing or false preserves the previous appearance."
+        },
+        {
+          "id": "alexandriaCustomFont",
+          "introducedIn": "2.10.0",
+          "properties": [
+            "globalTheme.globalCustomFont"
+          ],
+          "values": [
+            "Alexandria"
+          ],
+          "description": "Select Alexandria through the existing case-sensitive custom-font field. The bundled variable font uses the existing weight axis; no field or weight semantics change.",
+          "support": {
+            "iosSwiftUI": true,
+            "iosUIKit": true,
+            "appmostPreview": true,
+            "appmostDesignPreview": true,
+            "androidCompose": false,
+            "web": false
+          }
+        },
+        {
+          "id": "labelLineHeight",
+          "introducedIn": "2.10.0",
+          "properties": [
+            "rows[].labelModels[].lineHeight"
+          ],
+          "description": "Optional positive finite logical-point line-box height. Missing or null preserves existing line metrics; native text scaling scales the authored height with the font.",
+          "support": {
+            "iosSwiftUI": true,
+            "iosUIKit": true,
+            "androidCompose": true,
+            "web": true
+          }
+        },
+        {
+          "id": "labelLetterSpacing",
+          "introducedIn": "2.10.0",
+          "properties": [
+            "rows[].labelModels[].letterSpacing"
+          ],
+          "description": "Optional finite logical-point letter spacing. Zero and negative values are supported. Missing or null preserves existing tracking; native text scaling scales the authored spacing with the font.",
+          "support": {
+            "iosSwiftUI": true,
+            "iosUIKit": true,
+            "androidCompose": true,
+            "web": true
+          }
+        },
+        {
+          "id": "rowBorderStyle",
+          "introducedIn": "2.10.0",
+          "properties": [
+            "rows[].childProperties.borderStyle"
+          ],
+          "values": [
+            "solid",
+            "dashed"
+          ],
+          "description": "Optional border style. Missing or solid preserves existing behavior. Native dashed borders use dash and gap lengths of three times borderWidth; web uses CSS dashed while retaining width, color and corner radius.",
+          "support": {
+            "iosSwiftUI": true,
+            "iosUIKit": true,
+            "androidCompose": true,
+            "web": true
+          }
+        }
+      ],
+      "artifacts": {
+        "schemas/2.10/app.schema.json": "6d05126dc2f18fc7227f2e465560ff42fc1e32774bedbc5a4907948717028988",
+        "schemas/2.10/page.schema.json": "a13df60eec35046112c7d2420fb426f87f1e904363cb513894147c620930978b",
+        "schemas/2.10/version.schema.json": "8cf853fe21eb3b3b0da49062ef4501c355549d6a39a7eb36d7b605b5c9a45f15",
+        "schemas/2.10/test-data.schema.json": "e3d62e67b1c77e1bc5d723434d436b45df56a7e8da1e49efb1f5671dc8016072",
+        "registry/chart-properties-2.10.json": "4e00be3216e79eb912854ceb06aa1184a54321cf49658496dabde939af776bd8",
+        "registry/2.10.json": "131cee6fc272f5a895ef6237efb762db691ca284120aac1e1070e556f3c70804"
+      },
+      "specification": {
+        "path": "spec/2.10.0.md",
+        "sha256": "280d72e0757558db2a9e9af314443df8d5a134061238c4fd240a8c8ae621933f"
+      }
+    },
+    "2.11.0": {
+      "directory": "2.11",
+      "previousVersion": "2.10.0",
+      "changes": [
+        "Optional RevenueCat integration settings and native paywall presentation using the existing purchase, restore and access-state flows."
+      ],
+      "retiredTypes": {
+        "actionTypes": {
+          "appendToFirebaseDatabase": "Realtime Database actions are no longer supported by current renderers."
+        }
+      },
+      "features": [
+        {
+          "id": "adaptivePages",
+          "introducedIn": "2.1.0",
+          "description": "Adaptive pages compose primary and secondary normal pages through layout metadata."
+        },
+        {
+          "id": "openPagePaneDestination",
+          "introducedIn": "2.1.0",
+          "actionType": "openAnotherPage",
+          "properties": [
+            "configuration.containerId",
+            "configuration.paneId",
+            "configuration.operation"
+          ]
+        },
+        {
+          "id": "backgroundOverlays",
+          "introducedIn": "2.1.0",
+          "properties": [
+            "appearance.backgroundOverlays"
+          ]
+        },
+        {
+          "id": "rowMaxCellWidth",
+          "introducedIn": "2.2.0",
+          "properties": [
+            "rows[].maxCellWidth",
+            "rows[].childProperties.children[].maxCellWidth"
+          ],
+          "description": "Optional maximum width in logical points (pt on Apple platforms, dp on Android, CSS px on the web). Caps the complete styled row including contentPadding and outerMargins, centers it in the available width, and shrinks it to fit narrower containers. Omission or null leaves the row uncapped."
+        },
+        {
+          "id": "testData",
+          "introducedIn": "2.3.0",
+          "properties": [
+            "versions/<number>/test-data.json"
+          ],
+          "description": "Optional version-scoped collections, Firebase callable bindings and data sets for isolated test runs."
+        },
+        {
+          "id": "disableSystemTextScaling",
+          "introducedIn": "2.4.0",
+          "properties": [
+            "versions/<number>/version.json.disableSystemTextScaling"
+          ],
+          "description": "When true, Appmost's native iOS and Android renderers use the authored text scale without system text scaling. False, null, or omission preserves the platform's existing behavior."
+        },
+        {
+          "id": "audioPlayback",
+          "introducedIn": "2.5.0",
+          "actionTypes": [
+            "setAudioQueue",
+            "playAudio",
+            "pauseAudio",
+            "toggleAudioPlayback",
+            "stopAudio",
+            "nextAudioTrack",
+            "previousAudioTrack",
+            "seekAudio",
+            "setAudioShuffle",
+            "setAudioRepeat"
+          ],
+          "properties": [
+            "configuration.audio",
+            "audioPlayer"
+          ],
+          "description": "One session-owned audio queue, transport actions and read-only playback state; runtime availability is platform-specific."
+        },
+        {
+          "id": "androidAudioPlayback",
+          "introducedIn": "2.5.0",
+          "actionTypes": [
+            "setAudioQueue",
+            "playAudio",
+            "pauseAudio",
+            "toggleAudioPlayback",
+            "stopAudio",
+            "nextAudioTrack",
+            "previousAudioTrack",
+            "seekAudio",
+            "setAudioShuffle",
+            "setAudioRepeat"
+          ],
+          "platforms": [
+            "android"
+          ],
+          "description": "Android implements the existing audio actions and readonly playback state with one project-owned Media3 service, native player presentation and system media controls."
+        },
+        {
+          "id": "testDataJsonGetListBindings",
+          "introducedIn": "2.5.0",
+          "properties": [
+            "versions/<number>/test-data.json.bindings[].source"
+          ],
+          "description": "List-mode test data bindings can use the ID of a JSON GET endpoint whose response maps to a list of the collection\u2019s object type."
+        },
+        {
+          "id": "testDataImageFixtures",
+          "introducedIn": "2.6.0",
+          "properties": [
+            "versions/<number>/test-data.json.dataSets[].imageFixtures"
+          ],
+          "description": "Exact HTTP(S) URL mappings to ordinary imported project images in native test data sessions.",
+          "support": {
+            "iosSwiftUI": true,
+            "androidCompose": true,
+            "appmostDesignPreview": true,
+            "web": false
+          }
+        },
+        {
+          "id": "chartListDataBinding",
+          "introducedIn": "2.7.0",
+          "properties": [
+            "rows[].chartViewModels[].dataBinding"
+          ],
+          "description": "Connect chart points to an existing list of custom objects and map label, numeric value and optional range fields."
+        },
+        {
+          "id": "imageFadeBottom",
+          "introducedIn": "2.8.0",
+          "properties": [
+            "rows[].images[].fadeBottom",
+            "rows[].backgroundImage.fadeBottom",
+            "appearance.backgroundImageViewModel.fadeBottom"
+          ],
+          "description": "The lower fraction of an image fades linearly to transparency. Zero, null, or omission leaves the image unchanged."
+        },
+        {
+          "id": "barValueLabels",
+          "introducedIn": "2.9.0",
+          "properties": [
+            "rows[].chartViewModels[].showBarValueLabels"
+          ],
+          "description": "Show numeric values at bar ends when enabled. Omission or false preserves the existing appearance."
+        },
+        {
+          "id": "barWidth",
+          "introducedIn": "2.9.0",
+          "properties": [
+            "rows[].chartViewModels[].barWidthRatio"
+          ],
+          "description": "Optional width as a fraction of the category slot, between 0.1 and 1; omission preserves the existing width."
+        },
+        {
+          "id": "topScrollEdgeEffectVisibility",
+          "introducedIn": "2.9.0",
+          "properties": [
+            "listProperties.hideTopScrollEdgeEffect"
+          ],
+          "description": "Optionally hides the top scroll edge effect. Missing or false preserves the previous appearance."
+        },
+        {
+          "id": "rowContentClipping",
+          "introducedIn": "2.9.0",
+          "properties": [
+            "rows[].childProperties.clipsContent"
+          ],
+          "description": "Optionally clips a row to its bounds. Missing or false preserves the previous appearance."
+        },
+        {
+          "id": "alexandriaCustomFont",
+          "introducedIn": "2.10.0",
+          "properties": [
+            "globalTheme.globalCustomFont"
+          ],
+          "values": [
+            "Alexandria"
+          ],
+          "description": "Select Alexandria through the existing case-sensitive custom-font field. The bundled variable font uses the existing weight axis; no field or weight semantics change.",
+          "support": {
+            "iosSwiftUI": true,
+            "iosUIKit": true,
+            "appmostPreview": true,
+            "appmostDesignPreview": true,
+            "androidCompose": false,
+            "web": false
+          }
+        },
+        {
+          "id": "labelLineHeight",
+          "introducedIn": "2.10.0",
+          "properties": [
+            "rows[].labelModels[].lineHeight"
+          ],
+          "description": "Optional positive finite logical-point line-box height. Missing or null preserves existing line metrics; native text scaling scales the authored height with the font.",
+          "support": {
+            "iosSwiftUI": true,
+            "iosUIKit": true,
+            "androidCompose": true,
+            "web": true
+          }
+        },
+        {
+          "id": "labelLetterSpacing",
+          "introducedIn": "2.10.0",
+          "properties": [
+            "rows[].labelModels[].letterSpacing"
+          ],
+          "description": "Optional finite logical-point letter spacing. Zero and negative values are supported. Missing or null preserves existing tracking; native text scaling scales the authored spacing with the font.",
+          "support": {
+            "iosSwiftUI": true,
+            "iosUIKit": true,
+            "androidCompose": true,
+            "web": true
+          }
+        },
+        {
+          "id": "rowBorderStyle",
+          "introducedIn": "2.10.0",
+          "properties": [
+            "rows[].childProperties.borderStyle"
+          ],
+          "values": [
+            "solid",
+            "dashed"
+          ],
+          "description": "Optional border style. Missing or solid preserves existing behavior. Native dashed borders use dash and gap lengths of three times borderWidth; web uses CSS dashed while retaining width, color and corner radius.",
+          "support": {
+            "iosSwiftUI": true,
+            "iosUIKit": true,
+            "androidCompose": true,
+            "web": true
+          }
+        },
+        {
+          "id": "revenueCat",
+          "introducedIn": "2.11.0",
+          "actionTypes": [
+            "showRevenueCatPaywall"
+          ],
+          "properties": [
+            "integrations[].type",
+            "integrations[].revenueCatIntegrationModel.iosApiKey",
+            "integrations[].revenueCatIntegrationModel.androidApiKey",
+            "integrations[].revenueCatIntegrationModel.entitlementId",
+            "integrations[].revenueCatIntegrationModel.offeringId"
+          ],
+          "description": "Optional app-specific public SDK keys, entitlement and offering selection for native RevenueCat purchases, restore and paywall presentation. The paywall action targets the existing integration ID. Missing, null or empty offeringId selects the default offering. Each version permits at most one active RevenueCat integration; multiple inactive configurations are allowed.",
+          "support": {
+            "ios": true,
+            "android": true,
+            "web": false,
+            "appmostDesign": false
+          }
+        }
+      ],
+      "artifacts": {
+        "schemas/2.11/app.schema.json": "491d3e74cf8bb6027c3e2c68a28e3d709ee02163624179fecb72cd96c3a0e583",
+        "schemas/2.11/page.schema.json": "1083b4d0611dc0d1db672287c5b566b2990f4257d0259add10696c939e400c92",
+        "schemas/2.11/version.schema.json": "e60992dfa66a88c3c339c600178add7f82f6598f8905ae3213f00995eb4eca6d",
+        "schemas/2.11/test-data.schema.json": "9c115a99082dac18da14428a63b9e50383b2c2d9156d649b76d3848260078afd",
+        "registry/chart-properties-2.11.json": "fe6d0941bbbebf8b2b06b453f93337bb7bd352bedca0dbc11fa66032ac1cb917",
+        "registry/2.11.json": "7eb89c4982c6bc4ac4e99265d9ebc1095eaed1ddcd37dd86b7f7ff92066316de"
+      },
+      "specification": {
+        "path": "spec/2.11.0.md",
+        "sha256": "dbd21b51dcb7a5a20f2494c319df4a013af9689fceb136085e28c086199e44e2"
+      }
+    },
+    "2.12.0": {
+      "directory": "2.12",
+      "previousVersion": "2.11.0",
+      "changes": [
+        "Named line/area chart series with a shared time axis, explicit data gaps and per-series color, line pattern and optional fill.",
+        "Optional explicit native Debug-only Firebase emulator endpoints, rejected by distribution and publishing.",
+        "Optional RevenueCat appUserId expression with required-account identity and rights isolation on iOS.",
+        "Optional iOS Firebase Auth-only accounts and explicit Apple/password sign-in, registration and provider linking.",
+        "Optional explicit Firebase callable latestForTarget response policy for native iOS Auth-only global targets."
+      ],
+      "retiredTypes": {
+        "actionTypes": {
+          "appendToFirebaseDatabase": "Realtime Database actions are no longer supported by current renderers."
+        }
+      },
+      "features": [
+        {
+          "id": "adaptivePages",
+          "introducedIn": "2.1.0",
+          "description": "Adaptive pages compose primary and secondary normal pages through layout metadata."
+        },
+        {
+          "id": "openPagePaneDestination",
+          "introducedIn": "2.1.0",
+          "actionType": "openAnotherPage",
+          "properties": [
+            "configuration.containerId",
+            "configuration.paneId",
+            "configuration.operation"
+          ]
+        },
+        {
+          "id": "backgroundOverlays",
+          "introducedIn": "2.1.0",
+          "properties": [
+            "appearance.backgroundOverlays"
+          ]
+        },
+        {
+          "id": "rowMaxCellWidth",
+          "introducedIn": "2.2.0",
+          "properties": [
+            "rows[].maxCellWidth",
+            "rows[].childProperties.children[].maxCellWidth"
+          ],
+          "description": "Optional maximum width in logical points (pt on Apple platforms, dp on Android, CSS px on the web). Caps the complete styled row including contentPadding and outerMargins, centers it in the available width, and shrinks it to fit narrower containers. Omission or null leaves the row uncapped."
+        },
+        {
+          "id": "testData",
+          "introducedIn": "2.3.0",
+          "properties": [
+            "versions/<number>/test-data.json"
+          ],
+          "description": "Optional version-scoped collections, Firebase callable bindings and data sets for isolated test runs."
+        },
+        {
+          "id": "disableSystemTextScaling",
+          "introducedIn": "2.4.0",
+          "properties": [
+            "versions/<number>/version.json.disableSystemTextScaling"
+          ],
+          "description": "When true, Appmost's native iOS and Android renderers use the authored text scale without system text scaling. False, null, or omission preserves the platform's existing behavior."
+        },
+        {
+          "id": "audioPlayback",
+          "introducedIn": "2.5.0",
+          "actionTypes": [
+            "setAudioQueue",
+            "playAudio",
+            "pauseAudio",
+            "toggleAudioPlayback",
+            "stopAudio",
+            "nextAudioTrack",
+            "previousAudioTrack",
+            "seekAudio",
+            "setAudioShuffle",
+            "setAudioRepeat"
+          ],
+          "properties": [
+            "configuration.audio",
+            "audioPlayer"
+          ],
+          "description": "One session-owned audio queue, transport actions and read-only playback state; runtime availability is platform-specific."
+        },
+        {
+          "id": "androidAudioPlayback",
+          "introducedIn": "2.5.0",
+          "actionTypes": [
+            "setAudioQueue",
+            "playAudio",
+            "pauseAudio",
+            "toggleAudioPlayback",
+            "stopAudio",
+            "nextAudioTrack",
+            "previousAudioTrack",
+            "seekAudio",
+            "setAudioShuffle",
+            "setAudioRepeat"
+          ],
+          "platforms": [
+            "android"
+          ],
+          "description": "Android implements the existing audio actions and readonly playback state with one project-owned Media3 service, native player presentation and system media controls."
+        },
+        {
+          "id": "testDataJsonGetListBindings",
+          "introducedIn": "2.5.0",
+          "properties": [
+            "versions/<number>/test-data.json.bindings[].source"
+          ],
+          "description": "List-mode test data bindings can use the ID of a JSON GET endpoint whose response maps to a list of the collection\u2019s object type."
+        },
+        {
+          "id": "testDataImageFixtures",
+          "introducedIn": "2.6.0",
+          "properties": [
+            "versions/<number>/test-data.json.dataSets[].imageFixtures"
+          ],
+          "description": "Exact HTTP(S) URL mappings to ordinary imported project images in native test data sessions.",
+          "support": {
+            "iosSwiftUI": true,
+            "androidCompose": true,
+            "appmostDesignPreview": true,
+            "web": false
+          }
+        },
+        {
+          "id": "chartListDataBinding",
+          "introducedIn": "2.7.0",
+          "properties": [
+            "rows[].chartViewModels[].dataBinding"
+          ],
+          "description": "Connect chart points to an existing list of custom objects and map label, numeric value and optional range fields."
+        },
+        {
+          "id": "imageFadeBottom",
+          "introducedIn": "2.8.0",
+          "properties": [
+            "rows[].images[].fadeBottom",
+            "rows[].backgroundImage.fadeBottom",
+            "appearance.backgroundImageViewModel.fadeBottom"
+          ],
+          "description": "The lower fraction of an image fades linearly to transparency. Zero, null, or omission leaves the image unchanged."
+        },
+        {
+          "id": "barValueLabels",
+          "introducedIn": "2.9.0",
+          "properties": [
+            "rows[].chartViewModels[].showBarValueLabels"
+          ],
+          "description": "Show numeric values at bar ends when enabled. Omission or false preserves the existing appearance."
+        },
+        {
+          "id": "barWidth",
+          "introducedIn": "2.9.0",
+          "properties": [
+            "rows[].chartViewModels[].barWidthRatio"
+          ],
+          "description": "Optional width as a fraction of the category slot, between 0.1 and 1; omission preserves the existing width."
+        },
+        {
+          "id": "topScrollEdgeEffectVisibility",
+          "introducedIn": "2.9.0",
+          "properties": [
+            "listProperties.hideTopScrollEdgeEffect"
+          ],
+          "description": "Optionally hides the top scroll edge effect. Missing or false preserves the previous appearance."
+        },
+        {
+          "id": "rowContentClipping",
+          "introducedIn": "2.9.0",
+          "properties": [
+            "rows[].childProperties.clipsContent"
+          ],
+          "description": "Optionally clips a row to its bounds. Missing or false preserves the previous appearance."
+        },
+        {
+          "id": "alexandriaCustomFont",
+          "introducedIn": "2.10.0",
+          "properties": [
+            "globalTheme.globalCustomFont"
+          ],
+          "values": [
+            "Alexandria"
+          ],
+          "description": "Select Alexandria through the existing case-sensitive custom-font field. The bundled variable font uses the existing weight axis; no field or weight semantics change.",
+          "support": {
+            "iosSwiftUI": true,
+            "iosUIKit": true,
+            "appmostPreview": true,
+            "appmostDesignPreview": true,
+            "androidCompose": false,
+            "web": false
+          }
+        },
+        {
+          "id": "labelLineHeight",
+          "introducedIn": "2.10.0",
+          "properties": [
+            "rows[].labelModels[].lineHeight"
+          ],
+          "description": "Optional positive finite logical-point line-box height. Missing or null preserves existing line metrics; native text scaling scales the authored height with the font.",
+          "support": {
+            "iosSwiftUI": true,
+            "iosUIKit": true,
+            "androidCompose": true,
+            "web": true
+          }
+        },
+        {
+          "id": "labelLetterSpacing",
+          "introducedIn": "2.10.0",
+          "properties": [
+            "rows[].labelModels[].letterSpacing"
+          ],
+          "description": "Optional finite logical-point letter spacing. Zero and negative values are supported. Missing or null preserves existing tracking; native text scaling scales the authored spacing with the font.",
+          "support": {
+            "iosSwiftUI": true,
+            "iosUIKit": true,
+            "androidCompose": true,
+            "web": true
+          }
+        },
+        {
+          "id": "rowBorderStyle",
+          "introducedIn": "2.10.0",
+          "properties": [
+            "rows[].childProperties.borderStyle"
+          ],
+          "values": [
+            "solid",
+            "dashed"
+          ],
+          "description": "Optional border style. Missing or solid preserves existing behavior. Native dashed borders use dash and gap lengths of three times borderWidth; web uses CSS dashed while retaining width, color and corner radius.",
+          "support": {
+            "iosSwiftUI": true,
+            "iosUIKit": true,
+            "androidCompose": true,
+            "web": true
+          }
+        },
+        {
+          "id": "revenueCat",
+          "introducedIn": "2.11.0",
+          "actionTypes": [
+            "showRevenueCatPaywall"
+          ],
+          "properties": [
+            "integrations[].type",
+            "integrations[].revenueCatIntegrationModel.iosApiKey",
+            "integrations[].revenueCatIntegrationModel.androidApiKey",
+            "integrations[].revenueCatIntegrationModel.entitlementId",
+            "integrations[].revenueCatIntegrationModel.offeringId"
+          ],
+          "description": "Optional app-specific public SDK keys, entitlement and offering selection for native RevenueCat purchases, restore and paywall presentation. The paywall action targets the existing integration ID. Missing, null or empty offeringId selects the default offering. Each version permits at most one active RevenueCat integration; multiple inactive configurations are allowed.",
+          "support": {
+            "ios": true,
+            "android": true,
+            "web": false,
+            "appmostDesign": false
+          }
+        },
+        {
+          "id": "chartTimeSeries",
+          "introducedIn": "2.12.0",
+          "properties": [
+            "rows[].chartViewModels[].series"
+          ],
+          "description": "Optional named line/area series with portable timestamps, explicit null gaps and independent color, line pattern and optional fill on a shared axis. Single-series dataPoints remain unchanged when series is omitted.",
+          "support": {
+            "iosSwiftUI": true,
+            "androidCompose": true,
+            "web": true,
+            "appmostDesignPreview": true
+          }
+        },
+        {
+          "id": "firebaseEmulators",
+          "introducedIn": "2.12.0",
+          "properties": [
+            "integrations[].firebaseIntegrationModel.emulators"
+          ],
+          "description": "Explicit loopback demo-project emulator endpoints for native iOS/Mac Catalyst Debug verification. Publishing/distribution reject all emulator metadata in the selected version.",
+          "support": {
+            "iosDebug": true,
+            "macCatalystDebug": true,
+            "android": false,
+            "web": false,
+            "appmostDesign": false
+          }
+        },
+        {
+          "id": "revenueCatIdentity",
+          "introducedIn": "2.12.0",
+          "properties": [
+            "integrations[].revenueCatIntegrationModel.appUserId"
+          ],
+          "description": "Optional global account-expression binding for customer RevenueCat sessions. A present String requires a validated resolved opaque account ID, invalidates old rights across account changes and prevents stale asynchronous results from crossing accounts. Missing or null retains prior behavior. Android preserves the field but rejects account-bound initialization until supported.",
+          "support": {
+            "ios": true,
+            "android": false,
+            "web": false,
+            "appmostDesign": false
+          }
+        },
+        {
+          "id": "firebaseAccounts",
+          "introducedIn": "2.12.0",
+          "actionTypes": [
+            "authenticateFirebaseUser"
+          ],
+          "properties": [
+            "integrations[].firebaseIntegrationModel.accountMode",
+            "configuration.firebaseAuthAction"
+          ],
+          "description": "Optional authOnly Firebase accounts and one explicit account action with signIn/register/link and apple/password. Existing expression objects supply password credentials. Account actions target the sole active iOS Firebase integration; unsupported platforms preserve source metadata but reject activation and publication. No implicit Firestore user-profile access is introduced.",
+          "support": {
+            "ios": true,
+            "android": false,
+            "web": false,
+            "appmostDesign": false
+          }
+        },
+        {
+          "id": "firebaseCallableResponsePolicy",
+          "introducedIn": "2.12.0",
+          "properties": [
+            "configuration.fbFuncAction.responsePolicy"
+          ],
+          "values": [
+            "latestForTarget"
+          ],
+          "support": {
+            "ios": true,
+            "macCatalyst": true,
+            "android": false,
+            "web": false,
+            "appmostDesign": false
+          }
+        }
+      ],
+      "artifacts": {
+        "registry/2.12.json": "6ac05e7e06579d3d44f8b35407c7f9546eb49ab43510e25f566d9db9b056e993",
+        "registry/chart-properties-2.12.json": "395574e15baf1081aa0adab42bce1e6fc2f4d9caa7b9186a954f9a315ab2767b",
+        "schemas/2.12/app.schema.json": "fe5739e3cf548d296dfb1a9bf1ea43a5454d0de3c11dfbf668f3aef09dd0cb7d",
+        "schemas/2.12/page.schema.json": "e2de2cb97f3ff889770bc2399f35278a2824b0f3da96a15152064abebcd0f976",
+        "schemas/2.12/version.schema.json": "0782049a3ed336163d5bafa313adae99499c0590a2702aff54c40287c7b3010c",
+        "schemas/2.12/test-data.schema.json": "3e819a9f5a302223ae37b58ba92da8c78b5792356aeca4f21d03d43fa1f8b96d"
+      },
+      "specification": {
+        "path": "spec/2.12.0.md",
+        "sha256": "0db14c3a7035a23506e68bdbfa0f22ce6f63797e35b8af8956b239d79bca8574"
       }
     }
   },

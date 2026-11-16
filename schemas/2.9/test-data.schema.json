@@ -1,0 +1,192 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.appmost.ai/format/schemas/2.9/test-data.schema.json",
+  "title": "Appmost version test data",
+  "description": "Optional sibling of version.json. Binding sources and object types refer to the same app version.",
+  "type": "object",
+  "required": [
+    "collections",
+    "bindings",
+    "dataSets"
+  ],
+  "properties": {
+    "collections": {
+      "type": "object",
+      "additionalProperties": {
+        "type": "object",
+        "required": [
+          "objectType"
+        ],
+        "properties": {
+          "objectType": {
+            "type": "string",
+            "pattern": "\\S"
+          }
+        }
+      },
+      "propertyNames": {
+        "pattern": "\\S"
+      }
+    },
+    "bindings": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "source",
+          "collection",
+          "mode"
+        ],
+        "properties": {
+          "source": {
+            "type": "object",
+            "required": [
+              "integrationId",
+              "operation"
+            ],
+            "properties": {
+              "integrationId": {
+                "type": "string",
+                "pattern": "\\S"
+              },
+              "operation": {
+                "description": "Firebase callable name or the ID of a JSON GET endpoint whose response maps to a list of the collection’s object type.",
+                "type": "string",
+                "pattern": "\\S"
+              }
+            }
+          },
+          "collection": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "mode": {
+            "enum": [
+              "list",
+              "lookup"
+            ]
+          },
+          "lookup": {
+            "type": "object",
+            "required": [
+              "input",
+              "key"
+            ],
+            "properties": {
+              "input": {
+                "type": "string",
+                "pattern": "\\S"
+              },
+              "key": {
+                "type": "string",
+                "pattern": "\\S"
+              }
+            }
+          },
+          "result": {
+            "type": "object",
+            "required": [
+              "foundField",
+              "itemField"
+            ],
+            "properties": {
+              "foundField": {
+                "type": "string",
+                "pattern": "\\S"
+              },
+              "itemField": {
+                "type": "string",
+                "pattern": "\\S"
+              }
+            }
+          }
+        },
+        "if": {
+          "properties": {
+            "mode": {
+              "const": "lookup"
+            }
+          }
+        },
+        "then": {
+          "required": [
+            "lookup",
+            "result"
+          ]
+        },
+        "else": {
+          "not": {
+            "anyOf": [
+              {
+                "required": [
+                  "lookup"
+                ]
+              },
+              {
+                "required": [
+                  "result"
+                ]
+              }
+            ]
+          }
+        }
+      }
+    },
+    "dataSets": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "name",
+          "values"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "name": {
+            "type": "string",
+            "pattern": "\\S"
+          },
+          "values": {
+            "type": "object",
+            "additionalProperties": {
+              "type": "array",
+              "items": {
+                "type": "object"
+              }
+            }
+          },
+          "imageFixtures": {
+            "description": "Optional exact resolved HTTP(S) image URL to imported lower-case resources/images PNG or JPEG file name. Used only in native test sessions.",
+            "type": "object",
+            "propertyNames": {
+              "type": "string",
+              "format": "uri",
+              "pattern": "^https?://[^/?#@\\s]+(?:[/?#][^\\s]*)?$"
+            },
+            "additionalProperties": {
+              "type": "string",
+              "minLength": 1,
+              "pattern": "^[^./\\\\\\u0000-\\u001f\\u007f][^/\\\\\\u0000-\\u001f\\u007f]*\\.(?:png|jpg|jpeg)$",
+              "allOf": [
+                {
+                  "not": {
+                    "pattern": "[A-Z]"
+                  }
+                },
+                {
+                  "not": {
+                    "pattern": "^\\s|\\s$"
+                  }
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

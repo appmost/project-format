@@ -38,8 +38,7 @@ export function sha256(bytes) {
 export async function readFormatArtifact(relativePath) {
   const prefix = ['appmostapp-format/', 'firebase/appmost.ai/format/'].find(value => relativePath.startsWith(value));
   const localPath = prefix ? relativePath.slice(prefix.length) : relativePath;
-  const publicPath = localPath === 'spec/2.1.1/README.md' ? 'spec/2.1.1.md'
-    : localPath === 'spec/2.2.0/README.md' ? 'spec/2.2.0.md' : localPath;
+  const publicPath = localPath.replace(/^spec\/([0-9]+\.[0-9]+\.[0-9]+)\/README\.md$/, "spec/$1.md");
   return readFile(path.join(formatRepositoryRoot, publicPath));
 }
 

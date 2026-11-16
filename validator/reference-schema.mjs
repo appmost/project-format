@@ -2,11 +2,11 @@ import { isDeepStrictEqual } from 'node:util';
 
 // A closed subset for the assertions used in the published reference schemas.
 // Unknown keywords and external references fail, rather than reducing validation.
-const annotations = new Set(['$schema', '$id', '$comment', 'title', 'description', 'default']);
+const annotations = new Set(['$schema', '$id', '$comment', 'title', 'description', 'default', 'format']);
 const assertions = new Set([
   '$ref', '$defs', 'type', 'enum', 'const', 'properties', 'required',
   'additionalProperties', 'propertyNames', 'items', 'minItems', 'uniqueItems',
-  'minLength', 'pattern', 'minimum', 'maximum', 'exclusiveMinimum',
+  'contains', 'minContains', 'maxContains', 'minLength', 'pattern', 'minimum', 'maximum', 'exclusiveMinimum',
   'allOf', 'anyOf', 'if', 'then', 'else', 'not',
 ]);
 const object = value => value !== null && typeof value === 'object' && !Array.isArray(value);
@@ -21,7 +21,7 @@ export function assertSupportedSchema(schema) {
   for (const key of ['properties', '$defs']) {
     for (const child of Object.values(schema[key] ?? {})) assertSupportedSchema(child);
   }
-  for (const key of ['items', 'propertyNames', 'if', 'then', 'else', 'not', 'additionalProperties']) {
+  for (const key of ['items', 'contains', 'propertyNames', 'if', 'then', 'else', 'not', 'additionalProperties']) {
     if (schema[key] !== undefined) assertSupportedSchema(schema[key]);
   }
   for (const key of ['allOf', 'anyOf']) {
@@ -75,6 +75,20 @@ export function validateReferenceSchema(value, schema, root = schema, jsonPath =
     if (schema.minItems !== undefined && value.length < schema.minItems) invalid('Too few array items.');
     if (schema.uniqueItems && value.some((entry, index) => value.slice(0, index).some(previous => isDeepStrictEqual(entry, previous)))) invalid('Array items must be unique.');
     if (schema.items !== undefined) value.forEach((child, index) => validateReferenceSchema(child, schema.items, root, jsonPath + '[' + index + ']'));
+    if (schema.contains !== undefined) {
+      let count = 0;
+      value.forEach((child, index) => {
+        try {
+          validateReferenceSchema(child, schema.contains, root, jsonPath + '[' + index + ']');
+          count += 1;
+        } catch (error) {
+          if (!error.jsonPath) throw error;
+        }
+      });
+      if (count < (schema.minContains ?? 1)) invalid('Too few matching array items.');
+      if (schema.maxContains !== undefined && count > schema.maxContains) invalid('Too many matching array items.');
+    }
+
   }
   if (typeof value === 'string') {
     if (schema.minLength !== undefined && [...value].length < schema.minLength) invalid('String is too short.');

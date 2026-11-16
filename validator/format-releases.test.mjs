@@ -37,10 +37,10 @@ async function modifiedErrata(change) {
   return {manifest, read: name => name.endsWith('/publication-errata.json') ? bytes : readFormatArtifact(name)};
 }
 
-test('canonical Git 2.0, frozen 2.1 references and current 2.2.0 artifacts agree', async () => {
+test('canonical Git 2.0, frozen 2.1 references and current 2.12.0 artifacts agree', async () => {
   const manifest = await readFormatReleases();
   const current = await verifyPublishedFormatReleases(manifest);
-  assert.equal(current.version, '2.2.0');
+  assert.equal(current.version, '2.12.0');
   assert.equal(current.documentVersion, 2);
   assert.equal(manifest.releases['2.0.0'].artifacts['registry/2.0.json'],
     '2d64b69aeb52ab27037636f345e82719fece2bd5092e913149913a499e091747');
@@ -148,9 +148,8 @@ test('published deprecation metadata is not reintroduced as new in an editorial 
   await assert.rejects(verifyPublishedFormatReleases(manifest, read), /Published deprecation/);
 });
 
-test('Open page keeps its type introduction and versions its pane capability separately', async () => {
-  const current = currentFormatRelease(await readFormatReleases());
-  const registry = JSON.parse(await readFormatArtifact(`appmostapp-format/registry/${current.directory}.json`));
+test('Frozen2.2 Open page keeps its type introduction and versions its pane capability separately', async () => {
+  const registry = JSON.parse(await readFormatArtifact("appmostapp-format/registry/2.2.json"));
   assert.equal(registry.actionTypes.find(entry => entry.type === 'openAnotherPage').introducedIn, '2.0.0');
   assert.deepEqual(registry.features.find(entry => entry.id === 'openPagePaneDestination').properties,
     ['configuration.containerId', 'configuration.paneId', 'configuration.operation']);
