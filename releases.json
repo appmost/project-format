@@ -1,6 +1,6 @@
 {
   "manifestVersion": 1,
-  "currentVersion": "2.12.0",
+  "currentVersion": "2.13.0",
   "documentVersion": 2,
   "publicationScope": "reference",
   "releases": {
@@ -469,7 +469,7 @@
           "properties": [
             "versions/<number>/test-data.json.bindings[].source"
           ],
-          "description": "List-mode test data bindings can use the ID of a JSON GET endpoint whose response maps to a list of the collection\u2019s object type."
+          "description": "List-mode test data bindings can use the ID of a JSON GET endpoint whose response maps to a list of the collection’s object type."
         }
       ],
       "artifacts": {
@@ -591,7 +591,7 @@
           "properties": [
             "versions/<number>/test-data.json.bindings[].source"
           ],
-          "description": "List-mode test data bindings can use the ID of a JSON GET endpoint whose response maps to a list of the collection\u2019s object type."
+          "description": "List-mode test data bindings can use the ID of a JSON GET endpoint whose response maps to a list of the collection’s object type."
         },
         {
           "id": "testDataImageFixtures",
@@ -727,7 +727,7 @@
           "properties": [
             "versions/<number>/test-data.json.bindings[].source"
           ],
-          "description": "List-mode test data bindings can use the ID of a JSON GET endpoint whose response maps to a list of the collection\u2019s object type."
+          "description": "List-mode test data bindings can use the ID of a JSON GET endpoint whose response maps to a list of the collection’s object type."
         },
         {
           "id": "testDataImageFixtures",
@@ -871,7 +871,7 @@
           "properties": [
             "versions/<number>/test-data.json.bindings[].source"
           ],
-          "description": "List-mode test data bindings can use the ID of a JSON GET endpoint whose response maps to a list of the collection\u2019s object type."
+          "description": "List-mode test data bindings can use the ID of a JSON GET endpoint whose response maps to a list of the collection’s object type."
         },
         {
           "id": "testDataImageFixtures",
@@ -1026,7 +1026,7 @@
           "properties": [
             "versions/<number>/test-data.json.bindings[].source"
           ],
-          "description": "List-mode test data bindings can use the ID of a JSON GET endpoint whose response maps to a list of the collection\u2019s object type."
+          "description": "List-mode test data bindings can use the ID of a JSON GET endpoint whose response maps to a list of the collection’s object type."
         },
         {
           "id": "testDataImageFixtures",
@@ -1212,7 +1212,7 @@
           "properties": [
             "versions/<number>/test-data.json.bindings[].source"
           ],
-          "description": "List-mode test data bindings can use the ID of a JSON GET endpoint whose response maps to a list of the collection\u2019s object type."
+          "description": "List-mode test data bindings can use the ID of a JSON GET endpoint whose response maps to a list of the collection’s object type."
         },
         {
           "id": "testDataImageFixtures",
@@ -1463,7 +1463,7 @@
           "properties": [
             "versions/<number>/test-data.json.bindings[].source"
           ],
-          "description": "List-mode test data bindings can use the ID of a JSON GET endpoint whose response maps to a list of the collection\u2019s object type."
+          "description": "List-mode test data bindings can use the ID of a JSON GET endpoint whose response maps to a list of the collection’s object type."
         },
         {
           "id": "testDataImageFixtures",
@@ -1739,7 +1739,7 @@
           "properties": [
             "versions/<number>/test-data.json.bindings[].source"
           ],
-          "description": "List-mode test data bindings can use the ID of a JSON GET endpoint whose response maps to a list of the collection\u2019s object type."
+          "description": "List-mode test data bindings can use the ID of a JSON GET endpoint whose response maps to a list of the collection’s object type."
         },
         {
           "id": "testDataImageFixtures",
@@ -1981,6 +1981,375 @@
       "specification": {
         "path": "spec/2.12.0.md",
         "sha256": "0db14c3a7035a23506e68bdbfa0f22ce6f63797e35b8af8956b239d79bca8574"
+      }
+    },
+    "2.13.0": {
+      "directory": "2.13",
+      "previousVersion": "2.12.0",
+      "changes": [
+        "Optional public RevenueCat Web Billing SDK key and account-bound web paywall and entitlement refresh.",
+        "Web runtime support for existing Firebase Auth-only accounts and latest-for-target callable response policy."
+      ],
+      "retiredTypes": {
+        "actionTypes": {
+          "appendToFirebaseDatabase": "Realtime Database actions are no longer supported by current renderers."
+        }
+      },
+      "features": [
+        {
+          "id": "adaptivePages",
+          "introducedIn": "2.1.0",
+          "description": "Adaptive pages compose primary and secondary normal pages through layout metadata."
+        },
+        {
+          "id": "openPagePaneDestination",
+          "introducedIn": "2.1.0",
+          "actionType": "openAnotherPage",
+          "properties": [
+            "configuration.containerId",
+            "configuration.paneId",
+            "configuration.operation"
+          ]
+        },
+        {
+          "id": "backgroundOverlays",
+          "introducedIn": "2.1.0",
+          "properties": [
+            "appearance.backgroundOverlays"
+          ]
+        },
+        {
+          "id": "rowMaxCellWidth",
+          "introducedIn": "2.2.0",
+          "properties": [
+            "rows[].maxCellWidth",
+            "rows[].childProperties.children[].maxCellWidth"
+          ],
+          "description": "Optional maximum width in logical points (pt on Apple platforms, dp on Android, CSS px on the web). Caps the complete styled row including contentPadding and outerMargins, centers it in the available width, and shrinks it to fit narrower containers. Omission or null leaves the row uncapped."
+        },
+        {
+          "id": "testData",
+          "introducedIn": "2.3.0",
+          "properties": [
+            "versions/<number>/test-data.json"
+          ],
+          "description": "Optional version-scoped collections, Firebase callable bindings and data sets for isolated test runs."
+        },
+        {
+          "id": "disableSystemTextScaling",
+          "introducedIn": "2.4.0",
+          "properties": [
+            "versions/<number>/version.json.disableSystemTextScaling"
+          ],
+          "description": "When true, Appmost's native iOS and Android renderers use the authored text scale without system text scaling. False, null, or omission preserves the platform's existing behavior."
+        },
+        {
+          "id": "audioPlayback",
+          "introducedIn": "2.5.0",
+          "actionTypes": [
+            "setAudioQueue",
+            "playAudio",
+            "pauseAudio",
+            "toggleAudioPlayback",
+            "stopAudio",
+            "nextAudioTrack",
+            "previousAudioTrack",
+            "seekAudio",
+            "setAudioShuffle",
+            "setAudioRepeat"
+          ],
+          "properties": [
+            "configuration.audio",
+            "audioPlayer"
+          ],
+          "description": "One session-owned audio queue, transport actions and read-only playback state; runtime availability is platform-specific."
+        },
+        {
+          "id": "androidAudioPlayback",
+          "introducedIn": "2.5.0",
+          "actionTypes": [
+            "setAudioQueue",
+            "playAudio",
+            "pauseAudio",
+            "toggleAudioPlayback",
+            "stopAudio",
+            "nextAudioTrack",
+            "previousAudioTrack",
+            "seekAudio",
+            "setAudioShuffle",
+            "setAudioRepeat"
+          ],
+          "platforms": [
+            "android"
+          ],
+          "description": "Android implements the existing audio actions and readonly playback state with one project-owned Media3 service, native player presentation and system media controls."
+        },
+        {
+          "id": "testDataJsonGetListBindings",
+          "introducedIn": "2.5.0",
+          "properties": [
+            "versions/<number>/test-data.json.bindings[].source"
+          ],
+          "description": "List-mode test data bindings can use the ID of a JSON GET endpoint whose response maps to a list of the collection’s object type."
+        },
+        {
+          "id": "testDataImageFixtures",
+          "introducedIn": "2.6.0",
+          "properties": [
+            "versions/<number>/test-data.json.dataSets[].imageFixtures"
+          ],
+          "description": "Exact HTTP(S) URL mappings to ordinary imported project images in native test data sessions.",
+          "support": {
+            "iosSwiftUI": true,
+            "androidCompose": true,
+            "appmostDesignPreview": true,
+            "web": false
+          }
+        },
+        {
+          "id": "chartListDataBinding",
+          "introducedIn": "2.7.0",
+          "properties": [
+            "rows[].chartViewModels[].dataBinding"
+          ],
+          "description": "Connect chart points to an existing list of custom objects and map label, numeric value and optional range fields."
+        },
+        {
+          "id": "imageFadeBottom",
+          "introducedIn": "2.8.0",
+          "properties": [
+            "rows[].images[].fadeBottom",
+            "rows[].backgroundImage.fadeBottom",
+            "appearance.backgroundImageViewModel.fadeBottom"
+          ],
+          "description": "The lower fraction of an image fades linearly to transparency. Zero, null, or omission leaves the image unchanged."
+        },
+        {
+          "id": "barValueLabels",
+          "introducedIn": "2.9.0",
+          "properties": [
+            "rows[].chartViewModels[].showBarValueLabels"
+          ],
+          "description": "Show numeric values at bar ends when enabled. Omission or false preserves the existing appearance."
+        },
+        {
+          "id": "barWidth",
+          "introducedIn": "2.9.0",
+          "properties": [
+            "rows[].chartViewModels[].barWidthRatio"
+          ],
+          "description": "Optional width as a fraction of the category slot, between 0.1 and 1; omission preserves the existing width."
+        },
+        {
+          "id": "topScrollEdgeEffectVisibility",
+          "introducedIn": "2.9.0",
+          "properties": [
+            "listProperties.hideTopScrollEdgeEffect"
+          ],
+          "description": "Optionally hides the top scroll edge effect. Missing or false preserves the previous appearance."
+        },
+        {
+          "id": "rowContentClipping",
+          "introducedIn": "2.9.0",
+          "properties": [
+            "rows[].childProperties.clipsContent"
+          ],
+          "description": "Optionally clips a row to its bounds. Missing or false preserves the previous appearance."
+        },
+        {
+          "id": "alexandriaCustomFont",
+          "introducedIn": "2.10.0",
+          "properties": [
+            "globalTheme.globalCustomFont"
+          ],
+          "values": [
+            "Alexandria"
+          ],
+          "description": "Select Alexandria through the existing case-sensitive custom-font field. The bundled variable font uses the existing weight axis; no field or weight semantics change.",
+          "support": {
+            "iosSwiftUI": true,
+            "iosUIKit": true,
+            "appmostPreview": true,
+            "appmostDesignPreview": true,
+            "androidCompose": false,
+            "web": false
+          }
+        },
+        {
+          "id": "labelLineHeight",
+          "introducedIn": "2.10.0",
+          "properties": [
+            "rows[].labelModels[].lineHeight"
+          ],
+          "description": "Optional positive finite logical-point line-box height. Missing or null preserves existing line metrics; native text scaling scales the authored height with the font.",
+          "support": {
+            "iosSwiftUI": true,
+            "iosUIKit": true,
+            "androidCompose": true,
+            "web": true
+          }
+        },
+        {
+          "id": "labelLetterSpacing",
+          "introducedIn": "2.10.0",
+          "properties": [
+            "rows[].labelModels[].letterSpacing"
+          ],
+          "description": "Optional finite logical-point letter spacing. Zero and negative values are supported. Missing or null preserves existing tracking; native text scaling scales the authored spacing with the font.",
+          "support": {
+            "iosSwiftUI": true,
+            "iosUIKit": true,
+            "androidCompose": true,
+            "web": true
+          }
+        },
+        {
+          "id": "rowBorderStyle",
+          "introducedIn": "2.10.0",
+          "properties": [
+            "rows[].childProperties.borderStyle"
+          ],
+          "values": [
+            "solid",
+            "dashed"
+          ],
+          "description": "Optional border style. Missing or solid preserves existing behavior. Native dashed borders use dash and gap lengths of three times borderWidth; web uses CSS dashed while retaining width, color and corner radius.",
+          "support": {
+            "iosSwiftUI": true,
+            "iosUIKit": true,
+            "androidCompose": true,
+            "web": true
+          }
+        },
+        {
+          "id": "revenueCat",
+          "introducedIn": "2.11.0",
+          "actionTypes": [
+            "showRevenueCatPaywall"
+          ],
+          "properties": [
+            "integrations[].type",
+            "integrations[].revenueCatIntegrationModel.iosApiKey",
+            "integrations[].revenueCatIntegrationModel.androidApiKey",
+            "integrations[].revenueCatIntegrationModel.entitlementId",
+            "integrations[].revenueCatIntegrationModel.offeringId"
+          ],
+          "description": "Optional app-specific public SDK keys, entitlement and offering selection for native RevenueCat purchases, restore and paywall presentation. The paywall action targets the existing integration ID. Missing, null or empty offeringId selects the default offering. Each version permits at most one active RevenueCat integration; multiple inactive configurations are allowed.",
+          "support": {
+            "ios": true,
+            "android": true,
+            "web": false,
+            "appmostDesign": false
+          }
+        },
+        {
+          "id": "chartTimeSeries",
+          "introducedIn": "2.12.0",
+          "properties": [
+            "rows[].chartViewModels[].series"
+          ],
+          "description": "Optional named line/area series with portable timestamps, explicit null gaps and independent color, line pattern and optional fill on a shared axis. Single-series dataPoints remain unchanged when series is omitted.",
+          "support": {
+            "iosSwiftUI": true,
+            "androidCompose": true,
+            "web": true,
+            "appmostDesignPreview": true
+          }
+        },
+        {
+          "id": "firebaseEmulators",
+          "introducedIn": "2.12.0",
+          "properties": [
+            "integrations[].firebaseIntegrationModel.emulators"
+          ],
+          "description": "Explicit loopback demo-project emulator endpoints for native iOS/Mac Catalyst Debug verification. Publishing/distribution reject all emulator metadata in the selected version.",
+          "support": {
+            "iosDebug": true,
+            "macCatalystDebug": true,
+            "android": false,
+            "web": false,
+            "appmostDesign": false
+          }
+        },
+        {
+          "id": "revenueCatIdentity",
+          "introducedIn": "2.12.0",
+          "properties": [
+            "integrations[].revenueCatIntegrationModel.appUserId"
+          ],
+          "description": "Optional global account-expression binding for customer RevenueCat sessions. A present String requires a validated resolved opaque account ID, invalidates old rights across account changes and prevents stale asynchronous results from crossing accounts. Missing or null retains prior behavior. Android preserves the field but rejects account-bound initialization until supported.",
+          "support": {
+            "ios": true,
+            "android": false,
+            "web": true,
+            "appmostDesign": false
+          }
+        },
+        {
+          "id": "firebaseAccounts",
+          "introducedIn": "2.12.0",
+          "actionTypes": [
+            "authenticateFirebaseUser"
+          ],
+          "properties": [
+            "integrations[].firebaseIntegrationModel.accountMode",
+            "configuration.firebaseAuthAction"
+          ],
+          "description": "Explicit authOnly Firebase accounts and signIn/register/link with apple/password on iOS and web. Password accounts require verified email; linking preserves UID. No implicit Firestore user-profile access.",
+          "support": {
+            "ios": true,
+            "android": false,
+            "web": true,
+            "appmostDesign": false
+          }
+        },
+        {
+          "id": "firebaseCallableResponsePolicy",
+          "introducedIn": "2.12.0",
+          "properties": [
+            "configuration.fbFuncAction.responsePolicy"
+          ],
+          "values": [
+            "latestForTarget"
+          ],
+          "support": {
+            "ios": true,
+            "macCatalyst": true,
+            "android": false,
+            "web": true,
+            "appmostDesign": false
+          }
+        },
+        {
+          "id": "revenueCatWebBilling",
+          "introducedIn": "2.13.0",
+          "properties": [
+            "integrations[].revenueCatIntegrationModel.webApiKey"
+          ],
+          "actionTypes": [
+            "showRevenueCatPaywall",
+            "restoreIAP"
+          ],
+          "description": "Optional public rcb_ Web Billing SDK key. Web purchases and entitlement refresh require the existing appUserId expression and an identified customer. Missing, null or empty web key disables web billing while preserving native SDK keys. Account and configuration changes invalidate pending results.",
+          "support": {
+            "web": true,
+            "ios": false,
+            "android": false,
+            "appmostDesign": false
+          }
+        }
+      ],
+      "artifacts": {
+        "schemas/2.13/app.schema.json": "14b045196e24035fc8aa73daa6396a922e77c485f3abfe7305e014b04de1fe08",
+        "schemas/2.13/page.schema.json": "290359c988e762fd629c0ca0b11395e4e35fabe51ac025210d5045afe601852d",
+        "schemas/2.13/version.schema.json": "535af11464798c8f5d62a6a3c7c8f1b5aebd3dba0277c9158c08bbe905aa4221",
+        "schemas/2.13/test-data.schema.json": "7997e542ed78507f657dde5d4cd42d038c5622f625afdf4b673eaf93aab89539",
+        "registry/chart-properties-2.13.json": "2f69d1cbe65bc97d3aa4711cde0149339712faeccb3ea09ba88307cdadcba9e0",
+        "registry/2.13.json": "4ce6e2a4258e7f3139bf14059ad46c800c2f14132e00c24fb82c81278a7066e5"
+      },
+      "specification": {
+        "path": "spec/2.13.0.md",
+        "sha256": "d319e8c2fc26e6a45c068f12761282f3660305426ef7edbc9a6d469a8c3d1025"
       }
     }
   },

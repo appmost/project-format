@@ -1,0 +1,1121 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.appmost.ai/format/schemas/2.13/page.schema.json",
+  "title": "Appmost Project Format 2.1 page",
+  "type": "object",
+  "required": [
+    "id",
+    "type"
+  ],
+  "properties": {
+    "id": {
+      "type": "string",
+      "minLength": 1
+    },
+    "type": {
+      "enum": [
+        "normal",
+        "tabbar",
+        "paginated",
+        "webview",
+        "map",
+        "camera",
+        "login",
+        "bankIdLogin",
+        "none",
+        "adaptive"
+      ]
+    },
+    "rows": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/row"
+      }
+    },
+    "leftNavBarButtons": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/barButtonItem"
+      }
+    },
+    "rightNavBarButtons": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/barButtonItem"
+      }
+    },
+    "bottomToolbarItems": {
+      "type": "array",
+      "items": {
+        "$ref": "#/$defs/barButtonItem"
+      }
+    },
+    "appearance": {
+      "type": "object",
+      "properties": {
+        "backgroundOverlays": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/backgroundOverlay"
+          }
+        },
+        "backgroundImageViewModel": {
+          "$ref": "#/$defs/imageWithFade"
+        }
+      },
+      "additionalProperties": true
+    },
+    "extensions": {
+      "$ref": "#/$defs/extensions"
+    },
+    "layout": {
+      "$ref": "#/$defs/adaptiveLayout"
+    },
+    "backgroundImageViewModel": {
+      "$ref": "#/$defs/imageWithFade"
+    },
+    "listProperties": {
+      "type": "object",
+      "properties": {
+        "hideTopScrollEdgeEffect": {
+          "type": "boolean",
+          "default": false,
+          "description": "When true, hide the top scroll edge effect on platforms that support it. Omission preserves the previous appearance."
+        }
+      },
+      "additionalProperties": true
+    }
+  },
+  "additionalProperties": true,
+  "$defs": {
+    "backgroundOverlay": {
+      "type": "object",
+      "required": [
+        "stops"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "direction": {
+          "enum": [
+            "topToBottom",
+            "bottomToTop",
+            "leftToRight",
+            "rightToLeft"
+          ],
+          "default": "topToBottom"
+        },
+        "start": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "default": 0
+        },
+        "end": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1,
+          "default": 1
+        },
+        "anchorRowId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "offset": {
+          "type": "number",
+          "default": -80
+        },
+        "length": {
+          "type": "number",
+          "exclusiveMinimum": 0,
+          "default": 180
+        },
+        "stops": {
+          "type": "array",
+          "minItems": 2,
+          "items": {
+            "$ref": "#/$defs/backgroundOverlayStop"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "backgroundOverlayStop": {
+      "type": "object",
+      "required": [
+        "location",
+        "color",
+        "opacity"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "location": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        },
+        "color": {
+          "type": "string",
+          "pattern": "^[0-9a-fA-F]{6}$"
+        },
+        "darkColor": {
+          "type": "string",
+          "pattern": "^[0-9a-fA-F]{6}$"
+        },
+        "opacity": {
+          "type": "number",
+          "minimum": 0,
+          "maximum": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "extensions": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^[a-z0-9.-]+/[a-zA-Z0-9._-]+$"
+      }
+    },
+    "action": {
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "configuration": {
+          "type": "object"
+        },
+        "extensions": {
+          "$ref": "#/$defs/extensions"
+        }
+      },
+      "additionalProperties": true,
+      "allOf": [
+        {
+          "if": {
+            "required": [
+              "configuration"
+            ],
+            "properties": {
+              "configuration": {
+                "type": "object",
+                "anyOf": [
+                  {
+                    "required": [
+                      "containerId"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "paneId"
+                    ]
+                  },
+                  {
+                    "required": [
+                      "operation"
+                    ]
+                  }
+                ]
+              }
+            }
+          },
+          "then": {
+            "required": [
+              "targetId",
+              "configuration"
+            ],
+            "properties": {
+              "targetId": {
+                "type": "string",
+                "minLength": 1
+              },
+              "configuration": {
+                "type": "object",
+                "required": [
+                  "containerId",
+                  "paneId",
+                  "operation"
+                ],
+                "properties": {
+                  "containerId": {
+                    "type": "string",
+                    "minLength": 1
+                  },
+                  "paneId": {
+                    "enum": [
+                      "primary",
+                      "secondary"
+                    ]
+                  },
+                  "operation": {
+                    "const": "replace"
+                  },
+                  "openPage": {
+                    "type": "object",
+                    "properties": {
+                      "openIndirect": {
+                        "const": false
+                      },
+                      "awaitRes": {
+                        "const": "none"
+                      }
+                    }
+                  }
+                }
+              },
+              "type": {
+                "const": "openAnotherPage"
+              },
+              "openWithSheetProperties": {
+                "type": "null"
+              },
+              "openIndirect": {
+                "const": false
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "enum": [
+                  "setAudioQueue",
+                  "seekAudio",
+                  "setAudioShuffle",
+                  "setAudioRepeat"
+                ]
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "required": [
+              "configuration"
+            ],
+            "properties": {
+              "configuration": {
+                "type": "object",
+                "required": [
+                  "audio"
+                ],
+                "properties": {
+                  "audio": {
+                    "$ref": "#/$defs/audioActionConfiguration"
+                  }
+                }
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "showRevenueCatPaywall"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "required": [
+              "targetId"
+            ],
+            "properties": {
+              "targetId": {
+                "type": "string",
+                "minLength": 1,
+                "description": "ID of an active revenueCat integration."
+              }
+            }
+          }
+        },
+        {
+          "if": {
+            "properties": {
+              "type": {
+                "const": "authenticateFirebaseUser"
+              }
+            },
+            "required": [
+              "type"
+            ]
+          },
+          "then": {
+            "required": [
+              "targetId",
+              "configuration"
+            ],
+            "properties": {
+              "targetId": {
+                "type": "string",
+                "minLength": 1,
+                "description": "Exact ID of the sole active iOS-applicable Firebase integration with accountMode authOnly."
+              },
+              "configuration": {
+                "type": "object",
+                "required": [
+                  "firebaseAuthAction"
+                ],
+                "properties": {
+                  "firebaseAuthAction": {
+                    "$ref": "#/$defs/firebaseAuthAction"
+                  }
+                }
+              }
+            },
+            "not": {
+              "required": [
+                "cp"
+              ]
+            }
+          }
+        },
+        {
+          "if": {
+            "required": [
+              "configuration"
+            ],
+            "properties": {
+              "configuration": {
+                "type": "object",
+                "required": [
+                  "fbFuncAction"
+                ],
+                "properties": {
+                  "fbFuncAction": {
+                    "type": "object",
+                    "required": [
+                      "responsePolicy"
+                    ]
+                  }
+                }
+              }
+            }
+          },
+          "then": {
+            "properties": {
+              "type": {
+                "const": "callFirebaseFunction"
+              },
+              "configuration": {
+                "properties": {
+                  "fbFuncAction": {
+                    "properties": {
+                      "responsePolicy": {
+                        "enum": [
+                          "latestForTarget",
+                          null
+                        ],
+                        "description": "Optional native iOS Auth-only policy. Null or omission preserves legacy behavior; unsupported runtimes fail closed."
+                      }
+                    },
+                    "allOf": [
+                      {
+                        "if": {
+                          "properties": {
+                            "responsePolicy": {
+                              "const": "latestForTarget"
+                            }
+                          }
+                        },
+                        "then": {
+                          "required": [
+                            "targetVar"
+                          ],
+                          "properties": {
+                            "targetVar": {
+                              "type": "string",
+                              "minLength": 1,
+                              "pattern": "^[^.\\s$%@()\\[\\]]+$",
+                              "description": "A literal declared global root variable; paths, expressions, aliases and prototype targets are invalid."
+                            }
+                          }
+                        }
+                      }
+                    ]
+                  }
+                }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "variableExpressionValue": {
+      "type": "object",
+      "required": [
+        "type"
+      ],
+      "properties": {
+        "type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "resolvedText": {
+          "type": "string"
+        },
+        "variableReference": {
+          "type": "string"
+        },
+        "function": {
+          "type": "object"
+        },
+        "value": {},
+        "extensions": {
+          "$ref": "#/$defs/extensions"
+        }
+      },
+      "additionalProperties": true
+    },
+    "barButtonItem": {
+      "type": "object",
+      "properties": {
+        "kind": {
+          "enum": [
+            "button",
+            "flexibleSpace",
+            "fixedSpace"
+          ]
+        },
+        "imageNameVarExpVal": {
+          "$ref": "#/$defs/variableExpressionValue"
+        },
+        "clickActions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/action"
+          }
+        },
+        "isEnabled": {
+          "$ref": "#/$defs/variableExpressionValue"
+        },
+        "isVisible": {
+          "$ref": "#/$defs/variableExpressionValue"
+        },
+        "badgeText": {
+          "$ref": "#/$defs/variableExpressionValue"
+        },
+        "extensions": {
+          "$ref": "#/$defs/extensions"
+        }
+      },
+      "additionalProperties": true
+    },
+    "row": {
+      "type": "object",
+      "required": [
+        "id",
+        "type"
+      ],
+      "properties": {
+        "id": {
+          "type": "string",
+          "minLength": 1
+        },
+        "type": {
+          "type": "string",
+          "minLength": 1
+        },
+        "role": {
+          "enum": [
+            "header",
+            "defaultHeader",
+            "footer"
+          ]
+        },
+        "appActions": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/action"
+          }
+        },
+        "chartViewModels": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/chartViewModel"
+          }
+        },
+        "childProperties": {
+          "type": "object",
+          "properties": {
+            "children": {
+              "type": "array",
+              "items": {
+                "$ref": "#/$defs/row"
+              }
+            },
+            "clipsContent": {
+              "type": "boolean",
+              "default": false,
+              "description": "When true, clip the row content to its bounds. Omission preserves the previous appearance."
+            },
+            "borderStyle": {
+              "type": [
+                "string",
+                "null"
+              ],
+              "enum": [
+                "solid",
+                "dashed",
+                null
+              ],
+              "description": "Optional native border appearance. Omission or solid preserves the existing border. Dashed uses dash and gap lengths of three times borderWidth on native renderers; web uses CSS dashed. Existing width, color and corner radius apply."
+            }
+          },
+          "additionalProperties": true
+        },
+        "extensions": {
+          "$ref": "#/$defs/extensions"
+        },
+        "maxCellWidth": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 1,
+          "description": "Optional maximum width in logical points (pt on Apple platforms, dp on Android, CSS px on the web). Caps the complete styled row including contentPadding and outerMargins, centers it in the available width, and shrinks it to fit narrower containers. Omission or null leaves the row uncapped."
+        },
+        "images": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/imageWithFade"
+          }
+        },
+        "backgroundImage": {
+          "$ref": "#/$defs/imageWithFade"
+        },
+        "labelModels": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/label"
+          }
+        }
+      },
+      "additionalProperties": true,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "chartViewModels": {
+                "type": "array",
+                "contains": {
+                  "type": "object",
+                  "required": [
+                    "series"
+                  ]
+                }
+              }
+            },
+            "required": [
+              "chartViewModels"
+            ]
+          },
+          "then": {
+            "properties": {
+              "type": {
+                "enum": [
+                  "lineBarChart",
+                  "areaChart"
+                ]
+              }
+            }
+          }
+        }
+      ]
+    },
+    "chartDataPoint": {
+      "type": "object",
+      "required": [
+        "label",
+        "value"
+      ],
+      "properties": {
+        "label": {
+          "type": "string"
+        },
+        "value": {
+          "type": "number"
+        },
+        "minValue": {
+          "type": "number"
+        },
+        "maxValue": {
+          "type": "number"
+        },
+        "extensions": {
+          "$ref": "#/$defs/extensions"
+        }
+      },
+      "additionalProperties": true
+    },
+    "chartViewModel": {
+      "type": "object",
+      "properties": {
+        "chartStyle": {
+          "enum": [
+            "standard",
+            "compactTrend",
+            "sparkline",
+            "metricInline"
+          ]
+        },
+        "usesCustomChartStyle": {
+          "type": "boolean"
+        },
+        "showYAxis": {
+          "type": "boolean"
+        },
+        "showXAxis": {
+          "type": "boolean"
+        },
+        "tintColor": {
+          "type": [
+            "object",
+            "null"
+          ]
+        },
+        "highlightLargestBar": {
+          "type": "boolean"
+        },
+        "barTopCornerRadius": {
+          "type": "integer",
+          "minimum": 0
+        },
+        "usesGradient": {
+          "type": "boolean"
+        },
+        "lineWidth": {
+          "type": "number",
+          "exclusiveMinimum": 0
+        },
+        "showGridLines": {
+          "type": "boolean"
+        },
+        "showSymbols": {
+          "type": "boolean"
+        },
+        "yAxisPosition": {
+          "enum": [
+            "leading",
+            "trailing"
+          ]
+        },
+        "interpolation": {
+          "enum": [
+            "linear",
+            "monotone",
+            "catmullRom",
+            "cardinal",
+            "stepStart",
+            "stepCenter",
+            "stepEnd"
+          ]
+        },
+        "dataPoints": {
+          "type": "array",
+          "items": {
+            "$ref": "#/$defs/chartDataPoint"
+          }
+        },
+        "highlightedDataPointIndex": {
+          "type": [
+            "integer",
+            "null"
+          ],
+          "minimum": 0
+        },
+        "extensions": {
+          "$ref": "#/$defs/extensions"
+        },
+        "dataBinding": {
+          "type": "object",
+          "required": [
+            "listVariable",
+            "labelProperty",
+            "valueProperty"
+          ],
+          "properties": {
+            "listVariable": {
+              "type": "string",
+              "minLength": 1
+            },
+            "labelProperty": {
+              "type": "string",
+              "minLength": 1
+            },
+            "valueProperty": {
+              "type": "string",
+              "minLength": 1
+            },
+            "minValueProperty": {
+              "type": "string",
+              "minLength": 1
+            },
+            "maxValueProperty": {
+              "type": "string",
+              "minLength": 1
+            }
+          },
+          "additionalProperties": false
+        },
+        "showBarValueLabels": {
+          "type": "boolean"
+        },
+        "barWidthRatio": {
+          "type": "number",
+          "minimum": 0.1,
+          "maximum": 1
+        },
+        "series": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/chartSeries"
+          },
+          "description": "Named time series for lineBarChart and areaChart. When present, replaces top-level dataPoints/dataBinding. Names are unique; timestamps are strictly increasing within each series. Explicit null values are gaps."
+        }
+      },
+      "additionalProperties": true,
+      "not": {
+        "required": [
+          "seriesJSON"
+        ]
+      }
+    },
+    "adaptivePane": {
+      "type": "object",
+      "required": [
+        "pageId"
+      ],
+      "properties": {
+        "pageId": {
+          "type": "string",
+          "minLength": 1
+        },
+        "emptyPageId": {
+          "type": "string",
+          "minLength": 1
+        }
+      },
+      "additionalProperties": false
+    },
+    "adaptiveLayout": {
+      "type": "object",
+      "required": [
+        "kind",
+        "panes"
+      ],
+      "properties": {
+        "kind": {
+          "enum": [
+            "navigationSplit",
+            "split"
+          ]
+        },
+        "panes": {
+          "type": "object",
+          "required": [
+            "primary",
+            "secondary"
+          ],
+          "properties": {
+            "primary": {
+              "$ref": "#/$defs/adaptivePane"
+            },
+            "secondary": {
+              "$ref": "#/$defs/adaptivePane"
+            }
+          },
+          "additionalProperties": false
+        },
+        "compact": {
+          "type": "object",
+          "required": [
+            "behavior",
+            "initialPane"
+          ],
+          "properties": {
+            "behavior": {
+              "const": "stack"
+            },
+            "initialPane": {
+              "enum": [
+                "primary",
+                "secondary"
+              ]
+            }
+          },
+          "additionalProperties": false
+        },
+        "expanded": {
+          "type": "object",
+          "required": [
+            "sizing"
+          ],
+          "properties": {
+            "sizing": {
+              "const": "automatic"
+            }
+          },
+          "additionalProperties": false
+        }
+      },
+      "additionalProperties": false
+    },
+    "audioActionConfiguration": {
+      "type": "object",
+      "required": [
+        "queueReference",
+        "autoPlay",
+        "positionSeconds",
+        "shuffleEnabled",
+        "repeatMode"
+      ],
+      "properties": {
+        "queueReference": {
+          "type": "string"
+        },
+        "startEntryId": {
+          "anyOf": [
+            {
+              "$ref": "#/$defs/variableExpressionValue"
+            },
+            {
+              "type": "null"
+            }
+          ]
+        },
+        "autoPlay": {
+          "$ref": "#/$defs/variableExpressionValue"
+        },
+        "positionSeconds": {
+          "$ref": "#/$defs/variableExpressionValue"
+        },
+        "shuffleEnabled": {
+          "$ref": "#/$defs/variableExpressionValue"
+        },
+        "repeatMode": {
+          "enum": [
+            "off",
+            "all",
+            "one"
+          ]
+        }
+      },
+      "additionalProperties": true
+    },
+    "imageWithFade": {
+      "type": [
+        "object",
+        "null"
+      ],
+      "properties": {
+        "fadeBottom": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "minimum": 0,
+          "maximum": 1,
+          "default": 0,
+          "description": "Lower fraction of the image faded linearly to transparency; zero, null or omission disables the effect."
+        }
+      },
+      "additionalProperties": true
+    },
+    "label": {
+      "type": "object",
+      "properties": {
+        "lineHeight": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "exclusiveMinimum": 0,
+          "description": "Optional absolute line-box height in logical points. Native text scaling scales it with the resolved font. Missing or null preserves existing metrics."
+        },
+        "letterSpacing": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "Optional extra inter-letter spacing in logical points. Zero and negative finite values are valid. Native text scaling scales it with the resolved font. Missing or null preserves existing tracking."
+        }
+      },
+      "additionalProperties": true
+    },
+    "chartSeries": {
+      "type": "object",
+      "required": [
+        "name",
+        "dataPoints"
+      ],
+      "properties": {
+        "name": {
+          "type": "string",
+          "minLength": 1,
+          "pattern": "\\S"
+        },
+        "tintColor": {
+          "type": [
+            "object",
+            "null"
+          ],
+          "default": null
+        },
+        "lineStyle": {
+          "enum": [
+            "solid",
+            "dashed"
+          ],
+          "default": "solid"
+        },
+        "fill": {
+          "type": "boolean",
+          "default": false
+        },
+        "dataPoints": {
+          "type": "array",
+          "minItems": 1,
+          "items": {
+            "$ref": "#/$defs/chartTimeDataPoint"
+          }
+        }
+      },
+      "additionalProperties": false
+    },
+    "chartTimeDataPoint": {
+      "type": "object",
+      "required": [
+        "timestamp",
+        "value"
+      ],
+      "properties": {
+        "timestamp": {
+          "type": "string",
+          "format": "date-time",
+          "pattern": "^(?!0000)[0-9]{4}-(0[1-9]|1[0-2])-(0[1-9]|[12][0-9]|3[01])T([01][0-9]|2[0-3]):[0-5][0-9]:[0-5][0-9](?:\\.[0-9]{1,3})?(?:Z|[+-](?:[01][0-9]|2[0-3]):[0-5][0-9])$",
+          "description": "RFC 3339 timestamp with seconds and timezone, years 0001–9999 and at most millisecond precision; leap seconds are not supported."
+        },
+        "value": {
+          "type": [
+            "number",
+            "null"
+          ],
+          "description": "A finite number, or explicit null to break the line and fill at a data gap. Omission is invalid."
+        }
+      },
+      "additionalProperties": false
+    },
+    "firebaseAuthAction": {
+      "type": "object",
+      "required": [
+        "operation",
+        "provider"
+      ],
+      "properties": {
+        "operation": {
+          "enum": [
+            "signIn",
+            "register",
+            "link"
+          ]
+        },
+        "provider": {
+          "enum": [
+            "apple",
+            "password"
+          ]
+        },
+        "email": {
+          "$ref": "#/$defs/variableExpressionValue"
+        },
+        "password": {
+          "$ref": "#/$defs/variableExpressionValue"
+        }
+      },
+      "additionalProperties": false,
+      "allOf": [
+        {
+          "if": {
+            "properties": {
+              "provider": {
+                "const": "apple"
+              }
+            },
+            "required": [
+              "provider"
+            ]
+          },
+          "then": {
+            "properties": {
+              "operation": {
+                "enum": [
+                  "signIn",
+                  "link"
+                ]
+              }
+            },
+            "not": {
+              "anyOf": [
+                {
+                  "required": [
+                    "email"
+                  ]
+                },
+                {
+                  "required": [
+                    "password"
+                  ]
+                }
+              ]
+            }
+          },
+          "else": {
+            "required": [
+              "email",
+              "password"
+            ]
+          }
+        }
+      ]
+    }
+  },
+  "allOf": [
+    {
+      "if": {
+        "properties": {
+          "type": {
+            "const": "adaptive"
+          }
+        }
+      },
+      "then": {
+        "required": [
+          "layout"
+        ]
+      },
+      "else": {
+        "not": {
+          "required": [
+            "layout"
+          ]
+        }
+      }
+    }
+  ]
+}

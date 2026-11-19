@@ -1,11 +1,11 @@
 # Appmost Project Format
 
 Appmost Project Format is the open specification for `.appmostapp` project
-packages. The current reference release is **2.12.0**, with **documentVersion 2**.
+packages. The current reference release is **2.13.0**, with **documentVersion 2**.
 The semantic reference release, decoder major and numbered stored project
 versions are separate axes.
 
-Reference 2.12.0 includes named chart series and explicitly scoped native account, callable-response and Debug emulator settings. The versioned specification and registry record platform availability. Earlier reference artifacts remain immutable.
+Reference 2.13.0 adds RevenueCat Web Billing for identified customers and extends the Firebase account and callable-response contracts to the web. The versioned specification and registry record platform availability. Earlier reference artifacts remain immutable.
 
 Reference 2.2.0 added the optional general row field `maxCellWidth` for centered,
 responsive content. Existing types keep their introduction versions. The
@@ -23,11 +23,13 @@ publication.
 
 ## Specification and releases
 
-- [Normative 2.12.0 specification](spec/2.12.0.md)
+- [Normative 2.13.0 specification](spec/2.13.0.md)
 - [Release manifest and artifact checksums](releases.json)
-- [Current type registry](registry/2.12.json)
-- [Current app, page and version schemas](schemas/2.12/)
-- [Chart properties and preset defaults](registry/chart-properties-2.12.json)
+- [Current type registry](registry/2.13.json)
+- [Current app, page, version and test data schemas](schemas/2.13/)
+- [Chart properties and preset defaults](registry/chart-properties-2.13.json)
+- [Frozen 2.12.0 specification](spec/2.12.0.md), [registry](registry/2.12.json)
+  and [schemas](schemas/2.12/)
 - [Frozen 2.1.1 specification](spec/2.1.1.md), [registry](registry/2.1.1.json)
   and [schemas](schemas/2.1.1/)
 - [Original 2.0 specification](spec/2.0.md), [registry](registry/2.0.json)
@@ -115,7 +117,7 @@ arbitrary additions or normalize old project content.
 ## Implementation support
 
 A valid project may require features unavailable in a particular renderer.
-The [current registry](registry/2.2.json) declares support per type.
+The [current registry](registry/2.13.json) declares support per type.
 
 | Format surface | iOS (SwiftUI) | Android (Compose) | Appmost Design |
 | --- | ---: | ---: | ---: |
