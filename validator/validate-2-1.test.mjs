@@ -40,9 +40,9 @@ async function adaptive(project) {
   });
 }
 
-test('manifest selects 2.13.0 with documentVersion 2 and all frozen artifacts verify', async () => {
+test('manifest selects 2.14.0 with documentVersion 2 and all frozen artifacts verify', async () => {
   const manifest = await verifyPublishedArtifacts();
-  assert.equal(manifest.currentVersion, '2.13.0');
+  assert.equal(manifest.currentVersion, '2.14.0');
   assert.equal(manifest.documentVersion, 2);
   assert.equal((await loadFormatRelease()).registry.rowTypes.find(row => row.type === 'donutChart').introducedIn, '2.1.0');
 });

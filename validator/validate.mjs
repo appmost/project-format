@@ -107,7 +107,7 @@ function uniqueStrings(values, jsonPath) {
   return values;
 }
 
-function validateRows(rows, registry, pagePath) {
+function validateRows(rows, registry, pagePath, actionKeys) {
   if (rows === undefined) return 0;
   if (!Array.isArray(rows)) fail('invalid_package', `${pagePath}.rows must be an array.`, `${pagePath}.rows`);
 
@@ -126,11 +126,14 @@ function validateRows(rows, registry, pagePath) {
     }
     count += 1;
 
-    if (row.appActions !== undefined) {
-      if (!Array.isArray(row.appActions)) fail('invalid_package', `${rowPath}.appActions must be an array.`, `${rowPath}.appActions`);
-      row.appActions.forEach((action, index) => {
+    for (const key of actionKeys) {
+      const actions = row[key];
+      if (actions === undefined) continue;
+      const actionPath = `${rowPath}.${key}`;
+      if (!Array.isArray(actions)) fail('invalid_package', `${actionPath} must be an array.`, actionPath);
+      actions.forEach((action, index) => {
         if (!isObject(action) || typeof action.type !== 'string' || !actionTypes.has(action.type)) {
-          fail('unknown_action_type', `Unknown action type '${String(action?.type)}'.`, `${rowPath}.appActions[${index}].type`);
+          fail('unknown_action_type', `Unknown action type '${String(action?.type)}'.`, `${actionPath}[${index}].type`);
         }
       });
     }
@@ -212,6 +215,8 @@ export async function validateProject(source, { formatVersion } = {}) {
   if (!root.endsWith('.appmostapp')) fail('invalid_package', 'The package directory must end in .appmostapp.');
 
   const { registry, schemas } = await loadFormatRelease(formatVersion);
+  const rowActionKeys = Object.hasOwn(schemas.page.$defs?.row?.properties ?? {}, 'longPressActions')
+    ? ['appActions', 'longPressActions'] : ['appActions'];
   const app = await packageJson(root, path.join(root, 'app.json'), 'app.json');
   documentVersion(app, 'app.json');
   extensions(app);
@@ -282,7 +287,7 @@ export async function validateProject(source, { formatVersion } = {}) {
       if (pageIds.has(page.id)) fail('duplicate_id', `Duplicate page id '${page.id}'.`, `${pagePath}.id`);
       pageIds.add(page.id);
       pages.push(page);
-      rowCount += validateRows(page.rows, registry, pagePath);
+      rowCount += validateRows(page.rows, registry, pagePath, rowActionKeys);
       validateVariables(page, registry, pagePath);
       pageCount += 1;
     }

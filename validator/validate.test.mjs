@@ -89,6 +89,37 @@ test('an unknown semantic row type fails clearly', async () => {
   }
 });
 
+test('format 2.14 validates long-press action types on rows and their children', async () => {
+  const { directory, copy } = await temporaryExample();
+  try {
+    const pagePath = path.join(copy, 'versions/1/pages/home.json');
+    const page = JSON.parse(await readFile(pagePath, 'utf8'));
+    const row = page.rows[0];
+    const child = { ...row, id: 'child', longPressActions: [{ type: 'doNothing' }] };
+    row.longPressActions = [];
+    row.childProperties = { children: [child] };
+    const writePage = () => writeFile(pagePath, `${JSON.stringify(page, null, 2)}\n`);
+
+    await writePage();
+    assert.equal((await validateProject(copy, { formatVersion: '2.14.0' })).rowCount, 2);
+
+    for (const target of [row, child]) {
+      const previous = target.longPressActions;
+      target.longPressActions = [{ type: 'notARegisteredAction' }];
+      await writePage();
+      await assert.rejects(
+        validateProject(copy, { formatVersion: '2.14.0' }),
+        (error) => error instanceof FormatValidationError && error.code === 'unknown_action_type' &&
+          error.path.endsWith('longPressActions[0].type'),
+      );
+      assert.equal((await validateProject(copy, { formatVersion: '2.13.0' })).rowCount, 2);
+      target.longPressActions = previous;
+    }
+  } finally {
+    await rm(directory, { recursive: true, force: true });
+  }
+});
+
 test('an unsafe page filename fails clearly', async () => {
   const { directory, copy } = await temporaryExample();
   try {
