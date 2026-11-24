@@ -1,0 +1,230 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://www.appmost.ai/format/schemas/2.15/version.schema.json",
+  "title": "Appmost Project Format 2.1 stored version",
+  "type": "object",
+  "required": [
+    "documentVersion",
+    "version",
+    "startPageId",
+    "pageFileNames"
+  ],
+  "properties": {
+    "documentVersion": {
+      "const": 2
+    },
+    "version": {
+      "type": "integer",
+      "minimum": 1,
+      "maximum": 2147483647
+    },
+    "releaseState": {
+      "const": "locked",
+      "$comment": "Unlocked is the default and is omitted."
+    },
+    "startPageId": {
+      "type": "string",
+      "minLength": 1
+    },
+    "pageFileNames": {
+      "type": "array",
+      "minItems": 1,
+      "uniqueItems": true,
+      "items": {
+        "type": "string",
+        "pattern": "^[^./\\\\][^/\\\\]*\\.json$"
+      }
+    },
+    "globalTheme": {
+      "type": "object",
+      "properties": {
+        "webAppearance": {
+          "type": "string",
+          "enum": [
+            "standard",
+            "glass",
+            "brand",
+            "material"
+          ],
+          "default": "standard",
+          "description": "Visual treatment for adaptive web navigation. It does not change page-graph semantics or placement rules."
+        }
+      },
+      "additionalProperties": true
+    },
+    "extensions": {
+      "type": "object",
+      "propertyNames": {
+        "pattern": "^[a-z0-9.-]+/[a-zA-Z0-9._-]+$"
+      }
+    },
+    "disableSystemTextScaling": {
+      "type": [
+        "boolean",
+        "null"
+      ],
+      "description": "When true, Appmost's native iOS and Android renderers use the authored text scale without system text scaling. False, null, or omission preserves the platform's existing behavior."
+    },
+    "integrations": {
+      "type": "array",
+      "items": {
+        "type": "object",
+        "required": [
+          "id",
+          "type"
+        ],
+        "properties": {
+          "id": {
+            "type": "string",
+            "minLength": 1
+          },
+          "type": {
+            "type": "string"
+          },
+          "active": {
+            "type": "boolean"
+          },
+          "revenueCatIntegrationModel": {
+            "type": "object",
+            "required": [
+              "iosApiKey",
+              "androidApiKey",
+              "entitlementId"
+            ],
+            "properties": {
+              "iosApiKey": {
+                "type": "string",
+                "description": "Public app-specific RevenueCat iOS SDK key; never a secret REST API key."
+              },
+              "androidApiKey": {
+                "type": "string",
+                "description": "Public app-specific RevenueCat Android SDK key; never a secret REST API key."
+              },
+              "entitlementId": {
+                "type": "string"
+              },
+              "offeringId": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "description": "Omission, null or an empty string selects the default offering."
+              },
+              "appUserId": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "description": "Optional global text/variable interpolation for a required customer account ID. Missing or null preserves anonymous SDK behavior. A present String requires a valid resolved ID before SDK setup, rights, restore, purchase or paywall access. The resolved value is limited to 100 characters; the raw expression has no UID-length restriction."
+              },
+              "webApiKey": {
+                "type": [
+                  "string",
+                  "null"
+                ],
+                "description": "Optional public RevenueCat Web Billing SDK key (rcb_ prefix), introduced in 2.13.0. Never a secret server key. Omission, null or empty disables web billing without changing native keys."
+              }
+            },
+            "additionalProperties": true
+          },
+          "firebaseIntegrationModel": {
+            "type": "object",
+            "properties": {
+              "emulators": {
+                "type": "object",
+                "required": [
+                  "projectId",
+                  "host",
+                  "authPort",
+                  "firestorePort",
+                  "functionsPort"
+                ],
+                "properties": {
+                  "projectId": {
+                    "type": "string",
+                    "pattern": "^demo-[a-z0-9](?:[a-z0-9-]{0,23}[a-z0-9])?$"
+                  },
+                  "host": {
+                    "enum": [
+                      "127.0.0.1",
+                      "localhost",
+                      "::1"
+                    ]
+                  },
+                  "authPort": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 65535
+                  },
+                  "firestorePort": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 65535
+                  },
+                  "functionsPort": {
+                    "type": "integer",
+                    "minimum": 1,
+                    "maximum": 65535
+                  }
+                },
+                "additionalProperties": false,
+                "description": "Explicit native Debug-only Firebase emulator endpoints. All fields required. Distribution and web publication reject the metadata, including inactive integrations."
+              },
+              "accountMode": {
+                "enum": [
+                  "authOnly",
+                  null
+                ],
+                "description": "Optional Firebase Auth-only account ownership. Missing or null retains the existing profile-backed behavior. Auth-only uses no implicit Firestore user-profile reads or writes; supported on iOS and web."
+              }
+            },
+            "additionalProperties": true
+          }
+        },
+        "allOf": [
+          {
+            "if": {
+              "properties": {
+                "type": {
+                  "const": "revenueCat"
+                }
+              },
+              "required": [
+                "type"
+              ]
+            },
+            "then": {
+              "required": [
+                "revenueCatIntegrationModel"
+              ]
+            }
+          }
+        ],
+        "additionalProperties": true
+      },
+      "contains": {
+        "type": "object",
+        "required": [
+          "type",
+          "active"
+        ],
+        "properties": {
+          "type": {
+            "const": "revenueCat"
+          },
+          "active": {
+            "const": true
+          }
+        }
+      },
+      "minContains": 0,
+      "maxContains": 1
+    }
+  },
+  "additionalProperties": true,
+  "not": {
+    "required": [
+      "testData"
+    ]
+  }
+}

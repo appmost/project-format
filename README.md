@@ -1,9 +1,11 @@
 # Appmost Project Format
 
 Appmost Project Format is the open specification for `.appmostapp` project
-packages. The current reference release is **2.14.0**, with **documentVersion 2**.
+packages. The current reference release is **2.15.0**, with **documentVersion 2**.
 The semantic reference release, decoder major and numbered stored project
 versions are separate axes.
+
+Reference 2.15.0 adds web support for refreshing RevenueCat purchase state, scrolling to a paginated list item, list action sheets, and legacy inset button rows.
 
 Reference 2.14.0 adds `longPressActions` to rows and their children. Native iOS, iPadOS and Android renderers run the actions when a row is pressed and held. The versioned specification records platform availability. Earlier reference artifacts remain immutable.
 
@@ -23,11 +25,13 @@ publication.
 
 ## Specification and releases
 
-- [Normative 2.14.0 specification](spec/2.14.0.md)
+- [Normative 2.15.0 specification](spec/2.15.0.md)
 - [Release manifest and artifact checksums](releases.json)
-- [Current type registry](registry/2.14.json)
-- [Current app, page, version and test data schemas](schemas/2.14/)
-- [Chart properties and preset defaults](registry/chart-properties-2.14.json)
+- [Current type registry](registry/2.15.json)
+- [Current app, page, version and test data schemas](schemas/2.15/)
+- [Chart properties and preset defaults](registry/chart-properties-2.15.json)
+- [Frozen 2.14.0 specification](spec/2.14.0.md), [registry](registry/2.14.json)
+  and [schemas](schemas/2.14/)
 - [Frozen 2.13.0 specification](spec/2.13.0.md), [registry](registry/2.13.json)
   and [schemas](schemas/2.13/)
 - [Frozen 2.12.0 specification](spec/2.12.0.md), [registry](registry/2.12.json)
@@ -119,7 +123,7 @@ arbitrary additions or normalize old project content.
 ## Implementation support
 
 A valid project may require features unavailable in a particular renderer.
-The [current registry](registry/2.14.json) declares support per type.
+The [current registry](registry/2.15.json) declares support per type.
 
 | Format surface | iOS (SwiftUI) | Android (Compose) | Appmost Design |
 | --- | ---: | ---: | ---: |
