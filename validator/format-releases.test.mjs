@@ -37,10 +37,10 @@ async function modifiedErrata(change) {
   return {manifest, read: name => name.endsWith('/publication-errata.json') ? bytes : readFormatArtifact(name)};
 }
 
-test('canonical Git 2.0, frozen 2.1 references and current 2.16.0 artifacts agree', async () => {
+test('canonical Git 2.0, frozen 2.1 references and current 2.17.0 artifacts agree', async () => {
   const manifest = await readFormatReleases();
   const current = await verifyPublishedFormatReleases(manifest);
-  assert.equal(current.version, '2.16.0');
+  assert.equal(current.version, '2.17.0');
   assert.equal(current.documentVersion, 2);
   assert.equal(manifest.releases['2.0.0'].artifacts['registry/2.0.json'],
     '2d64b69aeb52ab27037636f345e82719fece2bd5092e913149913a499e091747');
